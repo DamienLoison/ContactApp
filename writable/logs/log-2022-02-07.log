@@ -1,0 +1,206 @@
+CRITICAL - 2022-02-07 08:35:03 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(13): view('recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:35:21 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(13): view('recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:35:25 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(13): view('recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:36:12 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(13): view('recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:36:50 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(13): view('recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:36:54 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(13): view('recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:37:04 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(13): view('recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:37:26 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(12): view('Recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:38:28 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(12): view('Recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:40:15 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(12): view('Recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:42:03 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(12): view('Recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:42:37 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(12): view('Recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:43:24 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(12): view('Recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:44:39 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(12): view('Recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:45:15 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(12): view('Recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:46:41 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('Aide', Array, true)
+#3 C:\laragon\www\app\Controllers\AideController.php(12): view('Aide')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\AideController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AideController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:47:03 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('Aide', Array, true)
+#3 C:\laragon\www\app\Controllers\AideController.php(12): view('Aide')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\AideController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AideController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:48:05 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('Aide', Array, true)
+#3 C:\laragon\www\app\Controllers\AideController.php(12): view('Aide')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\AideController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AideController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:48:07 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(12): view('Recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 08:49:39 --> Call to a member function prepare() on null
+#0 C:\laragon\www\system\View\View.php(210): include()
+#1 C:\laragon\www\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#3 C:\laragon\www\app\Controllers\RechercheController.php(12): view('Recherche')
+#4 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#5 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#6 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-07 09:03:28 --> Class 'CodeIgniter\RechercheModel' not found
+#0 C:\laragon\www\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#1 C:\laragon\www\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#2 C:\laragon\www\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
