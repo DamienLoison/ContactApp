@@ -12,13 +12,15 @@ require('template/header.php');
 <body>
     <style>
         /*Remonte la barre de navigation jusqu'au haut de la fiche*/
-        nav{
+        nav {
             margin-top: -17px;
             text-align: left;
         }
-        nav a{
+
+        nav a {
             text-align: center;
         }
+
         /* englobe la fiche entiere*/
         body {
             width: 500px;
@@ -47,8 +49,14 @@ require('template/header.php');
         .Logo-left {
             text-align: left;
             /* margin-top: -60px; */
-            width: 300px;
+            width: 250px;
             height: 150px;
+        }
+        img {
+            width: 250px;
+            height: 150px;
+            text-align: left;
+            margin-top: -120px;
         }
 
         .texte-droite {
@@ -96,24 +104,25 @@ require('template/header.php');
         <div class="Top">
             <!-- contient le Logo + info organisation -->
             <div class="texte-droite">
-                <!-- <h3>Nom organisation</h3> -->
                 <?php if (!empty($organisations) && is_array($organisations)) : ?>
                     <?php foreach ($organisations as $organisation) : ?>
                         <h2><?php echo ($organisation['Nom_Organisation']) ?></h2>
-                        <?php echo ($organisation['ID_Organisation']); ?>
+                        ID : [<?php echo ($organisation['ID_Organisation']); ?>]<br>
+
+                        mail : <?php echo ($organisation['Mail_Organisation']) ?><br>
+                        tel : <?php echo ($organisation['Telephone_Organisation']) ?><br>
+                        <address><?php echo ($organisation['Adresse_Organisation']) ?></address>
                     <?php endforeach; ?>
                 <?php endif ?>
-
-                <!-- mail : <br>
-                <a>
-                    <href="tel:+">appelé le
-                </a><br>
-                <address>Adresse Organisation</address> -->
             </div>
-            <div class="Logo-left">
-                <!--logo se situant a gauche-->
+            <!-- <div class="Logo-left">
+                logo se situant a gauche
                 <img src="images/logos/logo-1.png" alt="petit logo">
-                <!--<href="images/logos/logo-1.png">-->
+                
+                <href="images/logos/logo-1.png">
+            </div> -->
+            <div class="Logo-left">
+                <img src="images/btp-logo.jpg" alt="logo entreprise">
             </div>
         </div>
         <!-- <div class="Contact" style="color: rgb(0, 173, 124);"> -->
