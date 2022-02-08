@@ -5,20 +5,65 @@
     <meta charset="UTF-8">
     <title>Donnée Contact</title>
 </head>
-<?php
-require('template/header.php');
-?>
+<?php require('template/header.php'); ?>
+<div class="vertical">
+    <?php //require('template/navbar.php'); 
+    function ChangeCouleur()
+    {
+        $a = rand(0, 3);
+        // $a = 2;
+        // echo ($a);
+        if ($a == 0) {
+            echo ' class="pink"'; // on affiche la class
+        }
+        if ($a == 1) {
+            echo ' class="bisque"'; // on affiche la class
+        }
+        if ($a == 2) {
+            echo ' class="olivedrab"'; // on affiche la class
+        }
+        if ($a == 3) {
+            echo ' class="darkorange"'; // on affiche la class
+        }
+    }
+    ?>
+</div>
 
 <body>
     <style>
+        /*Classe permettant de modifier la couleur du background*/
+        .pink{
+            background-color:pink;
+        }
+        .bisque{
+            background-color:bisque;
+        }
+        .olivedrab{
+            background-color:olivedrab;
+        }
+        .darkorange{
+            background-color:darkorange;
+        }
         /*Remonte la barre de navigation jusqu'au haut de la fiche*/
-        nav {
+        .navigation {
             margin-top: -17px;
             text-align: left;
         }
 
-        nav a {
+        .navigation2 {
             text-align: center;
+        }
+
+        /*Barre de navigation vertical*/
+        .navbar {
+            position: absolute;
+            /*Ne pas toucher ! */
+            margin-left: -185px;
+            border: rgb(84, 84, 84) solid 5px;
+            border-radius: 90px;
+            width: 150px;
+            background-color: pink;
+            /* height: 400px; */
         }
 
         /* englobe la fiche entiere*/
@@ -35,7 +80,9 @@ require('template/header.php');
             width: 500px;
             height: 500px;
             text-align: center;
-
+            /* background-color: pink; */
+            background-color: <?php ChangeCouleur(); ?>;
+            /* margin: top -15px;; */
         }
 
         /*---------------------------------------*/
@@ -44,6 +91,7 @@ require('template/header.php');
             /*border: red solid 5px;*/
             width: 500px;
             height: 150px;
+            margin-top: -20px;
         }
 
         .Logo-left {
@@ -52,6 +100,7 @@ require('template/header.php');
             width: 250px;
             height: 150px;
         }
+
         img {
             width: 250px;
             height: 150px;
@@ -88,7 +137,7 @@ require('template/header.php');
             background-color: rgb(84, 84, 84);
             width: 500px;
             height: 70px;
-            margin-top: -45px;
+            margin-top: -20px;
         }
 
         .login_tableau {
@@ -173,11 +222,11 @@ require('template/header.php');
                     </table>
                 <?php endforeach; ?>
             <?php endif ?>
+            <?php
+            require('template/footer.php');
+            ?>
         </div>
-        <input type="button" href="ajout-contact.php" value="Ajouter Contact">
+        <!-- <input type="button" href="ajout-contact.php" value="Ajouter Contact"> -->
 </body>
 
 </html>
-<?php
-require('template/footer.php');
-?>
