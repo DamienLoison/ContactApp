@@ -13,7 +13,7 @@ require('template/header.php');
 ?>
 
 <body>
-    -ajouté ici barre de recherche<br>
+    -ajouté barre de recherche à la navbar<br>
     -faire mise en page<br>
 </body>
 <?php

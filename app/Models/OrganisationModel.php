@@ -7,6 +7,7 @@ use CodeIgniter\Model;
 class OrganisationModel extends Model
 {
     protected $table = 'organisation';
+    protected $useAutoIncrement = true;
 
     function getOrganisation()
     {

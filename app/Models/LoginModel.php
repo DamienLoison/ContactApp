@@ -4,12 +4,12 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class RechercheModel extends Model
+class LoginModel extends Model
 {
-    protected $table = 'contact';
+    protected $table = 'login';
     protected $useAutoIncrement = true;
-    
-    function getContact()
+
+    function getLogin()
     {
         return $this->findAll();
     }

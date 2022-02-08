@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr-Fr">
+<?php
+
+use App\Models\OrganisationModel;
+use App\Models\RechercheModel;
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -83,10 +88,14 @@ require('template/header.php');
             <!-- contient le Logo + info organisation -->
             <div class="texte-droite">
                 <h3>Nom organisation</h3>
-                <?php
-                
+                <?php if (!empty($organisations) && is_array($organisations)) : ?>
+                    <?php foreach ($organisations as $organisation) : ?>
+                        <h3><?php echo ($organisation['Nom_Organisation']) ?></h3>
+                        <td>Nom : <?php echo ($organisation['Nom_Organisation']) ?></td>
+                        <?php echo ($organisation['ID_Organisation']); ?>
+                    <?php endforeach; ?>
+                <?php endif ?>
 
-                ?>
                 <!-- mail : <br>
                 <a>
                     <href="tel:+">appelé le
@@ -102,7 +111,21 @@ require('template/header.php');
         <div class="Contact" style="color: rgb(0, 173, 124);">
             <!-- contient info contact -->
             <h2>Contact</h2>
-            <div class="nom+prenom">
+            <?php if (!empty($contacts) && is_array($contacts)) : ?>
+                <?php foreach ($contacts as $contact) : ?>
+                    <table class="tableau">
+                        <tr>
+                            <td >Nom : <?php echo ($contact['Nom_Contact']) ?></td>
+                            <td>Prénom : <?php echo ($contact['Prenom_Contact']) ?></td>
+                            <td>Numéro de téléphone : <?php echo ($contact['numeroTel_Contact']) ?></td>
+                            <td>mail : <?php echo ($contact['mail_Contact']) ?></td>
+                        </tr>
+                    </table>
+                <?php endforeach; ?>
+            <?php endif ?>
+
+
+            <!-- <div class="nom+prenom"> -->
                 <!-- <p class="nom-gauche">
                      Nom :
                 </p>
@@ -120,11 +143,17 @@ require('template/header.php');
             <div>
                 <div class="Info" style="color: white;">
                     <!--contient lien internet + login -->
-                    <strong>Site internet :</strong>
-                    <ul class="login_tableau">
-                        <li><?php ?></li>
-                        <li><?php ?></li>
-                    </ul>
+                    <h3>Site internet :</h3>
+                    <?php if (!empty($logins) && is_array($logins)) : ?>
+                        <?php foreach ($logins as $login) : ?>
+                            <table class="tableau">
+                                <tr>
+                                    <td>Login : <?php echo ($login['Utilisateur_login']) ?></td>
+                                    <td>Password : <?php echo ($login['password']) ?></td>
+                                </tr>
+                            </table>
+                        <?php endforeach; ?>
+                    <?php endif ?>
                     <!-- ICI PHP (LOGIN)-->
                 </div>
             </div>

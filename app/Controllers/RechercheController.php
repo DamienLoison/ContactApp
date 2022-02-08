@@ -6,6 +6,7 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\RechercheModel;
 use App\Models\OrganisationModel;
+use App\Models\LoginModel;
 
 class RechercheController extends Controller
 {
@@ -14,10 +15,14 @@ class RechercheController extends Controller
         helper(['Recherche', 'url']);
 
         $model = new RechercheModel();
+        $model1 = new OrganisationModel();
+        $model2 = new LoginModel();
         $data = [
-            'recherches' => $model->getContact(),
-            'titre' => 'Liste des contacts',
+            'contacts' => $model->getContact(),
+            'organisations' => $model1->getOrganisation(),
+            'logins' => $model2->getLogin(),
         ];
+
         return view('Recherche', $data);
     }
 }
