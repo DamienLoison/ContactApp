@@ -6,7 +6,7 @@
         padding: 0;
         margin: 0;
         height: 40px;
-        font-size: 20px;
+        font-size: 17px;
     }
 
     nav li {
