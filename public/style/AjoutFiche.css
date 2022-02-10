@@ -1,0 +1,103 @@
+/* Fichier CSS  pour tous les fichier servant à ajouter Contact/Organisation/Login*/
+/*Remonte la barre de navigation jusqu'au haut de la fiche*/
+.navigation {
+  margin-top: -17px;
+  text-align: left;
+}
+
+.navigation2 {
+  text-align: center;
+}
+
+/*Barre de navigation vertical*/
+.navbar {
+  position: absolute;
+  margin-top: -20px;
+  /* Ne pas toucher ! */
+  margin-left: -230px;
+  width: 200px;
+  background-color: pink;
+  text-align: center;
+}
+
+/*---------------------------------------*/
+/* englobe la fiche entiere*/
+body {
+  width: 500px;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: -25px;
+  border: rgb(84, 84, 84) solid 5px;
+}
+
+.fiche {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  background-color: pink;
+}
+
+/*---------------------------------------*/
+/* occupe la partie haute de la fiche */
+.Top {
+  /*border: red solid 5px;*/
+  width: 500px;
+  height: 150px;
+  margin-top: -20px;
+}
+
+.Logo-left {
+  text-align: left;
+  /* margin-top: -60px; */
+  width: 250px;
+  height: 150px;
+}
+
+.texte-droite {
+  /*text-align: right;*/
+  margin-left: 200px;
+}
+
+/*---------------------------------------*/
+/* occupe la partie centrale de la fiche */
+.Contact {
+  /*border: blue solid 5px;*/
+  width: 500px;
+  height: 250px;
+  border-top: 5px solid rgb(84, 84, 84);
+  /* width: 500px; */
+}
+
+.nom-gauche {
+  /*text-align: left;*/
+  margin-left: -300px;
+}
+
+.prenom-droite {
+  /*text-align: right;*/
+  margin-left: 150px;
+}
+
+/*---------------------------------------*/
+/* occupe la partie basse de la fiche */
+.Info {
+  background-color: rgb(84, 84, 84);
+  width: 500px;
+  height: 70px;
+  margin-top: -25px;
+}
+
+.login_tableau {
+  display: inline-block;
+  list-style: none;
+  color: white;
+}
+
+/*---------------------------------------*/
+/*le total n'équivaut pas a 500px à cause de border*/
+
+h1 {
+  font-size: 25px;
+  text-align: center;
+  border-bottom: 2px;
+}

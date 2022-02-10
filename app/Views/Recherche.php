@@ -7,43 +7,30 @@
 </head>
 <?php require('template/header.php'); ?>
 <div class="vertical">
-    <?php //require('template/navbar.php'); 
-    function ChangeCouleur()
-    {
-        $a = rand(0, 3);
-        // $a = 2;
-        // echo ($a);
-        if ($a == 0) {
-            echo ' class="pink"'; // on affiche la class
-        }
-        if ($a == 1) {
-            echo ' class="bisque"'; // on affiche la class
-        }
-        if ($a == 2) {
-            echo ' class="olivedrab"'; // on affiche la class
-        }
-        if ($a == 3) {
-            echo ' class="darkorange"'; // on affiche la class
-        }
-    }
+    <?php
+    require('template/navbar.php');
     ?>
 </div>
 
 <body>
     <style>
         /*Classe permettant de modifier la couleur du background*/
-        .pink{
-            background-color:pink;
+        /* .pink {
+            background-color: pink;
         }
-        .bisque{
-            background-color:bisque;
+
+        .bisque {
+            background-color: bisque;
         }
-        .olivedrab{
-            background-color:olivedrab;
+
+        .olivedrab {
+            background-color: olivedrab;
         }
-        .darkorange{
-            background-color:darkorange;
-        }
+
+        .darkorange {
+            background-color: darkorange;
+        } */
+
         /*Remonte la barre de navigation jusqu'au haut de la fiche*/
         .navigation {
             margin-top: -17px;
@@ -57,15 +44,14 @@
         /*Barre de navigation vertical*/
         .navbar {
             position: absolute;
-            /*Ne pas toucher ! */
-            margin-left: -185px;
-            border: rgb(84, 84, 84) solid 5px;
-            border-radius: 90px;
-            width: 150px;
+            /* Ne pas toucher ! */
+            margin-left: -230px;
+            width: 200px;
             background-color: pink;
-            /* height: 400px; */
+            text-align: center;
         }
 
+        /*---------------------------------------*/
         /* englobe la fiche entiere*/
         body {
             width: 500px;
@@ -80,8 +66,9 @@
             width: 500px;
             height: 500px;
             text-align: center;
-            /* background-color: pink; */
-            background-color: <?php ChangeCouleur(); ?>;
+            background-color: pink;
+            /* background-color: <?php //ChangeCouleur(); 
+                                    ?>; */
             /* margin: top -15px;; */
         }
 
@@ -119,6 +106,9 @@
             /*border: blue solid 5px;*/
             width: 500px;
             height: 250px;
+            border-top: 5px solid rgb(84, 84, 84);
+            /* width: 500px; */
+
         }
 
         .nom-gauche {
@@ -137,7 +127,7 @@
             background-color: rgb(84, 84, 84);
             width: 500px;
             height: 70px;
-            margin-top: -20px;
+            margin-top: -25px;
         }
 
         .login_tableau {
@@ -157,7 +147,6 @@
                     <?php foreach ($organisations as $organisation) : ?>
                         <h2><?php echo ($organisation['Nom_Organisation']) ?></h2>
                         ID : [<?php echo ($organisation['ID_Organisation']); ?>]<br>
-
                         mail : <?php echo ($organisation['Mail_Organisation']) ?><br>
                         tel : <?php echo ($organisation['Telephone_Organisation']) ?><br>
                         <address><?php echo ($organisation['Adresse_Organisation']) ?></address>
@@ -167,7 +156,6 @@
             <!-- <div class="Logo-left">
                 logo se situant a gauche
                 <img src="images/logos/logo-1.png" alt="petit logo">
-                
                 <href="images/logos/logo-1.png">
             </div> -->
             <div class="Logo-left">
@@ -182,30 +170,28 @@
                 <?php foreach ($contacts as $contact) : ?>
                     <table class="tableau">
                         <tr>
-                            <td>Nom : <?php echo ($contact['Nom_Contact']) ?></td>
-                            <td>Prénom : <?php echo ($contact['Prenom_Contact']) ?></td>
-                            <td>Numéro de téléphone : <?php echo ($contact['numeroTel_Contact']) ?></td>
-                            <td>mail : <?php echo ($contact['mail_Contact']) ?></td>
+                            <!-- <td>Nom : <?php //echo ($contact['Nom_Contact']) 
+                                            ?></td>
+                            <td>Prénom : <?php //echo ($contact['Prenom_Contact']) 
+                                            ?></td>
+                            <td>Numéro de téléphone : <?php //echo ($contact['numeroTel_Contact']) 
+                                                        ?></td>
+                            <td>mail : <?php //echo ($contact['mail_Contact']) 
+                                        ?></td> -->
+
+                            <!--MISE EN PLACE DE LA RECHERCHE DES INFORMATIONS-->
+                            <td>Nom : <?php //echo(); 
+                                        ?></td>
+                            <td>Prénom : <?php //echo(); 
+                                            ?></td>
+                            <td>Numéro de téléphone : <?php //echo(); 
+                                                        ?></td>
+                            <td>mail : <?php //echo(); 
+                                        ?></td>
                         </tr>
                     </table>
                 <?php endforeach; ?>
             <?php endif ?>
-
-
-            <!-- <div class="nom+prenom"> -->
-            <!-- <p class="nom-gauche">
-                     Nom :
-                </p>
-                <p class="prenom-droite">
-                    Prenom :
-                </p> 
-             </div> 
-            <p class="nom-gauche">
-                nom :
-            </p>
-            <p class="prenom-droite">
-                prenom :
-            </p> -->
         </div>
 
         <!-- Partie inférieur de la fiche 
@@ -223,6 +209,7 @@
                 <?php endforeach; ?>
             <?php endif ?>
             <?php
+
             require('template/footer.php');
             ?>
         </div>

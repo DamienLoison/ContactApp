@@ -9,37 +9,76 @@
         margin-top: 150px;
         /*Ne pas toucher au width !*/
         width: 100px;
-        border: rgb(84, 84, 84) solid 5 px;
-        border-width: 100px;
+        height: 250px;
+        border: rgb(84, 84, 84) solid 5px;
+        /* border-radius: 90px; */
     }
 
-    .navbar0 {
+    .navbarli {
         color: #14aa8a;
         display: block;
         /* ESSAIE*/
-        width: 70px;
+        width: 100px;
         /*permet de déplacer le texte
         - pour aller à gauche
         + pour aller vers la droite*/
         margin-left: 0px;
+        text-align: center;
+        font-size: 16px;
+        border: blue;
+
     }
 
-    .navbar1 {
+    .navbarli-1 {
         color: #14aa8a;
-        margin-left: -50px;
-        margin-left: 90;
+        display: block;
+        /* ESSAIE*/
+        width: 100px;
+        /*permet de déplacer le texte
+        - pour aller à gauche
+        + pour aller vers la droite*/
+        margin-left: -45px;
+        text-align: center;
+        font-size: 16px;
+        border: blue;
+        border-bottom: rgb(84, 84, 84) solid 2px;
     }
-    .navbar2{
-        /*margin-left: 50px;*/
+
+    .navbara {
+        color: #14aa8a;
+        margin-left: -80px;
+        /* margin-left: 90; */
+        font-size: 14px;
+        border: red;
+    }
+
+    .navbarUl {
+        margin-left: 50px;
         width: 50px;
+    }
+
+    /*Barre de navigation vertical*/
+    .navbar {
+        position: absolute;
+        margin-top: -20px;
+        /* Ne pas toucher ! */
+        margin-left: -230px;
+        width: 200px;
+        background-color: pink;
+        text-align: center;
     }
 </style>
 <nav class="navbar">
-    <ul class="navbar2">
-        <li class="navbar0">Liste d'ajout</li>
-        <li class="navbar0"><a class="navbar1" href="Views/ajout-information/ajout-contact">ajout contact</a></li>
-        <li class="navbar0"><a class="navbar1" href="Views/ajout-information/ajout-organisation">ajout Organisation</a></li>
-        <li class="navbar0"><a class="navbar1" href="ajout_loginController">ajout login</a></li>
+    <ul class="navbarUl">
+        <li class="navbarli-1">
+            <h4>Liste d'ajout</h4>
+        </li>
+        <br>
+        <li class="navbarli"><a class="navbara" href="ajoutContactController">ajout contact</a></li>
+        <br><br>
+        <li class="navbarli"><a class="navbara" href="ajoutOrganisationController">ajout Organisation</a></li>
+        <br><br>
+        <li class="navbarli"><a class="navbara" href="ajoutLoginController">ajout login</a></li>
     </ul>
 </nav>
 

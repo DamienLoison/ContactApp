@@ -6,7 +6,11 @@
 </style>
 <footer>
     <div class="footer">
-        2022-footer
+<!-- ---------------TEST RAPIDITE---------------
+     Page créer en {elapsed_time} secondes 
+---------------TEST RAPIDITE--------------- -->
+    <br>
+    2022-footer
     </div>
 </footer>
 
