@@ -3,7 +3,7 @@
 
 <head>
     <meta CHARSET='UTF-8'>
-    <title>Ajout donnée</title>
+    <title>Suppression donnée</title>
 </head>
 <style>
     body {
@@ -29,34 +29,37 @@
 </style>
 
 <body>
-    <?php
-    require("template/header.php");
-        if($valeur == "Contact"){
-            require("Suppression/Contact.php");
-        }
-        if($valeur == "Organisation"){
-            require("Suppression/Organisation.php");
-        }
-        if($valeur == "Login"){
-            require("Suppression/Login.php");
-        }
-        else{
-            echo("Erreur survenue");
-        }
-    ?>
-    <div class="Contact">
-        <div class="Suppression_Contact">
-            <select name="Liste_Suppression_Contact" size="5" multiple="yes">
-                <option>Loison Damien </option>
-                <option>TEST TEST</option>
-                <option>TST TST</option>
+    <?php require("template/header.php"); ?>
+    <div class="Choix_Suppression">
+        <form action="" method="post">
+            <select >
+                <option> <?php set_value($valeur==null); //$valeur = null ?></option>
+                <option name="Contact">Contact<?php set_value($valeur="Contact");?></option>
+                <option name="Organisation">Organisation <?php set_value($valeur="Organisation");?></option>
+                <option name="Login">Login <?php set_value($valeur="Login");?></option>
             </select>
-        </div>
-        <dialog open class="Contact_Droite">
-            <p>Salutations, à tous et à toutes !</p>
-        </dialog>
+        </form>
+        <input  type="button" <?php //$valeur=$choix?>>
     </div>
-    <div class="Organisation">
+    <?php
+    if ($valeur == "Contact") {
+        // redirect();
+        // redirect("Suppression");
+        // require("Suppression/Contact.php");
+        echo 'hello !';
+    }
+    // if ($valeur == "Organisation") {
+        // require("Suppression/Organisation.php");
+        // echo view("Suppression/Contact.php");
+    // }
+    // if ($valeur == "Login") {
+    //     require("Suppression/Login.php");
+    // } else {
+    //     echo ("Erreur survenue");
+    // }
+    // ?>
+
+    <!-- <div class="Organisation">
         <div class="Suppression_Organisation">
             <select name="Liste_Suppression_Organisation" size="5" multiple="yes">
                 <option>BTP </option>
@@ -67,8 +70,8 @@
         <dialog open class="Organisation_Droite">
             <p>Salutations, à tous et à toutes !</p>
         </dialog>
-    </div>
-    <div class="Login">
+    </div> -->
+    <!-- <div class="Login">
         <div class="Suppression_Login">
             <select name="Liste_Suppression_Login" size="5" multiple="yes">
                 <option>New York </option>
@@ -79,12 +82,12 @@
         <dialog open class="Login_Droite">
             <p>Salutations, à tous et à toutes !</p>
         </dialog>
-    </div>
+    </div> -->
 
-    <?php 
-        //trouver moyen pour donner une variable 
-        //au option choisie pour écrire 
-        //la phrase complète disant ce qui est supprimer
+    <?php
+    //trouver moyen pour donner une variable 
+    //au option choisie pour écrire 
+    //la phrase complète disant ce qui est supprimer
     ?>
     <!-- <option selected="selected" value="">
     <h1> - chercher un mot - </h1>
