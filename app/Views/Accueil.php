@@ -13,6 +13,11 @@ require('template/header.php');
 ?>
 
 <body>
+    <div class="RechercheContact">
+        <a href="RechercheController">
+            <h1>Recherche de contact ?</h1>
+        </a>
+    </div>
     -ajouté barre de recherche à la navbar<br>
     -faire mise en page<br>
 </body>

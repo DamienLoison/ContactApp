@@ -1,0 +1,57 @@
+CRITICAL - 2022-02-11 05:13:11 --> require(AideController.php): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Views\Information.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(AideCon...', 'C:\\laragon\\www\\...', 37, Array)
+#1 C:\laragon\www\Luzancy-App\app\Views\Information.php(37): require()
+#2 C:\laragon\www\Luzancy-App\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#3 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Information', Array, true)
+#5 C:\laragon\www\Luzancy-App\app\Controllers\InformationController.php(11): view('Information')
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\InformationController->index()
+#7 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InformationController))
+#8 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-11 07:45:31 --> Undefined variable: results
+#0 C:\laragon\www\Luzancy-App\app\Views\Suppression.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 13, Array)
+#1 C:\laragon\www\Luzancy-App\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Suppression', Array, true)
+#4 C:\laragon\www\Luzancy-App\app\Controllers\SuppressionController.php(12): view('Suppression')
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\SuppressionController->index()
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuppressionController))
+#7 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-11 07:45:48 --> Undefined variable: results
+#0 C:\laragon\www\Luzancy-App\app\Views\Suppression.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 13, Array)
+#1 C:\laragon\www\Luzancy-App\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Suppression', Array, true)
+#4 C:\laragon\www\Luzancy-App\app\Controllers\SuppressionController.php(12): view('Suppression')
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\SuppressionController->index()
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuppressionController))
+#7 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-11 08:05:43 --> Cannot call constructor
+#0 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(802): App\Controllers\SuppressionController->__construct()
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-11 08:05:47 --> Cannot call constructor
+#0 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(802): App\Controllers\SuppressionController->__construct()
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-11 08:25:24 --> Undefined variable: valeur
+#0 C:\laragon\www\Luzancy-App\app\Views\Suppression.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 34, Array)
+#1 C:\laragon\www\Luzancy-App\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Suppression', Array, true)
+#4 C:\laragon\www\Luzancy-App\app\Controllers\SuppressionController.php(27): view('Suppression')
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\SuppressionController->index()
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuppressionController))
+#7 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
