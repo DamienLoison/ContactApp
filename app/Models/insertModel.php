@@ -24,8 +24,6 @@ class insertModel
         ];
         $builder->insert($data);
         return $this->db->affectedRows();
-
-        mysqli_query($db, "SELECT * FROM nomdelatable WHERE champ = '{$id}'");
     }
     public function replacing()
     {

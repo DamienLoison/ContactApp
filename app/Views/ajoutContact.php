@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="style/AjoutFiche.css" media="all" />
 </head>
 <?php
-require('template/header.php');
-require('template/navbar.php');
+require 'template/header.php';
+require 'template/navbar.php';
 ?>
 
 <body>
@@ -23,8 +23,8 @@ require('template/navbar.php');
             <div class="Contact" style="color: #04a482;">
                 <!-- contient info contact -->
                 <h2>Informations Contact</h2>
-                <?php if (!empty($contacts) && is_array($contacts)) : ?>
-                    <?php foreach ($contacts as $contact) : ?>
+                <?php if (!empty($contacts) && is_array($contacts)): ?>
+                    <?php foreach ($contacts as $contact): ?>
                         <form class="formAdd" method="POST">
                             <style>
                                 .fiche{
@@ -75,12 +75,12 @@ require('template/navbar.php');
                                 </div>
                             </div>
                         </form>
-                    <?php endforeach; ?>
-                <?php endif ?>
+                    <?php endforeach;?>
+                <?php endif?>
             </div>
             <footer>
-                <?php require('template/footer.php'); ?>
+                <?php require 'template/footer.php';?>
             </footer>
 </body>
 
-</html>
+</html> 

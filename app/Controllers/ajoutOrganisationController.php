@@ -11,7 +11,7 @@ class ajoutOrganisationController extends Controller
 {
     public function index()
     {
-        helper(['ajout-organisation', 'url']);
-        echo view('ajoutOrganisation');
+        // helper(['ajout-organisation', 'url']);
+        echo view('FormulaireOrganisation');
     }
 }

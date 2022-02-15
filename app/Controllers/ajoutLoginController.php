@@ -12,6 +12,6 @@ class ajoutLoginController extends Controller
     public function index()
     {
         // helper(['Accueil', 'url']);
-        echo view('ajoutLogin');
+        echo view('FormulaireLogin');
     }
 }

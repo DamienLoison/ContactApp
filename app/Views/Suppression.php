@@ -29,35 +29,40 @@
 </style>
 
 <body>
-    <?php require("template/header.php"); ?>
+    <?php
+
+use Config\App;
+
+require "template/header.php";?>
     <div class="Choix_Suppression">
         <form action="" method="post">
             <select >
-                <option> <?php set_value($valeur==null); //$valeur = null ?></option>
-                <option name="Contact">Contact<?php set_value($valeur="Contact");?></option>
-                <option name="Organisation">Organisation <?php set_value($valeur="Organisation");?></option>
-                <option name="Login">Login <?php set_value($valeur="Login");?></option>
+                <option><!-- laisser vide--></option>
+                <option name="Contact">Contact<?php $valeur = "contact";?></option>
+                <option name="Organisation">Organisation <?php $valeur = "organisation";?></option>
+                <option name="Login">Login <?php $valeur = "login";?></option>
             </select>
         </form>
-        <input  type="button" <?php //$valeur=$choix?>>
+        <!-- <input  type="button" <?php //$valeur=$choix?>Valider> -->
+        <input type="submit" name="Valider" action="" >
     </div>
     <?php
-    if ($valeur == "Contact") {
-        // redirect();
-        // redirect("Suppression");
-        // require("Suppression/Contact.php");
-        echo 'hello !';
-    }
-    // if ($valeur == "Organisation") {
-        // require("Suppression/Organisation.php");
-        // echo view("Suppression/Contact.php");
-    // }
-    // if ($valeur == "Login") {
-    //     require("Suppression/Login.php");
-    // } else {
-    //     echo ("Erreur survenue");
-    // }
-    // ?>
+//if ($valeur == "Contact") {
+// redirect();
+// redirect("Suppression");
+// require("Suppression/Contact.php");
+//echo 'hello !';
+//}
+// if ($valeur == "Organisation") {
+// require("Suppression/Organisation.php");
+// echo view("Suppression/Contact.php");
+// }
+// if ($valeur == "Login") {
+//     require("Suppression/Login.php");
+// } else {
+//     echo ("Erreur survenue");
+// }
+// ?>
 
     <!-- <div class="Organisation">
         <div class="Suppression_Organisation">
@@ -85,22 +90,22 @@
     </div> -->
 
     <?php
-    //trouver moyen pour donner une variable 
-    //au option choisie pour écrire 
-    //la phrase complète disant ce qui est supprimer
-    ?>
+//trouver moyen pour donner une variable
+//au option choisie pour écrire
+//la phrase complète disant ce qui est supprimer
+?>
     <!-- <option selected="selected" value="">
     <h1> - chercher un mot - </h1>
 </option> -->
     <?php //foreach ($results as $row) {
-    ?>
+?>
     <option value="<?php //echo $row["mot"];
-                    ?>" <?php //echo isset($_POST["mot"])&&$_POST["mot"]==$row["mot"]?" selected":"";
-                        ?>>
+?>" <?php //echo isset($_POST["mot"])&&$_POST["mot"]==$row["mot"]?" selected":"";
+?>>
         <?php //echo $row["mot"];
-        ?>
+?>
         <?php //}
-        ?>
+?>
     </option>
 </body>
 

@@ -14,23 +14,6 @@
 
 <body>
     <style>
-        /*Classe permettant de modifier la couleur du background*/
-        /* .pink {
-            background-color: pink;
-        }
-
-        .bisque {
-            background-color: bisque;
-        }
-
-        .olivedrab {
-            background-color: olivedrab;
-        }
-
-        .darkorange {
-            background-color: darkorange;
-        } */
-
         /*Remonte la barre de navigation jusqu'au haut de la fiche*/
         .navigation {
             margin-top: -17px;
@@ -138,6 +121,9 @@
 
         /*---------------------------------------*/
         /*le total n'équivaut pas a 500px à cause de border*/
+        footer {
+            margin-top: -20px;
+        }
     </style>
     <div class="fiche">
         <div class="Top">
@@ -170,15 +156,6 @@
                 <?php foreach ($contacts as $contact) : ?>
                     <table class="tableau">
                         <tr>
-                            <!-- <td>Nom : <?php //echo ($contact['Nom_Contact']) 
-                                            ?></td>
-                            <td>Prénom : <?php //echo ($contact['Prenom_Contact']) 
-                                            ?></td>
-                            <td>Numéro de téléphone : <?php //echo ($contact['numeroTel_Contact']) 
-                                                        ?></td>
-                            <td>mail : <?php //echo ($contact['mail_Contact']) 
-                                        ?></td> -->
-
                             <!--MISE EN PLACE DE LA RECHERCHE DES INFORMATIONS-->
                             <td>Nom : <?php //echo(); 
                                         ?></td>
@@ -193,7 +170,6 @@
                 <?php endforeach; ?>
             <?php endif ?>
         </div>
-
         <!-- Partie inférieur de la fiche 
         comprenant le lien du site internet et du login -->
         <div class="Info" style="color: white;">
@@ -209,7 +185,6 @@
                 <?php endforeach; ?>
             <?php endif ?>
             <?php
-
             require('template/footer.php');
             ?>
         </div>

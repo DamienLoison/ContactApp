@@ -1,0 +1,416 @@
+CRITICAL - 2022-02-14 02:16:12 --> Call to undefined function set_value()
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(210): include()
+#1 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Suppression', Array, true)
+#3 C:\laragon\www\Luzancy-App\app\Controllers\SuppressionController.php(22): view('Suppression')
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\SuppressionController->index()
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuppressionController))
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-14 02:17:13 --> Undefined variable: valeur
+#0 C:\laragon\www\Luzancy-App\app\Views\Suppression.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 45, Array)
+#1 C:\laragon\www\Luzancy-App\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Suppression', Array, true)
+#4 C:\laragon\www\Luzancy-App\app\Controllers\SuppressionController.php(22): view('Suppression')
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\SuppressionController->index()
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuppressionController))
+#7 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-14 03:06:25 --> Call to undefined function set_value()
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(210): include()
+#1 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Suppression', Array, true)
+#3 C:\laragon\www\Luzancy-App\app\Controllers\SuppressionController.php(22): view('Suppression')
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\SuppressionController->index()
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuppressionController))
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-14 03:07:55 --> Call to undefined function set_value()
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(210): include()
+#1 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Suppression', Array, true)
+#3 C:\laragon\www\Luzancy-App\app\Controllers\SuppressionController.php(22): view('Suppression')
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\SuppressionController->index()
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuppressionController))
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-14 03:09:39 --> Undefined variable: valeur
+#0 C:\laragon\www\Luzancy-App\app\Views\Suppression.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 42, Array)
+#1 C:\laragon\www\Luzancy-App\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Suppression', Array, true)
+#4 C:\laragon\www\Luzancy-App\app\Controllers\SuppressionController.php(22): view('Suppression')
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\SuppressionController->index()
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuppressionController))
+#7 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-14 05:18:48 --> Undefined property: App\Controllers\ajoutContactController::$load
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 39, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 05:23:01 --> Object of class App\Models\ContactModel could not be converted to string
+#0 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 05:23:59 --> Too few arguments to function App\Controllers\ajoutContactController::insertContact(), 0 passed in C:\laragon\www\Luzancy-App\system\CodeIgniter.php on line 825 and exactly 5 expected
+#0 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 05:26:06 --> Object of class App\Models\ContactModel could not be converted to string
+#0 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 05:30:08 --> Non-static method App\Models\ContactModel::insertContact() should not be called statically
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Non-static meth...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 05:30:46 --> Too few arguments to function App\Models\ContactModel::insertContact(), 0 passed in C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php on line 41 and exactly 6 expected
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(41): App\Models\ContactModel::insertContact()
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 05:31:26 --> Undefined variable: NomContact
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:21:01 --> Undefined index: NomContact
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:23:44 --> Undefined index: 
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:28:46 --> Undefined variable: NomContact
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:39:16 --> Undefined variable: NomContact
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 45, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:44:54 --> Undefined property: App\Controllers\ajoutContactController::$load
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 19, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->index()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:44:56 --> Undefined property: App\Controllers\ajoutContactController::$load
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 19, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->index()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:44:58 --> Undefined property: App\Controllers\ajoutContactController::$load
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 19, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->index()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:46:23 --> Undefined index: MailContact
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 45, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:46:46 --> Undefined index: MailContact
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 45, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:47:08 --> Undefined index: MailContact
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 45, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:47:53 --> Undefined index: MailContact
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 45, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:48:23 --> Undefined index: MailContact
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 45, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:49:01 --> Undefined index: MailContact
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 45, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:49:57 --> Undefined index: NomContact
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 40, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:52:20 --> Call to a member function escape() on null
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(49): App\Models\ContactModel::insertContact(NULL, 'test', 'test', 'test', 'test', 'test')
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:55:22 --> Call to a member function query() on null
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(49): App\Models\ContactModel::insertContact(NULL, 'test', 'test', 'test', 'test', 'test')
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:56:37 --> Call to a member function query() on null
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(49): App\Models\ContactModel::insertContact(NULL, 'test', 'test', 'test', 'test', 'test')
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:57:37 --> Call to a member function query() on null
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(49): App\Models\ContactModel::insertContact(NULL, 'test', 'test', 'test', 'test', 'test')
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 06:59:08 --> Call to a member function query() on null
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(49): App\Models\ContactModel::insertContact(NULL, 'test', 'test', 'test', 'test', 'test')
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 07:00:06 --> Call to a member function affectedRows() on null
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(49): App\Models\ContactModel::insertContact(NULL, 'test', 'test', 'test', 'test', 'test')
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 07:00:13 --> Undefined property: App\Controllers\ajoutContactController::$
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 51, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 07:02:00 --> Undefined property: App\Controllers\ajoutContactController::$
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 07:03:22 --> Undefined property: App\Controllers\ajoutContactController::$
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 07:06:13 --> Undefined property: App\Controllers\ajoutContactController::$
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 07:06:40 --> Undefined property: App\Controllers\ajoutContactController::$
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 07:07:20 --> Call to a member function query() on null
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(48): App\Models\ContactModel::insertContact(NULL, 'test', 'test', 'test', 'test', 'test')
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 07:07:34 --> Undefined property: App\Controllers\ajoutContactController::$
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 07:37:02 --> Undefined property: App\Controllers\ajoutContactController::$
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 07:37:25 --> Undefined property: App\Controllers\ajoutContactController::$
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 07:48:23 --> Undefined property: App\Controllers\ajoutContactController::$
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->insertContact()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 07:49:13 --> Call to undefined function form_open()
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(210): include()
+#1 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('FormulaireConta...', Array, true)
+#3 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(36): view('FormulaireConta...')
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->index()
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-14 07:49:30 --> Call to undefined function form_open()
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(210): include()
+#1 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('FormulaireConta...', Array, true)
+#3 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(36): view('FormulaireConta...')
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->index()
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-14 07:49:51 --> Call to undefined function form_open()
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(210): include()
+#1 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('FormulaireConta...', Array, true)
+#3 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(36): view('FormulaireConta...')
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->index()
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-14 08:04:11 --> Too few arguments to function App\Controllers\ajoutContactController::ajouter_Contact(), 0 passed in C:\laragon\www\Luzancy-App\system\CodeIgniter.php on line 825 and exactly 5 expected
+#0 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->ajouter_Contact()
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 08:06:09 --> Too few arguments to function App\Controllers\ajoutContactController::ajouter_Contact(), 0 passed in C:\laragon\www\Luzancy-App\system\CodeIgniter.php on line 825 and exactly 6 expected
+#0 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->ajouter_Contact()
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 08:13:28 --> Too few arguments to function App\Controllers\ajoutContactController::ajouter_Contact(), 0 passed in C:\laragon\www\Luzancy-App\system\CodeIgniter.php on line 825 and exactly 5 expected
+#0 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->ajouter_Contact()
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 08:37:35 --> Undefined property: App\Controllers\ajoutContactController::$load
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 55, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->Accueil()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 08:45:07 --> Cannot call constructor
+#0 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(802): App\Controllers\ajoutContactController->__construct()
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 08:46:37 --> Undefined property: App\Controllers\ajoutContactController::$load
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 58, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->Accueil()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 08:46:54 --> Undefined property: App\Controllers\ajoutContactController::$load
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 59, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->Accueil()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 08:48:58 --> Undefined property: App\Controllers\ajoutContactController::$load
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 60, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->Accueil()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 08:49:41 --> Call to undefined method CodeIgniter\Controller::Controller()
+#0 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(802): App\Controllers\ajoutContactController->__construct()
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 08:50:08 --> Call to undefined method CodeIgniter\Controller::index()
+#0 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(802): App\Controllers\ajoutContactController->__construct()
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-02-14 08:50:27 --> Undefined property: App\Controllers\ajoutContactController::$load
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 17, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(802): App\Controllers\ajoutContactController->__construct()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(403): CodeIgniter\CodeIgniter->createController()
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-14 08:50:41 --> Undefined property: App\Controllers\ajoutContactController::$load
+#0 C:\laragon\www\Luzancy-App\app\Controllers\AjoutContactController.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 60, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ajoutContactController->Accueil()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ajoutContactController))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
