@@ -17,3 +17,13 @@ CRITICAL - 2022-02-17 03:17:07 --> Call to undefined function set_value()
 #6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2022-02-17 03:45:08 --> Call to undefined function set_value()
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(210): include()
+#1 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('contact/Formula...', Array, true)
+#3 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(57): view('contact/Formula...')
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->formulaire_contact()
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
