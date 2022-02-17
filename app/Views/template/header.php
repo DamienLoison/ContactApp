@@ -46,6 +46,7 @@
         <li class="navigation1"><a class="navigation2" href="AccueilController">Accueil</a></li>
         <li class="navigation1"><a class="navigation2" href="InformationController">Information</a></li>
         <li class="navigation1"><a class="navigation2" href="RechercheController">Recherche</a></li>
+        <li class="navigation1"><a class="navigation2" href="ContactController">[TEMPORAIRE] ajout</a></li>
         <!-- <li class="navigation1"><a class="navigation2" href="AideController">Rechercher</a></li> -->
     </ul>
 </nav>
