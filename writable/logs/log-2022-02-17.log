@@ -495,3 +495,40 @@ CRITICAL - 2022-02-17 08:02:30 --> require(template/header.php): failed to open 
 #8 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #9 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #10 {main}
+CRITICAL - 2022-02-17 08:11:54 --> Invalid file: Recherche.php
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Recherche.php')
+#1 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#2 C:\laragon\www\Luzancy-App\app\Controllers\RechercheController.php(34): view('Recherche', Array)
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-17 08:14:39 --> Call to undefined function set_value()
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(210): include()
+#1 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('contact/Formula...', Array, true)
+#3 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(70): view('contact/Formula...')
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->formulaire_contact()
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-17 08:15:56 --> Invalid file: Recherche/Accueil.php
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Recherche/Accue...')
+#1 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/Accue...', Array, true)
+#2 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(27): view('Recherche/Accue...')
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->index()
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-17 08:36:33 --> Invalid file: Recherche.php
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Recherche.php')
+#1 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#2 C:\laragon\www\Luzancy-App\app\Controllers\RechercheController.php(34): view('Recherche', Array)
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

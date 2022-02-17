@@ -8,21 +8,30 @@
     <style>
     </style>
 </head>
-<?php
-require('template/header.php');
-?>
+<style>
+    .nav {
+        height: 40px;
+    }
+
+    .footer {
+        height: 75px;
+    }
+</style>
 
 <body>
-    <div class="RechercheContact">
-        <a href="RechercheController">
-            <h1>Recherche de contact ?</h1>
-        </a>
+    <div class="nav">
+        <?php echo view('template/header.php') ?>
     </div>
-    -ajouté barre de recherche à la navbar<br>
-    -faire mise en page<br>
+
+    <div class="Accueil">
+        <h1>Bienvenu sur ContactApp</h1>
+        <h2>Ceci n'est qu'une version Beta</h2>
+        <h4>se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
+    </div>
+
+    <div class="footer">
+        <?php echo view('template/footer.php') ?>
+    </div>
 </body>
-<?php
-require('template/footer.php');
-?>
 
 </html>

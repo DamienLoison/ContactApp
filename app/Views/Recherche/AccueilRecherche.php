@@ -51,7 +51,7 @@
                 <option class="titre" value="">--Parmis les contacts--</option>  -->
             <option selected disabled>Veuillez choisir :</option>
             <option class="Contact" value="tout_les_contacts">Afficher tout les contacts</option>
-            <option class="Contact">Recherche de contact</option>
+            <option class="Contact" value="recherche_contact">Recherche de contact</option>
             <!-- recherche organisation
                 <option class="titre"value="">--Parmis les organisations--</option> -->
             <option class="Organisation">Afficher toute les organisations</option>

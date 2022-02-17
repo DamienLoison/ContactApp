@@ -10,4 +10,10 @@ class AccueilController extends Controller
         // helper(['Accueil', 'url']);
         echo view('Accueil');
     }
+    public function note_patch(){
+        echo view('Patch/NotePatch');
+    }
+    public function architecture_site(){
+        echo view('pages/Architecture');
+    }
 }

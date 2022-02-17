@@ -35,13 +35,22 @@ class ContactController extends Controller
     {
         $model  = new ContactModel();
         $model1 = new OrganisationModel();
-        $model2 = new LoginModel();
+        // $model2 = new LoginModel();
         $data = [
             'contacts'      => $model->getContact(),
             'organisations' => $model1->getOrganisation(),
-            'logins'        => $model2->getLogin(),
+            // 'logins'        => $model2->getLogin(),
         ];
         echo view('Recherche/AfficheContactEntier', $data);
+    }
+    public function recherche_contact(){
+        $model  = new ContactModel();
+        $model1 = new OrganisationModel();
+        $data = [
+            'contacts'      => $model->getContact(),
+            'organisations' => $model1->getOrganisation()
+        ];
+        echo view('Recherche/RechercheContact', $data);
     }
     public function Contact()
     {

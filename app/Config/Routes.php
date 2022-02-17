@@ -32,8 +32,15 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+//AccueilController route
 $routes->get('/', 'AccueilController::index');
+$routes->get('/', 'AccueilController::note_patch');
+//ContactController route
+$routes->get('/', 'ContactController::index');
+$routes->get('/', 'ContactController::aide_contact');
+$routes->get('/', 'ContactController::tout_les_contacts');
 
+//Autres route
 $routes->get('/', 'FormController::create');
 $routes->post('/', 'FormController::formValidation');
 
