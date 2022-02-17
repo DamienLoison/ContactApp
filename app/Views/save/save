@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr-Fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Recherche | Contact Entier</title>
+</head>
+
+<style>
+    body {
+        width: 700px;
+        height: 500px;
+        /* text-align: center; */
+    }
+
+    .fiche {
+        height: 400px;
+        margin: auto;
+        border: 3px solid #4287f5;
+
+    }
+
+    .top {}
+</style>
+
+<body>
+    <div class="top">
+        <?php echo view('template/header.php') ?>
+    </div>
+    <div class="fiche">
+        <!-- élément à gauche -->
+        <!-- CONTACT -->
+        <div class="gauche">
+            <?php if (!empty($contacts) && is_array($contacts)) : ?>
+                <?php foreach ($contacts as $contact) : ?>
+                    <table class="tableau">
+                        <tr>
+                            <!--MISE EN PLACE DE LA RECHERCHE DES INFORMATIONS-->
+                            <td>Nom : <?php echo ($contact['Nom_Contact']) ?></td>
+                            <td>Prénom : <?php echo ($contact['Prenom_Contact']) ?></td>
+                            <td>Numéro de téléphone : <?php echo ($contact['numeroTel_Contact']) ?></td>
+                            <td>mail : <?php echo ($contact['mail_Contact']) ?></td>
+                        </tr>
+                    </table>
+                <?php endforeach; ?>
+            <?php endif ?>
+        </div>
+        <!-- élément à droite -->
+        <!-- ORGANISATION + LOGIN -->
+        <div class="droite">
+
+            <!-- élément en haut à droite -->
+            <!-- ORGANISATION -->
+            <div class="droite_haut">
+                <?php if (!empty($organisations) && is_array($organisations)) : ?>
+                    <?php foreach ($organisations as $organisation) : ?>
+                        <h2><?php echo ($organisation['Nom_Organisation']) ?></h2>
+                        ID : [<?php echo ($organisation['ID_Organisation']); ?>]<br>
+                        mail : <?php echo ($organisation['Mail_Organisation']) ?><br>
+                        tel : <?php echo ($organisation['Telephone_Organisation']) ?><br>
+                        <address><?php echo ($organisation['Adresse_Organisation']) ?></address>
+                    <?php endforeach; ?>
+                <?php endif ?>
+            </div>
+            <!-- élément en bas à droite -->
+            <!-- LOGIN -->
+            <div class="droit_bas">
+
+            </div>
+        </div>
+        <div class="bas">
+
+        </div>
+    </div>
+</body>
+<footer>
+    <?php echo view('template/footer.php') ?>
+</footer>
+
+</html>

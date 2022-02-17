@@ -7,26 +7,19 @@
     <title>Information</title>
     <style>
         .a-faire {
-            /* background-color: pink; */
-            /* background-color: #545454; */
             background-color: #00ad81;
+        }
+
+        .nav {
+            height: 40px;
         }
     </style>
 </head>
-<?php
-
-use App\Controllers\RechercheController;
-
-require('template/header.php');
-?>
-<!-- <style>
-    body {
-        background-color: rgb(84, 84, 84);
-        color: white;
-    }
-</style> -->
 
 <body>
+    <div class="nav">
+        <?php echo view('template/header.php') ?>
+    </div>
     <div class="a-faire">
         <h1>Utilisation</h1>
         <p>
@@ -120,6 +113,3 @@ require('template/header.php');
         </p>
     </div>
 </body>
-<?php
-require('template/footer.php');
-?>

@@ -27,3 +27,471 @@ CRITICAL - 2022-02-17 03:45:08 --> Call to undefined function set_value()
 #6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2022-02-17 04:15:00 -->  route cannot be found while reverse-routing.
+#0 C:\laragon\www\Luzancy-App\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\laragon\www\Luzancy-App\system\Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\laragon\www\Luzancy-App\app\Controllers\Home.php(10): redirect('http://localhos...')
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-17 04:15:30 -->  route cannot be found while reverse-routing.
+#0 C:\laragon\www\Luzancy-App\system\HTTP\RedirectResponse.php(56): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 C:\laragon\www\Luzancy-App\system\Common.php(832): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 C:\laragon\www\Luzancy-App\app\Controllers\Home.php(10): redirect('AccueilControll...')
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\Home->index()
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-17 04:37:27 --> Invalid file: Recherche.php
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Recherche.php')
+#1 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#2 C:\laragon\www\Luzancy-App\app\Controllers\RechercheController.php(34): view('Recherche', Array)
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-17 04:39:09 --> Invalid file: Recherche.php
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Recherche.php')
+#1 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#2 C:\laragon\www\Luzancy-App\app\Controllers\RechercheController.php(34): view('Recherche', Array)
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-17 04:41:37 --> require(template/header): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(templat...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): require()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->index()
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-17 04:41:46 --> require(template\header): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(templat...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): require()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->index()
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-17 04:42:15 --> require(&lt;!-- DEBUG-VIEW START 1 APPPATH\Views\template\header.php --&gt;
+&lt;html lang=&quot;fr-Fr&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;uft-8&quot;&gt;
+    &lt;link href=&quot;https://...@5.0.2/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC&quot; crossorigin=&quot;anonymous&quot;&gt;
+&lt;/head&gt;
+&lt;style&gt;
+    /* Modification de la Navbar (barre de navigation)*/
+    /* nav {
+        background-color: rgb(84, 84, 84);
+        padding: 0;
+        margin: 0;
+        height: 40px;
+        font-size: 17px;
+    } */
+    .navigation {
+        background-color: rgb(84, 84, 84);
+        padding: 0;
+        margin: 0;
+        height: 60px;
+        font-size: 17px;
+    }
+
+    .navigation1 {
+        display: inline-block;
+        list-style: none;
+        color: white
+    }
+
+    .navigation2 {
+        display: inline-block;
+        margin: 0 30px;
+        color: white;
+    }
+
+    /* nav li {
+        display: inline-block;
+        list-style: none;
+        color: white
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0 30px;
+        color: white;
+    } */
+
+    .nav{
+        background-color: rgb(84, 84, 84);
+    }
+&lt;/style&gt;
+&lt;!-- &lt;nav class=&quot;navigation&quot;&gt;
+    &lt;ul&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;@Recherche Contact/Organisation&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;AccueilController&quot;&gt;Accueil&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;InformationController&quot;&gt;Information&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;RechercheController&quot;&gt;Recherche&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;ContactController&quot;&gt;[TEMPORAIRE] ajout&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;AideController&quot;&gt;Rechercher&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt; --&gt;
+
+&lt;ul class=&quot;nav&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; aria-current=&quot;page&quot; href=&quot;https://github.com/DamienLoison/ContactApp&quot;&gt;ContactApp&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;AccueilController&quot;&gt;Accueil&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;ContactController/index&quot;&gt;Rechercher&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/html&gt;
+&lt;!-- DEBUG-VIEW ENDED 1 APPPATH\Views\template\header.php --&gt;
+): failed to open stream: Invalid argument
+#0 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(&lt;!--...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): require()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->index()
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-17 04:42:27 --> require(&lt;!-- DEBUG-VIEW START 1 APPPATH\Views\template\header.php --&gt;
+&lt;html lang=&quot;fr-Fr&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;uft-8&quot;&gt;
+    &lt;link href=&quot;https://...@5.0.2/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC&quot; crossorigin=&quot;anonymous&quot;&gt;
+&lt;/head&gt;
+&lt;style&gt;
+    /* Modification de la Navbar (barre de navigation)*/
+    /* nav {
+        background-color: rgb(84, 84, 84);
+        padding: 0;
+        margin: 0;
+        height: 40px;
+        font-size: 17px;
+    } */
+    .navigation {
+        background-color: rgb(84, 84, 84);
+        padding: 0;
+        margin: 0;
+        height: 60px;
+        font-size: 17px;
+    }
+
+    .navigation1 {
+        display: inline-block;
+        list-style: none;
+        color: white
+    }
+
+    .navigation2 {
+        display: inline-block;
+        margin: 0 30px;
+        color: white;
+    }
+
+    /* nav li {
+        display: inline-block;
+        list-style: none;
+        color: white
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0 30px;
+        color: white;
+    } */
+
+    .nav{
+        background-color: rgb(84, 84, 84);
+    }
+&lt;/style&gt;
+&lt;!-- &lt;nav class=&quot;navigation&quot;&gt;
+    &lt;ul&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;@Recherche Contact/Organisation&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;AccueilController&quot;&gt;Accueil&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;InformationController&quot;&gt;Information&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;RechercheController&quot;&gt;Recherche&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;ContactController&quot;&gt;[TEMPORAIRE] ajout&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;AideController&quot;&gt;Rechercher&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt; --&gt;
+
+&lt;ul class=&quot;nav&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; aria-current=&quot;page&quot; href=&quot;https://github.com/DamienLoison/ContactApp&quot;&gt;ContactApp&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;AccueilController&quot;&gt;Accueil&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;ContactController/index&quot;&gt;Rechercher&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/html&gt;
+&lt;!-- DEBUG-VIEW ENDED 1 APPPATH\Views\template\header.php --&gt;
+): failed to open stream: Invalid argument
+#0 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(&lt;!--...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): require()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->index()
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-17 04:42:56 --> require(&lt;!-- DEBUG-VIEW START 1 APPPATH\Views\template\header.php --&gt;
+&lt;html lang=&quot;fr-Fr&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;uft-8&quot;&gt;
+    &lt;link href=&quot;https://...@5.0.2/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC&quot; crossorigin=&quot;anonymous&quot;&gt;
+&lt;/head&gt;
+&lt;style&gt;
+    /* Modification de la Navbar (barre de navigation)*/
+    /* nav {
+        background-color: rgb(84, 84, 84);
+        padding: 0;
+        margin: 0;
+        height: 40px;
+        font-size: 17px;
+    } */
+    .navigation {
+        background-color: rgb(84, 84, 84);
+        padding: 0;
+        margin: 0;
+        height: 60px;
+        font-size: 17px;
+    }
+
+    .navigation1 {
+        display: inline-block;
+        list-style: none;
+        color: white
+    }
+
+    .navigation2 {
+        display: inline-block;
+        margin: 0 30px;
+        color: white;
+    }
+
+    /* nav li {
+        display: inline-block;
+        list-style: none;
+        color: white
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0 30px;
+        color: white;
+    } */
+
+    .nav{
+        background-color: rgb(84, 84, 84);
+    }
+&lt;/style&gt;
+&lt;!-- &lt;nav class=&quot;navigation&quot;&gt;
+    &lt;ul&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;@Recherche Contact/Organisation&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;AccueilController&quot;&gt;Accueil&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;InformationController&quot;&gt;Information&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;RechercheController&quot;&gt;Recherche&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;ContactController&quot;&gt;[TEMPORAIRE] ajout&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;navigation1&quot;&gt;&lt;a class=&quot;navigation2&quot; href=&quot;AideController&quot;&gt;Rechercher&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt; --&gt;
+
+&lt;ul class=&quot;nav&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; aria-current=&quot;page&quot; href=&quot;https://github.com/DamienLoison/ContactApp&quot;&gt;ContactApp&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;AccueilController&quot;&gt;Accueil&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;ContactController/index&quot;&gt;Rechercher&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/html&gt;
+&lt;!-- DEBUG-VIEW ENDED 1 APPPATH\Views\template\header.php --&gt;
+): failed to open stream: Invalid argument
+#0 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(&lt;!--...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): require()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->index()
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-17 04:43:08 --> require(template/header): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(templat...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): require()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->index()
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-17 04:43:23 --> require(Views/template/header): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(Views/t...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): require()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->index()
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-17 04:47:28 --> require(Views/template/header): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(Views/t...', 'C:\\laragon\\www\\...', 50, Array)
+#1 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(50): require()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->index()
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-17 04:47:42 --> App\Controllers\ContactController::index(): Failed opening required 'template/header' (include_path='.;C:/laragon/etc/php/pear')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-17 04:49:12 --> require(app/Views/template/header.php): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(app/Vie...', 'C:\\laragon\\www\\...', 51, Array)
+#1 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(51): require()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->index()
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-17 04:49:26 --> App\Controllers\ContactController::index(): Failed opening required 'app/Views/template/header.php' (include_path='.;C:/laragon/etc/php/pear')
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-17 04:49:40 --> require(app/Views/template/header.php): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(app/Vie...', 'C:\\laragon\\www\\...', 51, Array)
+#1 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(51): require()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->index()
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-17 04:50:53 --> require(app/Views/template/header.php): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(app/Vie...', 'C:\\laragon\\www\\...', 52, Array)
+#1 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(52): require()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->index()
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-17 04:51:44 --> require(C:\laragon\www\Luzancy-App\app\Controllersapp/Views/template/header.php): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(C:\\lara...', 'C:\\laragon\\www\\...', 53, Array)
+#1 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(53): require()
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->index()
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-17 04:52:55 --> Invalid file: template/headerRecherche/AccueilRecherche.php
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/header...')
+#1 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('template/header...', Array, true)
+#2 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(54): view('template/header...')
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->index()
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-17 05:38:04 --> require(template/header.php): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Views\Recherche\Recherche.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(templat...', 'C:\\laragon\\www\\...', 8, Array)
+#1 C:\laragon\www\Luzancy-App\app\Views\Recherche\Recherche.php(8): require()
+#2 C:\laragon\www\Luzancy-App\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#3 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/Reche...', Array, true)
+#5 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(58): view('Recherche/Reche...')
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->tout_les_contacts()
+#7 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#8 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-17 06:14:18 --> require(template/header.php): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Views\Recherche\Recherche.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(templat...', 'C:\\laragon\\www\\...', 8, Array)
+#1 C:\laragon\www\Luzancy-App\app\Views\Recherche\Recherche.php(8): require()
+#2 C:\laragon\www\Luzancy-App\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#3 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/Reche...', Array, true)
+#5 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(58): view('Recherche/Reche...')
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->tout_les_contacts()
+#7 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#8 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-17 06:14:25 --> require(template/header.php): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Views\Recherche\Recherche.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(templat...', 'C:\\laragon\\www\\...', 8, Array)
+#1 C:\laragon\www\Luzancy-App\app\Views\Recherche\Recherche.php(8): require()
+#2 C:\laragon\www\Luzancy-App\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#3 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/Reche...', Array, true)
+#5 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(58): view('Recherche/Reche...')
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->tout_les_contacts()
+#7 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#8 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-17 06:14:33 --> require(template/header.php): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Views\Recherche\Recherche.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(templat...', 'C:\\laragon\\www\\...', 8, Array)
+#1 C:\laragon\www\Luzancy-App\app\Views\Recherche\Recherche.php(8): require()
+#2 C:\laragon\www\Luzancy-App\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#3 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/Reche...', Array, true)
+#5 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(58): view('Recherche/Reche...')
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->tout_les_contacts()
+#7 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#8 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-17 06:15:02 --> require(template/footer.php): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Views\Recherche\Recherche.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(templat...', 'C:\\laragon\\www\\...', 188, Array)
+#1 C:\laragon\www\Luzancy-App\app\Views\Recherche\Recherche.php(188): require()
+#2 C:\laragon\www\Luzancy-App\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#3 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/Reche...', Array, true)
+#5 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(58): view('Recherche/Reche...')
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->tout_les_contacts()
+#7 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#8 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-02-17 06:38:57 --> Invalid file: Recherche.php
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Recherche.php')
+#1 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#2 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(69): view('Recherche', Array)
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->tout_les_contacts()
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-17 08:02:30 --> require(template/header.php): failed to open stream: No such file or directory
+#0 C:\laragon\www\Luzancy-App\app\Views\Recherche\Information.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(templat...', 'C:\\laragon\\www\\...', 20, Array)
+#1 C:\laragon\www\Luzancy-App\app\Views\Recherche\Information.php(20): require()
+#2 C:\laragon\www\Luzancy-App\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#3 C:\laragon\www\Luzancy-App\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/infor...', Array, true)
+#5 C:\laragon\www\Luzancy-App\app\Controllers\ContactController.php(31): view('Recherche/infor...')
+#6 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\ContactController->aide_contact()
+#7 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactController))
+#8 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\ContactModel;
+use App\Models\OrganisationModel;
+use App\Models\LoginModel;
 use CodeIgniter\Controller;
 use CodeIgniter\Model;
 
@@ -19,32 +21,43 @@ class ContactController extends Controller
     public function index()
     {
         helper(['Contact', 'url']);
-        // // helper("form");
-        // echo form_input(data:'name', value:'', extra:'');
-        // // echo form_open(action:'',attributes:'');
-        // // form_open_multipart(action: ,attributes:);
-        // // echo form_close();
 
-        // $model = new ContactModel();
-        // $model1 = new OrganisationModel();
-        // $model2 = new LoginModel();
-        // $data = [
-        //     'contacts'      => $model->getContact(),
-        //     'organisations' => $model1->getOrganisation(),
-        //     'logins'        => $model2->getLogin(),
-        //     // '' => $model->getContact
+        echo view('template/header');
+        echo view('Recherche/AccueilRecherche');
+        echo view('template/footer');
+    }
+    public function aide_contact(){
+        echo view('template/header');
+        echo view('Recherche/information');
+        echo view('template/footer');
+    }
+    public function tout_les_contacts()
+    {
+        $model  = new ContactModel();
+        $model1 = new OrganisationModel();
+        $model2 = new LoginModel();
+        $data = [
+            'contacts'      => $model->getContact(),
+            'organisations' => $model1->getOrganisation(),
+            'logins'        => $model2->getLogin(),
+        ];
+        echo view('Recherche/AfficheContactEntier', $data);
+    }
+    public function Contact()
+    {
+        helper(['Recherche', 'url']);
 
-        // ];
-        // |-----------------------------------------------------------------------
-        // A TERMINER MAIS
-        //  NECESSITE LA RECHERCHE DE COMMENT
-        //  TRANSFERER LES DONNEES DE LA VUE AU CONTROLLER
-        // |-----------------------------------------------------------------------
-        // $sql = "SELECT * FROM Contact WHERE ID_Contact = ? AND Nom_Contact = ? AND Prenom_Contact = ?";
-        // |-----------------------------------------------------------------------
-        //LES POINTS D'INTERROGATIONS DOIVENT ETRE REMPLACER PAR LES BONNES DONNEES
-        // |-----------------------------------------------------------------------
-        //return view('FormulaireContact'); //,$data);
+        $model = new ContactModel();
+        $model1 = new OrganisationModel();
+        $model2 = new LoginModel();
+        $data = [
+            'contacts' => $model->getContact(),
+            'organisations' => $model1->getOrganisation(),
+            'logins' => $model2->getLogin(),
+            //     // '' => $model->getContact
+
+        ];
+        return view('Recherche', $data);
     }
     public function formulaire_contact()
     {
@@ -57,29 +70,29 @@ class ContactController extends Controller
         echo view('contact/FormulaireContact');
     }
     public function add_contact()
-        // $NomContact, $PrenomContact, $MailContact, $NumeroTelContact, $IDOrganisationContact)
+    // $NomContact, $PrenomContact, $MailContact, $NumeroTelContact, $IDOrganisationContact)
     {
         //modèle//
         // form_open();
         // $model = new ContactModel;
         // print_r($model->add_contact($NomContact, $PrenomContact, $MailContact, $NumeroTelContact, $IDOrganisationContact));
-    
-        $isValid = $this->validate([
-			'NomContact' => 'trim|required|min_length[1]|max_length[40]',
-			'PrenomContact' => 'trim|required|min_length[1]|max_length[40]',
-			'NumeroTelephoneContact' => 'trim|required|min_length[10]|max_length[10]',
-			'MailContact' => 'trim|required|valid_email',
-		]);
 
-		if (!$isValid) {
-			return view('contact/accueil', [
-				'validation' => \Config\Services::validation()
-			]);
-		} else {
-			$request = \Config\Services::request();
+        $isValid = $this->validate([
+            'NomContact' => 'trim|required|min_length[1]|max_length[40]',
+            'PrenomContact' => 'trim|required|min_length[1]|max_length[40]',
+            'NumeroTelephoneContact' => 'trim|required|min_length[10]|max_length[10]',
+            'MailContact' => 'trim|required|valid_email',
+        ]);
+
+        if (!$isValid) {
+            return view('contact/accueil', [
+                'validation' => \Config\Services::validation()
+            ]);
+        } else {
+            $request = \Config\Services::request();
             $data['contact'] = $request->getPost();
             return view('contact/success', $data);
-		}
+        }
     }
     public function add_ignore_contact()
     {

@@ -5,16 +5,26 @@
     <meta charset="UTF-8">
     <title>Donnée Contact</title>
 </head>
-<?php require('template/header.php'); ?>
+<!-- <header>
+    <?php //echo view('template/header.php'); ?>
+</header> -->
+
 <div class="vertical">
     <?php
-    require('template/navbar.php');
+    echo view('template/navbar.php');
     ?>
 </div>
 
 <body>
+    <div class="header">
+    <?php echo view('template/header.php'); ?>
+    </div>
     <style>
         /*Remonte la barre de navigation jusqu'au haut de la fiche*/
+        .header{
+            width: 505px;
+
+        }
         .navigation {
             margin-top: -17px;
             text-align: left;
@@ -40,7 +50,7 @@
             width: 500px;
             position: absolute;
             margin-left: 500px;
-            margin-top: auto;
+            /* margin-top: auto; */
             border: rgb(84, 84, 84) solid 5px;
         }
 
@@ -185,7 +195,7 @@
                 <?php endforeach; ?>
             <?php endif ?>
             <?php
-            require('template/footer.php');
+            echo view('template/footer.php');
             ?>
         </div>
         <!-- <input type="button" href="ajout-contact.php" value="Ajouter Contact"> -->
