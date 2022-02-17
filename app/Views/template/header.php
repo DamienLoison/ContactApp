@@ -19,7 +19,7 @@
         <a class="nav-link" href="/AccueilController">Accueil</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="index">Recherche</a>
+        <a class="nav-link" href="/ContactController/index">Recherche</a>
     </li>
     <li class="nav-item">
         <a class="nav-link disabled" href="aide_contact">Aide [DESACTIVER MOMENTANEMENT]</a>

@@ -532,3 +532,12 @@ CRITICAL - 2022-02-17 08:36:33 --> Invalid file: Recherche.php
 #5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2022-02-17 09:01:42 --> Invalid file: Recherche.php
+#0 C:\laragon\www\Luzancy-App\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Recherche.php')
+#1 C:\laragon\www\Luzancy-App\system\Common.php(1089): CodeIgniter\View\View->render('Recherche', Array, true)
+#2 C:\laragon\www\Luzancy-App\app\Controllers\RechercheController.php(34): view('Recherche', Array)
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\RechercheController->index()
+#4 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RechercheController))
+#5 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
