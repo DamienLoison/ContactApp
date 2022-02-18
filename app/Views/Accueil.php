@@ -16,6 +16,18 @@
     .footer {
         height: 75px;
     }
+    #right {
+        /* margin-top: 50px; */
+        font-size: 20px;
+        text-align: center;
+        width: 1000px;
+    }
+    #indication {
+        margin-top: 40px;
+        color: white;
+        background-color: black;
+        font-size: 20px;
+    }
 </style>
 
 <body>
@@ -24,8 +36,6 @@
     </div>
 
     <div class="Accueil">
-        <h1>Bienvenu sur ContactApp</h1>
-        <h2>Ceci n'est qu'une version Beta</h2>
         <h4>se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
     </div>
 

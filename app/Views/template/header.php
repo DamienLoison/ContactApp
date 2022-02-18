@@ -12,7 +12,7 @@
 </style>
 
 <ul class="nav fixed-top">
-    <li class="nav-item">
+    <li class=".navbar-brand">
         <a class="nav-link active" aria-current="page" href="https://github.com/DamienLoison/ContactApp">ContactApp</a>
     </li>
     <li class="nav-item">
@@ -33,6 +33,7 @@
     <li class="nav-item">
         <a class="nav-link " href="/AccueilController/note_patch" tabindex="-1">Note de patch</a>
     </li>
+    Beta version : B:1.0.2
 </ul>
 
 </html>

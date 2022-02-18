@@ -40,31 +40,37 @@
         <p>
         <div class="Todo">
             <h3>Todo : </h3>
-            <br>-Mise en place des moyens de recherche par ID (++)
-            <br>-Retravailler le désigne de la fiche recherche (-)
+            <!-- TRES IMPORTANT -->
             <br>-Faire les liasons à la base de donnée (++)
+            <br>-Mise en place des moyens de recherche par ID (++)
             <br>-Afficher les données (++)
+            <!-- MOIN IMPORTANT -->
+            <br>-Mise à jour du footer(-)
+            <br>-Retravailler le désigne de la fiche recherche (-)
         </div>
         <h1>Version-B:1.0</h1>
         <div class="Modification">
-            <h3>Modification :</h3>
+            <h2>Modification :</h2>
+            <br><h3>Ajout</h3>
             <br>-Ajout des méthodes pour la recherche
             <br>-Ajout des pages liées aux recherches
             <br>-Ajout des routes pour chaque méthode de recherche
-            <br>-Ajout de l'architecture du site <a href="/AccueilController/architecture_site" style="color: white;">disponible ici</a>
-            <br>-Correction mineur
-        </div>
-        <h1>Version BETA.7-1|22</h1>
-        <div class="Modification">
-            <h3>Modification :</h3>
-            <br>-Mise en place architecture
-            <br>-Embellissement des pages
-            <br>-Menu de navigation revu
-            <br>-Correction des liens de la barre de navigation
             <br>-Ajout du lien vers la recherche de contact
-            <br>-Optimisation des routes
+            <br>-Ajout de la version de l'application sur la barre de navigation
+            <br>-Ajout de l'architecture du site <a href="/AccueilController/architecture_site" style="color: white;">disponible ici</a>
+            <br> <!-- -------------------------------------- -->
+            <br><h3>Visuel</h3>
+            <br>-Menu de navigation revu
+            <br>-Embellissement des pages
             <br>-Refonte de l'accueil
-            <br>-Mise en place d'une page de navigation(toute les pages présente avec architecture)
+            <br>-Refonte de l'aide (toujour indisponible)
+            <br>-Refonte de la page des Patch Note
+            <br> <!-- -------------------------------------- -->
+            <br><h3>Correction/Optimisation</h3>
+            <br>-Correction des liens de la barre de navigation
+            <br>-Mise en place architecture
+            <br>-Optimisation des routes
+            <br>-Correction mineur
         </div>
         </p>
     </div>

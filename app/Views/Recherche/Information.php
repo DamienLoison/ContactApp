@@ -32,7 +32,7 @@
 
     <div class="information">
         <style>
-            .information {
+            /* .information {
                 border: solid rgb(84, 84, 84) 5px;
                 text-align: center;
                 width: 90%;
@@ -62,13 +62,10 @@
             .information1 {
                 border: solid black 5px;
                 text-align: center;
-            }
-
-            .Aide {
-                border: rgb(45, 210, 120) solidd 3px;
-            }
+            } */
+ 
         </style>
-        <div class="leftInformation">
+        <!-- <div class="leftInformation">
             <h4>Toutes les pages disponibles</h4>
             <dl>
                 <dt><a href="http://localhost/RechercheController">Recherche</a></dt>
@@ -87,7 +84,7 @@
                 • Le nom/prénom du Contact/Organisation <br>
                 • L'adresse mail du Contact/Organisation <br>
                 • L'id du Contact/Organisation <br>
-                <!-- texte explicatif -->
+                 texte explicatif
                 l'ID étant UNIQUE, il ne peut y avoir de doublon <br>
                 et donc pas possible de se tromper dans les recherches <br>
                 si plusieurs personnes ont le même nom/prénom<br>
@@ -96,7 +93,7 @@
         <div class="rightInformation">
             <h4>Utilisation de la recherche</h4>
         </div>
-    </div>
+    </div> -->
 
     <div class="Aide">
         <p>

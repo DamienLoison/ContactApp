@@ -49,9 +49,9 @@
                 <a id="sous-titre" href="/ContactController/recherche_organisation">-> Recherche des organisations</a><br>
                 <a id="sous-titre" href="/ContactController/tout_les_login">-> Liste des logins</a><br>
                 <a id="sous-titre" href="/ContactController/recherche_de_login">-> Recherche des logins</a><br>
-            <!-- <strong><a id="titre" style="color:black;" href="">• </a>-<br></strong>
-                <a id="sous-titre" href="">-> </a><br>
-                <a id="sous-titre" href="">-> </a><br>
+            <strong><a id="titre" style="color:black;" href="">• Test</a>-<br></strong>
+                <a id="sous-titre" href="/FormulaireController?NomContact=&PrenomContact=&NumeroTelephoneContact=&EmailContact=">-> Formulaire</a><br>
+                <!-- <a id="sous-titre" href="">-> </a><br>
                 <a id="sous-titre" href="">-> </a><br> -->
 
         </pre>
