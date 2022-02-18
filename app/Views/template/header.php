@@ -28,6 +28,9 @@
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
     </li> -->
     <li class="nav-item">
+        <a class="nav-link " href="/AccueilController/architecture_site" tabindex="-1">Ensembles des pages</a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link " href="/AccueilController/note_patch" tabindex="-1">Note de patch</a>
     </li>
 </ul>

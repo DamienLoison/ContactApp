@@ -51,7 +51,7 @@
             <br>-Ajout des méthodes pour la recherche
             <br>-Ajout des pages liées aux recherches
             <br>-Ajout des routes pour chaque méthode de recherche
-            <br>-...
+            <br>-Ajout de l'architecture du site <a href="/AccueilController/architecture_site" style="color: white;">disponible ici</a>
             <br>-Correction mineur
         </div>
         <h1>Version BETA.7-1|22</h1>
