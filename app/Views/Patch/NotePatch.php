@@ -18,14 +18,16 @@
     h1 {
         background-color: tomato;
     }
-    .Modification{
-        border-top:solid black 5px;
+
+    .Modification {
+        border-top: solid black 5px;
         background-color: darkcyan;
     }
-    .Todo{
-        border-top:solid black 5px;
+
+    .Todo {
+        border-top: solid black 5px;
         background-color: lightgreen;
-        border-bottom:solid black 5px;
+        border-bottom: solid black 5px;
     }
 </style>
 
@@ -36,8 +38,23 @@
 
     <div class="notePatch">
         <p>
-        <h1>Version BETA.17-02|22</h1>
-        <br>
+        <div class="Todo">
+            <h3>Todo : </h3>
+            <br>-Mise en place des moyens de recherche par ID (++)
+            <br>-Retravailler le désigne de la fiche recherche (-)
+            <br>-Faire les liasons à la base de donnée (++)
+            <br>-Afficher les données (++)
+        </div>
+        <h1>Version-B:1.0</h1>
+        <div class="Modification">
+            <h3>Modification :</h3>
+            <br>-Ajout des méthodes pour la recherche
+            <br>-Ajout des pages liées aux recherches
+            <br>-Ajout des routes pour chaque méthode de recherche
+            <br>-...
+            <br>-Correction mineur
+        </div>
+        <h1>Version BETA.7-1|22</h1>
         <div class="Modification">
             <h3>Modification :</h3>
             <br>-Mise en place architecture
@@ -48,11 +65,6 @@
             <br>-Optimisation des routes
             <br>-Refonte de l'accueil
             <br>-Mise en place d'une page de navigation(toute les pages présente avec architecture)
-        </div>
-        <div class="Todo">
-            <h3>Todo : </h3>
-            <br>-Mise en place des moyens de recherche par ID
-            <br>-Retravailler le désigne de la fiche recherche
         </div>
         </p>
     </div>

@@ -3,62 +3,37 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style/MiseEnPage">
     <title>Recherche | Contact Entier</title>
 </head>
 
 <style>
-    body {
-        /* width: 700px; */
-        /* height: 500px; */
-        /* text-align: center; */
-    }
-
     .TOP {
         height: 60px;
     }
 
-    .fiche {
-        /* height: 400px; */
-        /* margin: auto; */
-        /* border: 3px solid #4287f5; */
-
-    }
-
     .fiche td {
-        /* padding-left: 20px;
-        padding-top: 20px;
-        padding-right: 20px;
-        font-size: 20px;
-        border: solid black;*/
         border-bottom: solid black 3px;
     }
 
-    .header {}
-
     table {
-        /* border-collapse: collapse; */
         border-radius: 15px;
         border: 2px solid purple;
         padding: 5px;
     }
 
     #right {
-        /* font-family: Verdana, Arial, Helvetica, sans-serif; */
         font-size: 20px;
         text-align: center;
         width: 1000px;
 
     }
 
-    tr {
-        /* border: solid red 2px; */
-
-    }
-
     #nav {
         margin-top: 40px;
     }
-    #indication{
+
+    #indication {
         margin-top: 90px;
         color: white;
         background-color: black;
@@ -82,14 +57,6 @@
                     </form>
                 </div>
             </nav>
-            <!-- <table>
-            <tr>
-                <td>Nom</td>
-                <td>Prénom</td>
-                <td>Numéro de téléphone</td>
-                <td>mail</td>
-            </tr>
-            </table> -->
         </div>
         <!-- AFFICHAGE DE TOUT LES CONTACTS
         NOM + PRENOM + NUMERO DE TELEPHONE + MAIL  -->
@@ -97,10 +64,10 @@
         <table id="right" class="tableau" cellpadding="2" cellspacing="1" size="10px">
             <p>
                 <tr id="indication" class="fixed-top">
-                    <td>Nom                 |</td>
-                    <td>Prénom              |</td>
+                    <td>Nom |</td>
+                    <td>Prénom |</td>
                     <td>Numéro de téléphone |</td>
-                    <td>mail                |</td>
+                    <td>mail |</td>
                 </tr>
                 <?php if (!empty($contacts) && is_array($contacts)) : ?>
                     <?php foreach ($contacts as $contact) : ?>

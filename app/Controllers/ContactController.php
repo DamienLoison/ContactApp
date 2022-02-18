@@ -26,11 +26,17 @@ class ContactController extends Controller
         echo view('Recherche/AccueilRecherche');
         echo view('template/footer');
     }
-    public function aide_contact(){
+    public function aide_contact()
+    {
         echo view('template/header');
         echo view('Recherche/information');
         echo view('template/footer');
     }
+    /*
+    *FONCTION TRAITANT DES CONTACTS
+    *
+    *
+    */
     public function tout_les_contacts()
     {
         $model  = new ContactModel();
@@ -43,7 +49,8 @@ class ContactController extends Controller
         ];
         echo view('Recherche/AfficheContactEntier', $data);
     }
-    public function recherche_contact(){
+    public function recherche_contact()
+    {
         $model  = new ContactModel();
         $model1 = new OrganisationModel();
         $data = [
@@ -51,7 +58,100 @@ class ContactController extends Controller
             'organisations' => $model1->getOrganisation()
         ];
         echo view('Recherche/RechercheContact', $data);
+        // function resultat_contact(){
+        //     $choix = filter_input(INPUT_POST, 'ChoixRechercheContact');
+        //     $recherche = filter_input(INPUT_POST, 'search');
+        //     $model = new ContactModel;
+        //     $data['all'] = $model->recherche_contact($choix, $recherche);
+        //     $data =[
+        //         'contact'   => $model->recherche_contact($choix, $recherche)
+        //     ];
+        //     return $data;
+        //     echo view('Recherche/RechercheContact', $data);
+        //     return $data;
+
+        //     echo($data);
     }
+    // public function resultat_contact()
+    // {
+    //     $choix = filter_input(INPUT_POST, 'ChoixRechercheContact');
+    //     $recherche = filter_input(INPUT_POST, 'search');
+    //     $model = new ContactModel;
+    //     $data['all'] = $model->recherche_contact($choix, $recherche);
+    //     // $data =[
+    //     //     'contact'   => $model->recherche_contact($choix, $recherche)
+    //     // ];
+    //     // return $data;
+    //     // echo view('Recherche/RechercheContact', $data);
+    //     // return $data;
+
+    //     echo ($data);
+    // }
+    //     function recherche_contact_1(){
+    //     $choix = filter_input(INPUT_POST, 'ChoixRechercheContact');
+    //     $recherche = filter_input(INPUT_POST, 'search');
+    //     $model = new ContactModel;
+    //     $data['all'] = $model->recherche_contact($choix, $recherche);
+    //     // $data =[
+    //     //     'contact'   => $model->recherche_contact($choix, $recherche)
+    //     // ];
+    //     // return $data;
+    //     // echo view('Recherche/RechercheContact', $data);
+    //     // return $data;
+
+    //     echo("$choix, $recherche, $data");
+    // }
+    /*
+    *FONCTION TRAITANT DES ORGANISATIONS
+    *
+    *
+    */
+    public function toute_les_organisations()
+    {
+        $model = new OrganisationModel();
+        $data = [
+            'organisations' => $model->getOrganisation()
+        ];
+        echo view('organisation/ListeOrganisation', $data);
+    }
+    public function recherche_organisation()
+    {
+        $model = new OrganisationModel();
+        $data = [
+            'organisations' => $model->getOrganisation()
+        ];
+        echo view('organisation/RechercheOrganisation', $data);
+    }
+    /*
+    *FONCTION TRAITANT DES LOGINS
+    *
+    *
+    */
+    public function recherche_de_login()
+    {
+        $model = new LoginModel();
+        $data = [
+            'logins'        => $model->getLogin(),
+        ];
+        echo view('login/RechercheLogin', $data);
+    }
+    public function tout_les_login()
+    {
+        $model = new LoginModel();
+        $data = [
+            'logins'        => $model->getLogin(),
+        ];
+        echo view('login/ListeLogin', $data);
+    }
+    /*--------------------------------------------------------
+    ----------------------------------------------------------
+    --------------------------------------------------------*/
+
+    /*--------------------------------------------------------
+    ----------------------------------------------------------
+    --------------------------------------------------------*/
+
+
     public function Contact()
     {
         helper(['Recherche', 'url']);

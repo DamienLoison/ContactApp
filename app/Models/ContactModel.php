@@ -11,14 +11,10 @@ class ContactModel extends Model
     protected $table = 'contact';
     protected $primaryKey = 'ID_Contact';
     protected $useAutoIncrement = true;
-
+    //Variable
     protected $db;
     protected $id;
-    // Récupération des données
-    // protected $nom_contact;
-    // protected $prenom_contact;
-    // protected $numeroTel_contact;
-    // protected $mail_contact;
+    protected $choix;
 
     // protected $allowedFields = [
     //     'Nom_Contact',
@@ -32,50 +28,37 @@ class ContactModel extends Model
         parent::__construct();
         $this->db = db_connect();
     }
-    // /**
-    //  * Ajoute un contact
-    //  *
-    //  * @param string $NomContact le nom du contact
-    //  * @param string $PrenomContact le nom du contact
-    //  * @param string $mailContact le mail du contact
-    //  * @param string $TelContact le numéro de téléphone du contact
-    //  * @param string $OrganisationContact l'organisation où travail le contact
-    //  */
-    // public function ajouter_contact($NomContact, $PrenomContact, $mailContact, $TelContact, $OrganisationContact)
-    // {
-    //     // Ces données seront automatiquement échappées
-    //     $this->db->set('NomContact', $NomContact);
-    //     $this->db->set('PrenomContact', $PrenomContact);
-    //     $this->db->set('mailContact', $mailContact);
-    //     $this->db->set('TelContact', $TelContact);
-    //     $this->db->set('OrganisationContact', $OrganisationContact);
+    public function recherche_contact($choix, $recherche)
+    {
+        $builder = $this->db->table('contact');
+        if ($choix == "ID") {
+            $query = "SELECT ID_Contact FROM contact WHERE $recherche";
+        }
+        if ($choix == "NOM") {
+            $query = "SELECT Nom_Contact FROM contact WHERE $recherche";
+        }
+        if ($choix == "PRENOM") {
+            $query = "SELECT Prenom_Contact FROM contact WHERE $recherche";
+        }
+        if ($choix == "MAIL") {
+            $query = "SELECT mail_Contact FROM contact WHERE $recherche";
+        }
+        if ($choix == "TELEPHONE") {
+            $query = "SELECT numTel_Contact FROM contact WHERE $recherche";
+        }else{
+            $query = null;
+        }
+        // $this->assign('ResultatRecherche', $query);
 
-    //     return $this->db->insert($this->table);
-    // }
-
-    // public function editer_contact()
-    // {
-    // }
-    // /**
-    //  * Supprime un contact
-    //  */
-    // public function supprimer_contact()
-    // {
-    // }
-    // /**
-    //  * Retourne le nombre de contact
-    //  */
-    // public function count()
-    // {
-    // }
-    // /**
-    //  * Retourne une liste de contact
-    //  */
-    // public function liste_contact()
-    // {
-    // }
-
-    //test méthode ytb
+        // $query1 = $query->get();
+        // $result = $query1->getResult();
+        // $all = $query1->getResult();
+        $all =$query;
+        return $all;
+        // return $query;
+        // $query   = $builder->get();
+    }
+    //test méthode
     public function add_contact()
     {
         $builder = $this->db->table('contact');

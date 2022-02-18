@@ -2,16 +2,17 @@
 <html lang="fr-Fr">
     <head>
         <meta charset="fr-Fr">
+        <link rel="stylesheet" href="style/MiseEnPage"> 
         <title>Architecture ContactApp</title>
     </head>
 
     <style>
-        .nav{
+        /* .nav{
             height: 40px;
         }
         .footer{
             height: 75px;
-        }
+        } */
     </style>
 
     <body>

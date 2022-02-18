@@ -54,11 +54,12 @@
             <option class="Contact" value="recherche_contact">Recherche de contact</option>
             <!-- recherche organisation
                 <option class="titre"value="">--Parmis les organisations--</option> -->
-            <option class="Organisation">Afficher toute les organisations</option>
-            <option class="Organisation">Recherche d'organisation</option>
+            <option class="Organisation" value="toute_les_organisations">Afficher toute les organisations</option>
+            <option class="Organisation" value="recherche_organisation">Recherche d'organisation</option>
             <!-- reherche login 
                 <option class="titre" value="">--Recherche de login--</option>-->
-            <option class="Login">recherche d'un login</option>
+            <option class="Login" value="recherche_de_login">Recherche d'un login</option>
+            <option class="Login" value="tout_les_login">Tout les login</option>
         </select>
     </div>
 
