@@ -8,6 +8,11 @@
     /* Modification de la Navbar (barre de navigation)*/
     .nav {
         background-color: rgb(84, 84, 84);
+        color: rgb(198, 83, 140);
+    }
+
+    .nav-link {
+        color: rgb(51, 153, 255);
     }
 </style>
 
@@ -33,7 +38,7 @@
     <li class="nav-item">
         <a class="nav-link " href="/AccueilController/note_patch" tabindex="-1">Note de patch</a>
     </li>
-    Beta version : B:1.0.2
+    Beta version : B:1.0.3
 </ul>
 
 </html>

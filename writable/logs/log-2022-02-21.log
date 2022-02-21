@@ -1,0 +1,212 @@
+CRITICAL - 2022-02-21 02:39:56 --> Undefined property: App\Controllers\Ajouter::$load
+#0 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-21 02:50:54 --> Undefined index: 
+#0 C:\laragon\www\ContactApp\app\Models\ContactModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 65, Array)
+#1 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(18): App\Models\ContactModel->add_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 02:51:45 --> Undefined index: NomContact
+#0 C:\laragon\www\ContactApp\app\Models\ContactModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 65, Array)
+#1 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(18): App\Models\ContactModel->add_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-21 03:00:12 --> Call to undefined function set_value()
+#0 C:\laragon\www\ContactApp\system\View\View.php(210): include()
+#1 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(22): view('Ajout/Contact/f...')
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 03:26:33 --> syntax error, unexpected '<', expecting end of file
+#0 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#2 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(22): view('Ajout/Contact/f...')
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-21 03:26:42 --> Invalid file: template/.php
+#0 C:\laragon\www\ContactApp\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/.php')
+#1 C:\laragon\www\ContactApp\system\View\View.php(226): CodeIgniter\View\View->render('template/', Array, true)
+#2 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(22): view('Ajout/Contact/f...')
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 03:51:23 --> syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+#0 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#2 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(42): view('Ajout/Contact/f...')
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-21 04:00:45 --> Undefined variable: validation
+#0 C:\laragon\www\ContactApp\app\Views\Ajout\Contact\form.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 28, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(42): view('Ajout/Contact/f...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-21 04:01:36 --> Undefined variable: validation
+#0 C:\laragon\www\ContactApp\app\Views\Ajout\Contact\form.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 28, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(43): view('Ajout/Contact/f...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-21 04:01:38 --> Undefined variable: validation
+#0 C:\laragon\www\ContactApp\app\Views\Ajout\Contact\form.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 28, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(43): view('Ajout/Contact/f...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-21 04:03:15 --> Undefined variable: validation
+#0 C:\laragon\www\ContactApp\app\Views\Ajout\Contact\form.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 28, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(43): view('Ajout/Contact/f...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-21 04:03:16 --> Undefined variable: validation
+#0 C:\laragon\www\ContactApp\app\Views\Ajout\Contact\form.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 28, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(43): view('Ajout/Contact/f...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-21 04:03:45 --> Call to undefined function display_error()
+#0 C:\laragon\www\ContactApp\system\View\View.php(210): include()
+#1 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(43): view('Ajout/Contact/f...')
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 04:04:42 --> Undefined variable: validation
+#0 C:\laragon\www\ContactApp\app\Views\Ajout\Contact\form.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 28, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(43): view('Ajout/Contact/f...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-21 04:05:06 --> Undefined variable: validation
+#0 C:\laragon\www\ContactApp\app\Views\Ajout\Contact\form.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 28, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(43): view('Ajout/Contact/f...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-21 04:07:17 --> Undefined variable: validation
+#0 C:\laragon\www\ContactApp\app\Views\Ajout\Contact\form.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 28, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(36): view('Ajout/Contact/f...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-21 05:24:36 --> Invalid file: layouts/base.php
+#0 C:\laragon\www\ContactApp\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/base.ph...')
+#1 C:\laragon\www\ContactApp\system\View\View.php(226): CodeIgniter\View\View->render('layouts/base', Array, true)
+#2 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(59): view('Ajout/Contact/f...', Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 07:07:05 --> syntax error, unexpected '}', expecting ';' or ','
+#0 C:\laragon\www\ContactApp\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Ajouter/ajouter...')
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Ajouter/ajouter...')
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-21 07:07:17 --> Cannot redeclare App\Controllers\Ajouter::ajouter_contact()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-21 07:07:34 --> Cannot redeclare App\Controllers\Ajouter::ajouter_contact()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-21 07:07:47 --> Cannot redeclare App\Controllers\Ajouter::ajouter_contact()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-21 07:07:53 --> Cannot redeclare App\Controllers\Ajouter::ajouter_contact()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-21 07:08:24 --> Cannot redeclare App\Controllers\Ajouter::ajouter_contact()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-21 07:08:33 --> Cannot redeclare App\Controllers\Ajouter::ajouter_contact()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-21 07:08:38 --> Cannot redeclare App\Controllers\Ajouter::ajouter_contact()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2022-02-21 07:37:54 --> Unknown column 'numTel_Contact' in 'field list'
+CRITICAL - 2022-02-21 07:37:54 --> Unknown column 'numTel_Contact' in 'field list'
+#0 C:\laragon\www\ContactApp\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\laragon\www\ContactApp\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\laragon\www\ContactApp\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\laragon\www\ContactApp\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\laragon\www\ContactApp\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\ContactApp\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(23): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contacter_record()
+#9 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#10 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}

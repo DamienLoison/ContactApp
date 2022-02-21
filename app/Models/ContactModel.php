@@ -6,11 +6,12 @@ use CodeIgniter\Model;
 use CodeIgniter\Database\BaseBuilder;
 use CodeIgniter\Database\MySQLi\Builder;
 
-class ContactModel extends Model
-{
+class ContactModel extends Model {
+
     protected $table = 'contact';
     protected $primaryKey = 'ID_Contact';
     protected $useAutoIncrement = true;
+    protected $allowedFields=['Nom_Contact', 'Prenom_Contact', 'numeroTel_Contact', 'mail_Contact', 'ID_Organisation'];
     //Variable
     protected $db;
     protected $id;
@@ -23,13 +24,24 @@ class ContactModel extends Model
     //     'mail_Contact',
     //     'OrganisationContact',
     // ];
-    public function __construct()
-    {
+    public function __construct() {
         parent::__construct();
         $this->db = db_connect();
     }
-    public function recherche_contact($choix, $recherche)
-    {
+
+    public function SaveData($data) {
+        $db = \Config\Database::connect();
+        $builder = $this->db->table('contact');
+
+        $res = $builder->insert($data);
+        if ($res->connID->affected_rows >= 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function recherche_contact($choix, $recherche) {
         $builder = $this->db->table('contact');
         if ($choix == "ID") {
             $query = "SELECT ID_Contact FROM contact WHERE $recherche";
@@ -45,74 +57,86 @@ class ContactModel extends Model
         }
         if ($choix == "TELEPHONE") {
             $query = "SELECT numTel_Contact FROM contact WHERE $recherche";
-        }else{
+        } else {
             $query = null;
         }
         // $this->assign('ResultatRecherche', $query);
-
         // $query1 = $query->get();
         // $result = $query1->getResult();
         // $all = $query1->getResult();
-        $all =$query;
+        $all = $query;
         return $all;
         // return $query;
         // $query   = $builder->get();
     }
+
     //test méthode
-    public function add_contact()
-    {
+    public function add_contact() {
         $builder = $this->db->table('contact');
+        $NomContact = $_POST['NomContact'];
+        $PrenomContact = $_POST['PrenomContact'];
+        $MailContact = $_POST['MailContact'];
+        $TelContact = $_POST['TelContact'];
+        $IDOrganisation = $_POST['OrganisationContact'];
+
+        // $data = [
+        //     'Nom_Contact'           => 'TEST3',
+        //     'Prenom_Contact'        => 'Jtest2',
+        //     'mail_Contact'          => 'Test@test.fr',
+        //     'numeroTel_Contact'     => '0000000001',
+        //     'ID_Organisation'       => '1'
+        // ];
+        //$builder->insert($data);
+        // $builder->db->query("INSERT INTO contact VALUES ('$NomContact', ' $PrenomContact', ' $MailContact', '$TelContact', '$IDOrganisation')");
+        // return $this->db->affectedRows();
         $data = [
-            'Nom_Contact'           => 'TEST2',
-            'Prenom_Contact'        => 'Jtest2',
-            'mail_Contact'          => 'Test@test.fr',
-            'numeroTel_Contact'     => '0000000001',
-            'ID_Organisation'       => '1'
+            'Nom_Contact' => $NomContact,
+            'Prenom_Contact' => $PrenomContact,
+            'mail_Contact' => $MailContact,
+            'numTel_Contact' => $TelContact,
+            'ID_Organisation' => $IDOrganisation
         ];
-        $builder->insert($data);
-        return $this->db->affectedRows();
+        $this->insert($data);
     }
 
-    public function add_ignore_contact()
-    {
+    public function add_ignore_contact() {
         $builder = $this->db->table('contact');
         $data = [
-            'ID_Contact'            => '',
-            'Nom_Contact'           => '',
-            'Prenom_Contact'        => '',
-            'mail_Contact'          =>  '',
-            'numeroTelContact'      => '',
-            'Organisation_Contact'  => ''
+            'ID_Contact' => '',
+            'Nom_Contact' => '',
+            'Prenom_Contact' => '',
+            'mail_Contact' => '',
+            'numeroTelContact' => '',
+            'Organisation_Contact' => ''
         ];
         $builder->ignore(true)->insert($data);
         return $this->db->affectedRows();
     }
-    public function compiled_add_contact()
-    {
+
+    public function compiled_add_contact() {
         $data = [
-            'Nom_Contact'           => '',
-            'Prenom_Contact'        => '',
-            'mail_Contact'          =>  '',
-            'numeroTelContact'      => '',
-            'Organisation_Contact'  => ''
+            'Nom_Contact' => '',
+            'Prenom_Contact' => '',
+            'mail_Contact' => '',
+            'numeroTelContact' => '',
+            'Organisation_Contact' => ''
         ];
         $builder = $this->db->table('contact');
         $sql = $builder->set($data)->getCompiledInsert();
         return $sql;
     }
-    // public function batch_contact(){
 
+    // public function batch_contact(){
     // }
-    public function replace_contact()
-    {
+    public function replace_contact() {
         $builder = $this->db->table('contact');
         $data = [
-            'ID_Contact'            => '',
-            'Nom_Contact'           => '',
-            'Prenom_Contact'        => '',
-            'mail_Contact'          =>  '',
-            'numeroTelContact'      => '',
-            'Organisation_Contact'  => ''
+            'ID_Contact' => '',
+            'Nom_Contact' => '',
+            'Prenom_Contact' => '',
+            'mail_Contact' => '',
+            'numeroTelContact' => '',
+            'Organisation_Contact' => ''
         ];
         $builder->replace($data);
         return $this->db->affectedRows();
@@ -170,19 +194,17 @@ class ContactModel extends Model
     //     $builder  = $this->db->table('contact');
     //     $data = [
     //         'Organisation_Contact'  => ''
-
     //     ];
     //     $builder->set($data);
     //     $builder->where('id', $id);
     //     $builder->update();
     //     return $this->db->affectedRows();
     // }
-    public function set_update_contact($id)
-    {
+    public function set_update_contact($id) {
         if (!empty('Nom_Contact')) {
-            $builder  = $this->db->table('contact');
+            $builder = $this->db->table('contact');
             $data = [
-                'Nom_Contact'           => '',
+                'Nom_Contact' => '',
             ];
             $builder->set($data);
             $builder->where('id', $id);
@@ -190,9 +212,9 @@ class ContactModel extends Model
             return $this->db->affectedRows();
         } else {
             if (!empty('Prenom_Contact')) {
-                $builder  = $this->db->table('contact');
+                $builder = $this->db->table('contact');
                 $data = [
-                    'Prenom_Contact'        => '',
+                    'Prenom_Contact' => '',
                 ];
                 $builder->set($data);
                 $builder->where('id', $id);
@@ -200,9 +222,9 @@ class ContactModel extends Model
                 return $this->db->affectedRows();
             } else {
                 if (!empty('mail_Contact')) {
-                    $builder  = $this->db->table('contact');
+                    $builder = $this->db->table('contact');
                     $data = [
-                        'mail_Contact'          =>  '',
+                        'mail_Contact' => '',
                     ];
                     $builder->set($data);
                     $builder->where('id', $id);
@@ -210,9 +232,9 @@ class ContactModel extends Model
                     return $this->db->affectedRows();
                 } else {
                     if (!empty('numeroTel_Contact')) {
-                        $builder  = $this->db->table('contact');
+                        $builder = $this->db->table('contact');
                         $data = [
-                            'numeroTelContact'      => '',
+                            'numeroTelContact' => '',
                         ];
                         $builder->set($data);
                         $builder->where('id', $id);
@@ -220,10 +242,9 @@ class ContactModel extends Model
                         return $this->db->affectedRows();
                     } else {
                         if (!empty('Organisation_Contact')) {
-                            $builder  = $this->db->table('contact');
+                            $builder = $this->db->table('contact');
                             $data = [
-                                'Organisation_Contact'  => ''
-
+                                'Organisation_Contact' => ''
                             ];
                             $builder->set($data);
                             $builder->where('id', $id);
@@ -239,14 +260,12 @@ class ContactModel extends Model
     }
 
     //Affiche l'ensemble des données 
-    public function getContact()
-    {
+    public function getContact() {
         //variables utilisé
         // $id = $RechercheID;
         // $Nom = $RechercheNom;
         // $Prenom = $RecherchePrenom;
         // $Organisation = $RechercheOrganisation;
-
         // if($id != null){
         //si la recherche doit s'effectué par id
         //mysqli_query($db, "SELECT * FROM contact WHERE ID_Contact = '{$id}'");
@@ -267,6 +286,7 @@ class ContactModel extends Model
 
         return $this->findAll();
     }
+
     // public function insertContact()
     // {
     //     $f1 = $_POST['f1'];
@@ -275,7 +295,6 @@ class ContactModel extends Model
     //     $f4 = $_POST['f4'];
     //     $f5 = $_POST['f5'];
     //     $this->db->query("INSERT INTO contact VALUES('$f1','$f2','$f3','$f4','$f5')");
-
     // }
     // public static function insertContact($db, $NomContact, $PrenomContact, $TelContact, $MailContact, $OrganisationContact)
     // {

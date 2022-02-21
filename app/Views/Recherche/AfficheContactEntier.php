@@ -40,6 +40,14 @@
         font-size: 20px;
         text-align: center;
         width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tableau {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 </style>
 
@@ -92,6 +100,7 @@
                             <td>Numéro de téléphone : <?php echo ($contact['numeroTel_Contact']) ?></td>
                             <td>mail : <?php echo ($contact['mail_Contact']) ?></td>
                         </tr>
+                        
                     <?php endforeach; ?>
                 <?php endif ?>
             </p>
