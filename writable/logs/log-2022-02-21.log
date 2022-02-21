@@ -210,3 +210,250 @@ CRITICAL - 2022-02-21 07:37:54 --> Unknown column 'numTel_Contact' in 'field lis
 #10 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #12 {main}
+CRITICAL - 2022-02-21 08:54:27 --> Undefined variable: LoginModel
+#0 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 69, Array)
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-21 08:54:45 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(70): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 08:55:12 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(70): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 08:55:14 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(70): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 08:57:14 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 08:58:19 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 08:59:01 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 08:59:27 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:01:18 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:01:20 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:01:26 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:01:28 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:04:04 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:04:05 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:04:35 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:08:03 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:20:00 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:35:42 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(69): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:35:48 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(53): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_organisation()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:35:57 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(31): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contacter_record()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:36:38 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(37): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:39:19 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(57): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_organisation()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:39:21 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(57): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_organisation()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:40:16 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(57): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_organisation()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-02-21 09:42:47 --> There is no data to insert.
+#0 C:\laragon\www\ContactApp\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(Array, 'insert')
+#2 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(75): CodeIgniter\Model->insert(Array)
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_login_record()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

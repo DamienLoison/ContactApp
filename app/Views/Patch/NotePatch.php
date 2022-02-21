@@ -49,6 +49,20 @@
                 <br>-Mise à jour du footer(-)
                 <br>-Retravailler le désigne de la fiche recherche (-)
             </div>
+            <h1>Version B:1.0.4</h1>
+            <div class="Modification">
+                <h2>Modification :</h2>
+                <br><h3>Ajout</h3>
+                <br>-Ajout d'Organisation possible
+                <br>-Ajout de Login possible
+                <br>-Ajout d'Organisation possible
+                <br> <!-- -------------------------------------- -->
+                <br><h3>Visuel</h3>
+                <br>-modification de la barre de navigation
+                <br><h3>Correction/Optimisation</h3>
+                <br>-Suppression de Model inutile
+                <br>-Correction mineur
+            </div>
             <h1>Version B:1.0.3</h1>
             <div class="Modification">
                 <h2>Modification :</h2>
