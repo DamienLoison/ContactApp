@@ -35,18 +35,18 @@ $routes->get('/', 'Home::index');
 //AccueilController route
 $routes->get('/', 'AccueilController::index');
 $routes->get('/', 'AccueilController::note_patch');
-//ContactController route
-$routes->get('/', 'ContactController::index');
-//ContactController route -> CONTACT
-$routes->get('/', 'ContactController::aide_contact');
-$routes->get('/', 'ContactController::tout_les_contacts');
-$routes->get('/', 'ContactController::recherche_contact');
-//ContactController route -> ORGANISATION
-$routes->get('/', 'ContactController::toute_les_organisations');
-$routes->get('/', 'ContactController::recherche_organisation');
-//ContactController route -> LOGIN
-$routes->get('/', 'ContactController::recherche_de_login');
-$routes->get('/', 'ContactController::tout_les_login');
+//Recherche route
+$routes->get('/', 'Recherche::index');
+//Recherche route -> CONTACT
+$routes->get('/', 'Recherche::aide_contact');
+$routes->get('/', 'Recherche::tout_les_contacts');
+$routes->get('/', 'Recherche::recherche_contact');
+//Recherche route -> ORGANISATION
+$routes->get('/', 'Recherche::toute_les_organisations');
+$routes->get('/', 'Recherche::recherche_organisation');
+//Recherche route -> LOGIN
+$routes->get('/', 'Recherche::recherche_de_login');
+$routes->get('/', 'Recherche::tout_les_login');
 
 //Autres route
 $routes->get('/', 'FormController::create');

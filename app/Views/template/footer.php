@@ -2,6 +2,7 @@
     footer {
         background-color: rgb(84, 84, 84);
         color: white;
+        height: 75px
     }
 
     footer a {

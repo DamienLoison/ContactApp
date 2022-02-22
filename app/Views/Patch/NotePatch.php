@@ -49,6 +49,22 @@
                 <br>-Mise à jour du footer(-)
                 <br>-Retravailler le désigne de la fiche recherche (-)
             </div>
+            <h1>Version B:1.0.5</h1>
+            <div class="Modification">
+                <h2>Modification :</h2>
+                <br><scan style="color: white;">-Commencement de la modification de l'accueil</scan>
+                <br><h3>Ajout</h3>
+                <br>-fichier qui permettront la suppression de données
+                <br> <!-- -------------------------------------- -->
+                <br><h3>Visuel</h3>
+                <br>-modification de la barre de navigation
+                <br><h3>Correction/Optimisation</h3>
+                <br>-Mise en page de l'entête et du footer directement dans le fichier maintenant
+                <br>-Correction nom de fichiers
+                <br>-Correction des routes associées aux fichiers
+                <br>-Suppression de fichiers inutiles
+                <br>-Correction mineur
+            </div>
             <h1>Version B:1.0.4</h1>
             <div class="Modification">
                 <h2>Modification :</h2>

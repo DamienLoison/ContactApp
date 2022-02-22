@@ -10,6 +10,8 @@ use App\Models\LoginModel;
 class Ajouter extends Controller {
 
     public $ContactModel;
+    public $OrganisationModel;
+    public $LoginModel;
 
     public function __construct() {
         helper('form');

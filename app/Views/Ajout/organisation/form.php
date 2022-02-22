@@ -8,14 +8,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <style>
-        .nav {
-            height: 40px;
-        }
-
-        .footer {
-            height: 75px;
-        }
-
         .container {
             margin-top: 70px;
             height: 500px;
