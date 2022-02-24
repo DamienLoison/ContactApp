@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 
-class AccueilController extends Controller
+class Accueil extends Controller
 {
     public function index(){
         // helper(['Accueil', 'url']);

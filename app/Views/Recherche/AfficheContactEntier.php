@@ -1,117 +1,140 @@
 <!DOCTYPE html>
 <html lang="fr-Fr">
 
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style/MiseEnPage">
-    <title>Recherche | Contact Entier</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style/MiseEnPage">
+        <title>Recherche | Contact Entier</title>
+    </head>
 
-<style>
-    .TOP {
-        height: 60px;
-    }
+    <style>
+        html{
+            background-color: #545454;
+        }
+        body{
+            background-color: #545454;
+        }
+        .TOP {
+            height: 60px;
+            background-color: #545454;
+        }
 
-    .fiche td {
-        border-bottom: solid black 3px;
-    }
+        #right {
+            font-size: 20px;
+            text-align: center;
+            width: 1200px;
+            background-color: #545454;
+        }
 
-    table {
-        border-radius: 15px;
-        border: 2px solid purple;
-        padding: 5px;
-    }
+        #nav {
+            margin-top: 40px;
+        }
 
-    #right {
-        font-size: 20px;
-        text-align: center;
-        width: 1000px;
+        .fiche{
+            margin-left: 0.4px;
+            margin-right: 0.5px;
+            background-color: #545454;
+        }
+        .indication {
+            margin-top: 90px;
+            color: white;
+            background-color: #545454;
+            font-size: 20px;
+            text-align: center;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-    }
+        .tableau {
+            background-color: #545454;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        /*
+        TABLEAU D'AFFICHAGE
+        */
+        table {
+            border-radius: 15px;
+            /*            border: 2px solid purple;*/
+            padding: 5px;
+            background-color: #545454;
+        }
+        tr{
+            border: solid #000 5px;
+            background-color: #545454;
+        }
+        td{
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-right: 20px;
+            font-size: 30px;
+            background-color: #545454;
+        }
+        .footer {
+            margin-top: -16px;
+        }
+        .corp {
+            margin-top: -14px;
+        }
+    </style>
 
-    #nav {
-        margin-top: 40px;
-    }
-
-    #indication {
-        margin-top: 90px;
-        color: white;
-        background-color: black;
-        font-size: 20px;
-        text-align: center;
-        width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .tableau {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-</style>
-
-<body>
-    <div class="header">
-        <?php echo view('template/header.php') ?>
-    </div>
-    <div class="fiche">
-        <div class="TOP">
-            <nav id="nav" class="navbar navbar-dark bg-dark fixed-top">
-                <div class="container-fluid">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </nav>
+    <body>
+        <div class="header">
+            <?php echo view('template/header.php') ?>
         </div>
-        <!-- AFFICHAGE DE TOUT LES CONTACTS
-        NOM + PRENOM + NUMERO DE TELEPHONE + MAIL  -->
-        <br><br>
-        <table id="right" class="tableau" cellpadding="2" cellspacing="1" size="10px">
-            <p>
-                <tr id="indication" class="fixed-top">
-                    <td>Nom |</td>
-                    <td>Prénom |</td>
-                    <td>Numéro de téléphone |</td>
-                    <td>mail |</td>
-                </tr>
+        <div class="fiche">
+            <div class="TOP">
+                <nav id="nav" class="navbar navbar bg-dark fixed-top">
+                    <div class="container-fluid">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <!-- AFFICHAGE DE TOUT LES CONTACTS
+            NOM + PRENOM + NUMERO DE TELEPHONE + MAIL + organisation  -->
+            <br><br>
+            <div class="corp justify-content-center">
                 <?php if (!empty($contacts) && is_array($contacts)) : ?>
-                    <?php foreach ($contacts as $contact) : ?>
-                        <tr>
-                            <!--MISE EN PLACE DE LA RECHERCHE DES INFORMATIONS-->
-                            <td>Nom : <?php echo ($contact['Nom_Contact']) ?></td>
-                            <td>Prénom : <?php echo ($contact['Prenom_Contact']) ?></td>
-                            <td>Numéro de téléphone : <?php echo ($contact['numeroTel_Contact']) ?></td>
-                            <td>mail : <?php echo ($contact['mail_Contact']) ?></td>
-                        </tr>
-                        <tr>
-                            <!--MISE EN PLACE DE LA RECHERCHE DES INFORMATIONS-->
-                            <td>Nom : <?php echo ($contact['Nom_Contact']) ?></td>
-                            <td>Prénom : <?php echo ($contact['Prenom_Contact']) ?></td>
-                            <td>Numéro de téléphone : <?php echo ($contact['numeroTel_Contact']) ?></td>
-                            <td>mail : <?php echo ($contact['mail_Contact']) ?></td>
-                        </tr>
-                        <tr>
-                            <!--MISE EN PLACE DE LA RECHERCHE DES INFORMATIONS-->
-                            <td>Nom : <?php echo ($contact['Nom_Contact']) ?></td>
-                            <td>Prénom : <?php echo ($contact['Prenom_Contact']) ?></td>
-                            <td>Numéro de téléphone : <?php echo ($contact['numeroTel_Contact']) ?></td>
-                            <td>mail : <?php echo ($contact['mail_Contact']) ?></td>
-                        </tr>
-                        
-                    <?php endforeach; ?>
-                <?php endif ?>
-            </p>
-        </table>
-
-        <div class="bas">
+                    <table class="table table-dark table-borderless table-sm">
+                        <thead class="">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Nom</th>
+                                <th scope="col">Prénom</th>
+                                <th scope="col">Numéro de téléphone</th>
+                                <th scope="col">mail</th>
+                                <th scope="col">Organisation</th>
+                            </tr>
+                        </thead>
+                        <?php foreach ($contacts as $contact) : ?>
+                            <!--PROBLEME DE DUPLICATION DES RESULTAT !!-->
+                            <!--A CAUSE DU DOUBLE FOREACH -->
+                            <?php foreach ($organisations as $organisation) : ?>
+                                <tr class='border border-danger'>
+                                    <!--MISE EN PLACE DE LA RECHERCHE DES INFORMATIONS-->
+                                    <td><?php echo ($contact['ID_Contact']) ?></td>
+                                    <td><?php echo ($contact['Nom_Contact']) ?></td>
+                                    <td><?php echo ($contact['Prenom_Contact']) ?></td>
+                                    <td><?php echo ($contact['numeroTel_Contact']) ?></td>
+                                    <td><?php echo ($contact['mail_Contact']) ?></td>
+                                    <td><?php echo ($organisation['Nom_Organisation']) ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        <?php endforeach; ?>
+                    <?php endif ?>
+                </table>
+            </div>
+            <div class="bas">
+            </div>
         </div>
-    </div>
-</body>
-<footer>
-    <?php echo view('template/footer.php') ?>
-</footer>
+    </body>
+    <footer>
+        <?php echo view('template/footer.php') ?>
+    </footer>
 
 </html>

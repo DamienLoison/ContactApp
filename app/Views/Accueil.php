@@ -30,17 +30,22 @@
         </div>
         <div class="Accueil">
             <h4>se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
-            <div class="DernierAjout">
-                <div>
+            <div class="Corp">
+                <p>
+                <h2>TRAVAIL EN COUR ...</h2>
+                </p>
+                <div class="DernierAjout">
+                    <div>
 
+                    </div>
                 </div>
+
+                <div class="DerniereRecherche">
+                    <div>
+
+                    </div>
+                </div>       
             </div>
-
-            <div class="DerniereRecherche">
-                <div>
-
-                </div>
-            </div>       
         </div>
         <div class="footer">
             <?php echo view('template/footer.php') ?>

@@ -32,9 +32,9 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-//AccueilController route
-$routes->get('/', 'AccueilController::index');
-$routes->get('/', 'AccueilController::note_patch');
+//Accueil route
+$routes->get('/', 'Accueil::index');
+$routes->get('/', 'Accueil::note_patch');
 //Recherche route
 $routes->get('/', 'Recherche::index');
 //Recherche route -> CONTACT
@@ -49,8 +49,12 @@ $routes->get('/', 'Recherche::recherche_de_login');
 $routes->get('/', 'Recherche::tout_les_login');
 
 //Autres route
-$routes->get('/', 'FormController::create');
-$routes->post('/', 'FormController::formValidation');
+
+
+$routes->get('/', 'Supprimer::supprimer_contact');
+$routes->get('/', 'Supprimer::supprimer_organisation');
+$routes->get('/', 'Supprimer::supprimer_login');
+
 
 /*
  * --------------------------------------------------------------------

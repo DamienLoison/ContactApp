@@ -18,7 +18,7 @@
             <?php echo view('template/header.php') ?>
         </div>
         <div>
-            
+
         </div>
         <?php
         // put your code here

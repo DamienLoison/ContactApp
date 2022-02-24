@@ -38,7 +38,6 @@ class Recherche extends Controller {
     public function tout_les_contacts() {
         $model = new ContactModel();
         $model1 = new OrganisationModel();
-        // $model2 = new LoginModel();
         $data = [
             'contacts' => $model->getContact(),
             'organisations' => $model1->getOrganisation(),

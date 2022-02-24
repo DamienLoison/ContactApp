@@ -12,7 +12,7 @@ use App\Models\LoginModel;
  *
  * @author utilisateur
  */
-class Supprimer extends Controllers {
+class Supprimer extends Controller {
 
     public $ContactModel;
     public $OrganisationModel;

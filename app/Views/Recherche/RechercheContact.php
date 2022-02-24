@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr-Fr">
 
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style/MiseEnPage">
-    <title>Recherche | Contact</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style/MiseEnPage">
+        <title>Recherche | Contact</title>
+    </head>
 
-<style>
-    .nav {
-        height: 40px;
-    }
+    <style>
+        .nav {
+            height: 40px;
+        }
 
-    .footer {
-        height: 75px;
-    }
+        .footer {
+            height: 75px;
+        }
 
-    #barre_de_recherche {
-        height: 40px;
-        margin-top: 40px;
-        background-color: grey;
-        color: white;
-    }
-</style>
+        #barre_de_recherche {
+            height: 40px;
+            margin-top: 40px;
+            background-color: grey;
+            color: white;
+        }
+    </style>
 
-<body>
-    <div class="nav">
-        <?php echo view('template/header.php ') ?>
-    </div>
+    <body>
+        <div class="nav">
+            <?php echo view('template/header.php ') ?>
+        </div>
 
-    <div class="RechercheContact">
-        <br>
-        <p>
-        <table class="tableau" cellpadding="2" cellspacing="1" size="10px">
+        <div class="RechercheContact">
+            <br>
             <p>
+            <table class="tableau" cellpadding="2" cellspacing="1" size="10px">
+                <p>
                 <tr id="barre_de_recherche" class="fixed-top">
                     <td>Rechercher contact via son Nom</td>
                     <td></td>
@@ -60,25 +60,25 @@
                     </td>
                 </tr>
                 <!-- --------------------------------------------------------- -->
-            <p>
-                <strong style="color: red;">à revoir !</strong>
-            </p>
-            <!-- --------------------------------------------------------- -->
-            <!-- AFFICHER LE RESULTAT DE LA RECHERCHE -->
-            <?php if (!empty($all) && is_array($all)) : ?>
-                <?php foreach ($all as $contact) : ?>
-                    <tr>
-                        <!--MISE EN PLACE DE LA RECHERCHE DES INFORMATIONS-->
-                        <td>ID : <?php echo ($contact['ID_Contact']) ?></td>
-                        <td>Nom : <?php echo ($contact['Nom_Contact']) ?></td>
-                        <td>Prénom : <?php echo ($contact['Prenom_Contact']) ?></td>
-                        <td>Numéro de téléphone : <?php echo ($contact['numeroTel_Contact']) ?></td>
-                        <td>mail : <?php echo ($contact['mail_Contact']) ?></td>
-                    </tr>
-                <?php endforeach; ?>
-            <?php endif ?>
-            </p>
-        </table>
+                <p>
+                    <strong style="color: red;">à revoir !</strong>
+                </p>
+                <!-- --------------------------------------------------------- -->
+                <!-- AFFICHER LE RESULTAT DE LA RECHERCHE -->
+                <?php if (!empty($all) && is_array($all)) : ?>
+                    <?php foreach ($all as $contact) : ?>
+                        <tr>
+                            <!--MISE EN PLACE DE LA RECHERCHE DES INFORMATIONS-->
+                            <td>ID : <?php echo ($contact['ID_Contact']) ?></td>
+                            <td>Nom : <?php echo ($contact['Nom_Contact']) ?></td>
+                            <td>Prénom : <?php echo ($contact['Prenom_Contact']) ?></td>
+                            <td>Numéro de téléphone : <?php echo ($contact['numeroTel_Contact']) ?></td>
+                            <td>mail : <?php echo ($contact['mail_Contact']) ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php endif ?>
+                </p>
+            </table>
         </p>
         <br>
     </div>
