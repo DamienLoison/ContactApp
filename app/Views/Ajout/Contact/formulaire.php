@@ -20,8 +20,9 @@
         <div class="container mt-3">
             <div class="row">
                 <div class="col-sm-4 offset-4 my-3">
+                    <a href="formulaire.php"></a>
                     <h2>Ajouter un contact</h2>
-                    <form action="<?php echo site_url('Ajouter/ajouter_contacter_record');?>" method="POST">
+                    <form action="<?php echo site_url('Ajouter/ajouter_contacter_record'); ?>" method="POST">
                         <div class="mb-3 mt-3">
                             <label>Nom du contact :</label>
                             <input type="text" class="form-control" id="nomContact" placeholder="Entrer le nom" name="Nom_Contact" required>
@@ -39,10 +40,19 @@
                             <input type="text" class="form-control" id="mailContact" placeholder="Entrer le mail" name="mail_Contact" required>
                         </div>
                         <div class="mb-3">
-                            <label>ID de l'organisation :</label>
-                            <input type="text" class="form-control" id="ID_Organisation" placeholder="Entrer l'ID de l'organisation" name="ID_Organisation" required>
+                            <label>Nom de l'organisation :</label>
+                            <input type="text" class="form-control" id="Nom_Organisation_Contact" placeholder="Entrer le nom de l'organisation" name="Nom_Organisation_Contact" required>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block btn-lg">Submit</button>
+                        <div class="mb-3">
+                            <datalist>
+                                <?php foreach ($organisations as $organisation):?>
+                                <option><?php echo ($organisation['Nom_Organisation'])?></option>
+                                <?php endforeach ?>
+                            </datalist>
+                            <label>ID de l'organisation :</label>
+                            <input type="text" class="form-control" id="Nom_Organisation_Contact" placeholder="Entrer le nom de l'organisation" name="Nom_Organisation_Contact" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">Valider</button>
                     </form>
                 </div>
             </div>

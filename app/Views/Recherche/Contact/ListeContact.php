@@ -4,16 +4,10 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style/MiseEnPage">
-        <title>Recherche | Contact Entier</title>
+        <title>Recherche | Liste Contact</title>
     </head>
 
     <style>
-        html{
-            background-color: #545454;
-        }
-        body{
-            background-color: #545454;
-        }
         .TOP {
             height: 60px;
             background-color: #545454;
@@ -57,7 +51,6 @@
         */
         table {
             border-radius: 15px;
-            /*            border: 2px solid purple;*/
             padding: 5px;
             background-color: #545454;
         }
@@ -88,10 +81,10 @@
             <div class="TOP">
                 <nav id="nav" class="navbar navbar bg-dark fixed-top">
                     <div class="container-fluid">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                        <!--                        <form class="d-flex">
+                                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                                </form>-->
                     </div>
                 </nav>
             </div>
@@ -109,22 +102,31 @@
                                 <th scope="col">Numéro de téléphone</th>
                                 <th scope="col">mail</th>
                                 <th scope="col">Organisation</th>
+                                <th scope="col">Modifier</th>
+                                <th scope="col">Supprimer</th>
                             </tr>
                         </thead>
                         <?php foreach ($contacts as $contact) : ?>
-                            <!--PROBLEME DE DUPLICATION DES RESULTAT !!-->
-                            <!--A CAUSE DU DOUBLE FOREACH -->
-                            <?php foreach ($organisations as $organisation) : ?>
-                                <tr class='border border-danger'>
-                                    <!--MISE EN PLACE DE LA RECHERCHE DES INFORMATIONS-->
-                                    <td><?php echo ($contact['ID_Contact']) ?></td>
-                                    <td><?php echo ($contact['Nom_Contact']) ?></td>
-                                    <td><?php echo ($contact['Prenom_Contact']) ?></td>
-                                    <td><?php echo ($contact['numeroTel_Contact']) ?></td>
-                                    <td><?php echo ($contact['mail_Contact']) ?></td>
-                                    <td><?php echo ($organisation['Nom_Organisation']) ?></td>
-                                </tr>
-                            <?php endforeach; ?>
+                            <tr class='border border-danger'>
+                                <!--MISE EN PLACE DE LA RECHERCHE DES INFORMATIONS-->
+                                <td><?php echo ($contact['ID_Contact']) ?></td>
+                                <td><?php echo ($contact['Nom_Contact']) ?></td>
+                                <td><?php echo ($contact['Prenom_Contact']) ?></td>
+                                <td><?php echo ($contact['numeroTel_Contact']) ?></td>
+                                <td><?php echo ($contact['mail_Contact']) ?></td>
+                                <td><?php echo ($contact['Nom_Organisation_Contact']) ?></td>
+                                <td>
+                                    <form name="Modifier" action="<?php echo Base_url(); ?>/Modifier/modifier_contact" method="POST">
+                                        <button type="submit" class="btn btn-outline-warning" value="">Modifier</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <form name="Supprimer" action="<?php echo Base_url(); ?>/Supprimer/supprimer_contact" method="POST">
+                                        <button type="submit" class="btn btn-outline-primary" value="">Supprimer</button>
+                                    </form>
+                                </td>
+                            </tr>
+                            <?php // endforeach; ?>
                         <?php endforeach; ?>
                     <?php endif ?>
                 </table>
@@ -136,5 +138,4 @@
     <footer>
         <?php echo view('template/footer.php') ?>
     </footer>
-
 </html>

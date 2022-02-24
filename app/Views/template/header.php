@@ -28,7 +28,7 @@
             <a class="nav-link" href="/Recherche/index">Recherche</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link disabled" href="aide_contact">Aide [DESACTIVER MOMENTANEMENT]</a>
+            <a class="nav-link disabled" href="/Accueil/aide">Aide [DESACTIVER MOMENTANEMENT]</a>
         </li>
         <li class="nav-item">
             <a class="nav-link " href="/Accueil/architecture_site" tabindex="-1">Ensembles des pages</a>
@@ -36,20 +36,8 @@
         <li class="nav-item">
             <a class="nav-link " href="/Accueil/note_patch" tabindex="-1">Note de patch</a>
         </li>
-        <!--        <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Ajouter</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="Ajouter/ajouter_contact">Contact</a></li>
-                        <li><a class="dropdown-item" href="Ajouter/ajouter_organisation">Organisation</a></li>
-                        <li><a class="dropdown-item" href="Ajouter/ajouter_login">Login</a></li>
-                    </ul>
-                </li>-->
-
-        <!--        <li class="nav-item">
-                    <a class="nav-link " href="/Ajouter/ajouter_accueil" tabindex="-1">Ajouter [Version : B:1.0.4]</a>
-                </li>-->
         <li class="nav-item ms-auto">
-            Beta version : B:1.0.6
+            Beta version : B:1.0.7
         </li>
     </ul>
 </html>

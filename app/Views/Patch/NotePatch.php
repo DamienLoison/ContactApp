@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr-Fr">
-
     <head>
         <meta charset="utf-8">
         <title>Note patch</title>
     </head>
-
     <style>
         .footer {
             height: 75px;
@@ -22,12 +20,11 @@
 
         .Todo {
             border-top: solid black 5px;
-            background-color: lightgreen;
             border-bottom: solid black 5px;
             margin-top: -20px;
+            margin-bottom: -22px;
         }
     </style>
-
     <body>
         <div class="nav">
             <?php echo view('template/header.php') ?>
@@ -36,13 +33,76 @@
         <div class="notePatch">
             <p>
             <div class="Todo">
-                <h3>Todo : </h3>
-                <!-- TRES IMPORTANT -->
-                <br>-FAIRE ACCUEIL (+++)
-                <br>-Faire les liasons à la base de donnée (++)
-                <br>-Mise en place des moyens de recherche par ID (++)
-                <!-- MOIN IMPORTANT -->
-                <br>-Mise à jour du footer(-)
+                <table class="table table-dark table-borderless table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">IMPORTANCE</th>
+                            <th scope="col">TACHE</th>
+                        </tr>
+                    </thead>
+                    <tr class="border border-danger">
+                        <td>
+                            +++
+                        </td>
+                        <td>
+                            FAIRE ACCUEIL
+                        </td>
+                    <tr class="border border-danger">
+                        <td>
+                            +++
+                        </td>
+                        <td>
+                            ajouté le nom de l'organisation à l'ajout de contact via une liste
+                        </td>
+                    </tr>
+                    <tr class="border border-danger">
+                        <td>
+                            +++
+                        </td>
+                        <td>
+                            Vérifier le fonctionnement des suppressions
+                        </td>
+                    </tr>
+                    <tr class="border border-danger">
+                        <td>
+                            ++
+                        </td>
+                        <td>
+                            Faire les liasons à la base de donnée
+                        </td>
+                    </tr>
+                    <tr class="border border-danger">
+                        <td>
+                            ++
+                        </td>
+                        <td>
+                            Mise en place des moyens de recherche par ID
+                        </td>
+                    </tr>
+                    <tr class="border border-danger">
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            Mise à jour du footer
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="Modification">
+                <h1>Version B:1.0.7</h1>
+                <h2>Modification :</h2>
+                <br><h3>Ajout</h3>
+                <br>-Ajout du nom des organisations à la table contact
+                <br>-Affichage du nom des organisations dans l'affichage de la liste des contats
+                <br> <!-- -------------------------------------- -->
+                <br><h3>Visuel</h3>
+                <br>-modification NotePatch
+                <br> <!-- -------------------------------------- -->
+                <br><h3>Correction/Optimisation</h3>
+                <br>-Apparition bouton modifier/supprimer
+
+                <br>-correction mineure
             </div>
             <div class="Modification">
                 <h1>Version B:1.0.6</h1>

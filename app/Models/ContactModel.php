@@ -11,7 +11,7 @@ class ContactModel extends Model {
     protected $table = 'contact';
     protected $primaryKey = 'ID_Contact';
     protected $useAutoIncrement = true;
-    protected $allowedFields = ['Nom_Contact', 'Prenom_Contact', 'numeroTel_Contact', 'mail_Contact', 'ID_Organisation'];
+    protected $allowedFields = ['Nom_Contact', 'Prenom_Contact', 'numeroTel_Contact', 'mail_Contact', 'ID_Organisation', 'Nom_Organisation_Contact'];
     //Variable
     protected $db;
     protected $id;

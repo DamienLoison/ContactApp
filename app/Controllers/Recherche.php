@@ -24,9 +24,7 @@ class Recherche extends Controller {
     }
 
     public function aide_contact() {
-        echo view('template/header');
         echo view('Recherche/information');
-        echo view('template/footer');
     }
 
     /*
@@ -42,7 +40,7 @@ class Recherche extends Controller {
             'contacts' => $model->getContact(),
             'organisations' => $model1->getOrganisation(),
         ];
-        echo view('Recherche/AfficheContactEntier', $data);
+        echo view('Recherche/Contact/ListeContact', $data);
     }
 
     public function recherche_contact() {
@@ -105,7 +103,7 @@ class Recherche extends Controller {
         $data = [
             'organisations' => $model->getOrganisation()
         ];
-        echo view('organisation/ListeOrganisation', $data);
+        echo view('Recherche/Organisation/ListeOrganisation', $data);
     }
 
     public function recherche_organisation() {
@@ -122,20 +120,20 @@ class Recherche extends Controller {
      *
      */
 
+    public function tout_les_login() {
+        $model = new LoginModel();
+        $data = [
+            'logins' => $model->getLogin(),
+        ];
+        echo view('Recherche/Login/ListeLogin', $data);
+    }
+
     public function recherche_de_login() {
         $model = new LoginModel();
         $data = [
             'logins' => $model->getLogin(),
         ];
         echo view('login/RechercheLogin', $data);
-    }
-
-    public function tout_les_login() {
-        $model = new LoginModel();
-        $data = [
-            'logins' => $model->getLogin(),
-        ];
-        echo view('login/ListeLogin', $data);
     }
 
     /* --------------------------------------------------------
