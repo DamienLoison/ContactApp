@@ -35,13 +35,21 @@ class Ajouter extends Controller {
      * --------------------------------| */
 
     public function ajouter_contacter() {
-        echo view("Ajout/Contact/formulaire");
+        $model = new OrganisationModel();
+        $data = [
+            'organisations' => $model->getOrganisation()
+        ];
+        echo view("Ajout/Contact/formulaire", $data);
     }
 
     public function ajouter_contact_record() {
+        $model = new OrganisationModel();
+        $data = [
+            'organisations' => $model->getOrganisation()
+        ];
         $ContactModel = new ContactModel();
         $ContactModel->insert($_POST);
-        echo view("Ajout/Contact/formulaire");
+        echo view("Ajout/Contact/formulaire", $data);
     }
 
     /* --------------------------------|
@@ -51,7 +59,11 @@ class Ajouter extends Controller {
      * --------------------------------| */
 
     public function ajouter_organisation() {
-        echo view("Ajout/Organisation/form");
+        $model = new OrganisationModel();
+        $data = [
+            'organisations' => $model->getOrganisation()
+        ];
+        echo view("Ajout/Organisation/form", $data);
     }
 
     public function ajouter_organisation_record() {

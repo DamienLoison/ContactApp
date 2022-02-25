@@ -13,14 +13,6 @@
             background-color: black;
             font-size: 20px;
         }
-        body td {
-            /* padding-left: 20px;
-            padding-top: 20px;
-            padding-right: 20px;
-            font-size: 20px;
-            border: solid black;*/
-            border-bottom: solid black 3px;
-        }
         .footer {
             margin-top: -16px;
         }
@@ -43,7 +35,7 @@
                             <th scope="col">Téléphone</th>
                             <th scope="col">Modifier</th>
                             <th scope="col">Supprimer</th>
-                            <!--<th scope="col">TEST</th>-->
+                            <th scope="col"><a href="/Ajouter/Ajouter_Organisation">Ajouter Organisation</a></th>
                         </tr>
                     </thead>
                     <?php foreach ($organisations as $organisation) : ?>
@@ -62,8 +54,11 @@
                             </td>
                             <td>
                                 <form name="Supprimer" action="<?php echo Base_url(); ?>/Supprimer/supprimer_organisation" method="POST">
-                                    <button type="submit" class="btn btn-outline-primary" value="">Supprimer</button>
+                                    <button type="submit" class="btn btn-outline-dark" value="">&#10060;</button>
                                 </form>
+                            </td>
+                            <td>
+                                <!-- LAISSER VIDE !!!-->
                             </td>
                         </tr>
                     <?php endforeach; ?>

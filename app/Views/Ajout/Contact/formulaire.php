@@ -12,6 +12,9 @@
             margin-top: 70px;
             height: 500px;
         }
+        .Add_Organisation{
+
+        }
     </style>
     <body>
         <div class="nav">
@@ -22,7 +25,7 @@
                 <div class="col-sm-4 offset-4 my-3">
                     <a href="formulaire.php"></a>
                     <h2>Ajouter un contact</h2>
-                    <form action="<?php echo site_url('Ajouter/ajouter_contacter_record'); ?>" method="POST">
+                    <form action="<?php echo site_url('Ajouter/ajouter_contact_record'); ?>" method="POST">
                         <div class="mb-3 mt-3">
                             <label>Nom du contact :</label>
                             <input type="text" class="form-control" id="nomContact" placeholder="Entrer le nom" name="Nom_Contact" required>
@@ -40,20 +43,24 @@
                             <input type="text" class="form-control" id="mailContact" placeholder="Entrer le mail" name="mail_Contact" required>
                         </div>
                         <div class="mb-3">
-                            <label>Nom de l'organisation :</label>
-                            <input type="text" class="form-control" id="Nom_Organisation_Contact" placeholder="Entrer le nom de l'organisation" name="Nom_Organisation_Contact" required>
+                            <!--CHOIX DE L'ID ET DU NOM DE L'ORGANISATION !-->
+                            <label>Organisation :</label>
+                            <select name="ID_Organisation">
+                                <?php if (!empty($organisations) && is_array($organisations)) : ?>
+                                    <?php foreach ($organisations as $organisation): ?>
+                                        <option>
+                                            <?php echo ($organisation['ID_Organisation']) ?>
+                                            <?php echo ($organisation['Nom_Organisation']) ?>
+                                        </option>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </select>
                         </div>
-                        <div class="mb-3">
-                            <datalist>
-                                <?php foreach ($organisations as $organisation):?>
-                                <option><?php echo ($organisation['Nom_Organisation'])?></option>
-                                <?php endforeach ?>
-                            </datalist>
-                            <label>ID de l'organisation :</label>
-                            <input type="text" class="form-control" id="Nom_Organisation_Contact" placeholder="Entrer le nom de l'organisation" name="Nom_Organisation_Contact" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block btn-lg">Valider</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg float-start">Valider</button>
                     </form>
+                    <form action="<?php echo site_url('Ajouter/ajouter_organisation'); ?>" method="POST">
+                        <button type="submit" class="Add_Organisation btn btn-primary btn-block btn-lg float-end">Ajouter une organisation</button>
+                    </form>         
                 </div>
             </div>
         </div>

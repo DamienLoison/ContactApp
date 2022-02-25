@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr-Fr">
-
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style/MiseEnPage">
         <title>Recherche | Liste Contact</title>
     </head>
-
     <style>
         .TOP {
             height: 60px;
             background-color: #545454;
         }
-
         #right {
             font-size: 20px;
             text-align: center;
             width: 1200px;
             background-color: #545454;
         }
-
         #nav {
             margin-top: 40px;
         }
-
         .fiche{
             margin-left: 0.4px;
             margin-right: 0.5px;
@@ -39,7 +34,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-
         .tableau {
             background-color: #545454;
             margin-left: auto;
@@ -54,15 +48,11 @@
             padding: 5px;
             background-color: #545454;
         }
-        tr{
-            border: solid #000 5px;
-            background-color: #545454;
-        }
         td{
             padding-left: 20px;
             padding-top: 20px;
             padding-right: 20px;
-            font-size: 30px;
+            font-size: 24px;
             background-color: #545454;
         }
         .footer {
@@ -72,7 +62,6 @@
             margin-top: -14px;
         }
     </style>
-
     <body>
         <div class="header">
             <?php echo view('template/header.php') ?>
@@ -88,9 +77,6 @@
                     </div>
                 </nav>
             </div>
-            <!-- AFFICHAGE DE TOUT LES CONTACTS
-            NOM + PRENOM + NUMERO DE TELEPHONE + MAIL + organisation  -->
-            <br><br>
             <div class="corp justify-content-center">
                 <?php if (!empty($contacts) && is_array($contacts)) : ?>
                     <table class="table table-dark table-borderless table-sm">
@@ -104,6 +90,7 @@
                                 <th scope="col">Organisation</th>
                                 <th scope="col">Modifier</th>
                                 <th scope="col">Supprimer</th>
+                                <th scope="col"><a href="/Ajouter/Ajouter_Contacter">Ajouter Contact</a></th>
                             </tr>
                         </thead>
                         <?php foreach ($contacts as $contact) : ?>
@@ -122,11 +109,13 @@
                                 </td>
                                 <td>
                                     <form name="Supprimer" action="<?php echo Base_url(); ?>/Supprimer/supprimer_contact" method="POST">
-                                        <button type="submit" class="btn btn-outline-primary" value="">Supprimer</button>
+                                        <button type="submit" class="btn btn-outline-dark" value="">&#10060;</button>
                                     </form>
                                 </td>
+                                <td>
+                                    <!--LAISSER VIDE !!!-->
+                                </td>
                             </tr>
-                            <?php // endforeach; ?>
                         <?php endforeach; ?>
                     <?php endif ?>
                 </table>

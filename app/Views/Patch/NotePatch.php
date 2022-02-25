@@ -5,33 +5,31 @@
         <title>Note patch</title>
     </head>
     <style>
-        .footer {
-            height: 75px;
-        }
-
         h1 {
             background-color: tomato;
         }
-
         .Modification {
             border-top: solid black 5px;
             background-color: darkcyan;
         }
-
         .Todo {
             border-top: solid black 5px;
             border-bottom: solid black 5px;
             margin-top: -20px;
             margin-bottom: -22px;
         }
+        .BUG{
+            color: #d00;
+        }
+        .notePatch{
+            margin-top: 12px;
+        }
     </style>
     <body>
         <div class="nav">
             <?php echo view('template/header.php') ?>
         </div>
-
         <div class="notePatch">
-            <p>
             <div class="Todo">
                 <table class="table table-dark table-borderless table-sm">
                     <thead>
@@ -47,14 +45,6 @@
                         <td>
                             FAIRE ACCUEIL
                         </td>
-                    <tr class="border border-danger">
-                        <td>
-                            +++
-                        </td>
-                        <td>
-                            ajouté le nom de l'organisation à l'ajout de contact via une liste
-                        </td>
-                    </tr>
                     <tr class="border border-danger">
                         <td>
                             +++
@@ -90,6 +80,27 @@
                 </table>
             </div>
             <div class="Modification">
+                <h1>Version B:1.0.8</h1>
+                <h2>Modification :</h2>
+                <div class="BUG">
+                    <!--                    <h3>BUG :</h3>
+                                        <br>-Erreur à l'ajout de contact !-->
+                    <br> <!-- -------------------------------------- -->
+                </div>
+                <br><h3>Ajout</h3>
+                <br>-Ajout d'un lien sur le mot ajouter dans Recherche
+                <br>-Ajout d'une liste de sélection pour choisir l'organisation dans l'ajout de Contact
+                <br> <!-- -------------------------------------- -->
+                <br><h3>Visuel</h3>
+                <br>-Changement apparence bouton supprimer(recheche)
+                <br> <!-- -------------------------------------- -->
+                <br><h3>Correction/Optimisation</h3>
+                <br>-Correction lien erroné
+                <br>-Diminution de la taille de police de la page avec la liste des contacts
+                <br>-Correction mineure
+                <br> <!-- -------------------------------------- -->
+            </div>
+            <div class="Modification">
                 <h1>Version B:1.0.7</h1>
                 <h2>Modification :</h2>
                 <br><h3>Ajout</h3>
@@ -101,7 +112,6 @@
                 <br> <!-- -------------------------------------- -->
                 <br><h3>Correction/Optimisation</h3>
                 <br>-Apparition bouton modifier/supprimer
-
                 <br>-correction mineure
             </div>
             <div class="Modification">
@@ -184,12 +194,9 @@
                 <br>-Optimisation des routes
                 <br>-Correction mineure
             </div>
-        </p>
-    </div>
-
-    <div class="footer">
-        <?php echo view('template/footer.php') ?>
-    </div>
-</body>
-
+        </div>
+        <div class="footer">
+            <?php echo view('template/footer.php') ?>
+        </div>
+    </body>
 </html>

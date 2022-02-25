@@ -65,6 +65,11 @@
                                     <button type="submit" class="btn btn-outline-primary" value="">Supprimer</button>
                                 </form>
                             </td>
+                            <td>
+                                <form name="Ajouter" action="<?php echo Base_url(); ?>/Ajouter/ajouter_organisation" method="POST">
+                                    <button type="submit" class="btn btn-outline-primary" value="">Ajouter</button>
+                                </form>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 <?php endif ?>
