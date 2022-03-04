@@ -31,7 +31,6 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
 //Accueil route
 $routes->get('/', 'Accueil::index');
 $routes->get('/', 'Accueil::note_patch');
@@ -51,10 +50,6 @@ $routes->get('/', 'Recherche::tout_les_login');
 //Autres route
 
 $routes->get('/', 'Recherche::delete_contact');
-
-$routes->get('/', 'Supprimer::supprimer_contact');
-$routes->get('/', 'Supprimer::supprimer_organisation');
-$routes->get('/', 'Supprimer::supprimer_login');
 
 
 /*

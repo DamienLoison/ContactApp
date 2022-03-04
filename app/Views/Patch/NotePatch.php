@@ -64,6 +64,15 @@
                 </table>
             </div>  
             <div class="Modification">
+                <h1>Version B:1.0.11</h1>
+                <!-- -------------------------------------- -->
+                <h2>Modification :</h2>
+                <br><h3>Ajout</h3>
+                <!-- -------------------------------------- -->
+                <br><h3>Correction/Optimisation</h3>
+                <br>
+            </div>  
+            <div class="Modification">
                 <h1>Version B:1.0.10</h1>
                 <!-- -------------------------------------- -->
                 <h2>Modification :</h2>
