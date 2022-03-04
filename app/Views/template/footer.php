@@ -11,11 +11,7 @@
 </style>
 <footer>
     <div class="footer">
-        <!-- ---------------TEST RAPIDITE---------------
-        Page créer en {elapsed_time} secondes 
----------------TEST RAPIDITE--------------- -->
         <br>
-        2022-footer<br>
         <a href="https://github.com/DamienLoison/ContactApp">lien Github</a> |
         <a href="https://github.com/DamienLoison/ContactApp/issues">Signaler un Bug</a>
     </div>

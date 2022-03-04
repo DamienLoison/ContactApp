@@ -21,7 +21,10 @@
             <div class="row">
                 <div class="col-sm-4 offset-4 my-3">
                     <a href="formulaire.php"></a>
-                    <h2>Ajouter un contact</h2>
+                    <form action="<?= base_url('Recherche/tout_les_contacts'); ?>" method="POST">
+                        <button type="submit" class="btn btn-danger btn-block btn-lg float-end">Retour</button>
+                    </form>  
+                    <h2>Ajouter un contact</h2>                    
                     <form action="<?php echo site_url('Ajouter/ajouter_contact_record'); ?>" method="POST">
                         <div class="mb-3 mt-3">
                             <label>Nom du contact :</label>
@@ -41,7 +44,6 @@
                         </div>
                         <div class="mb-3">
                             <!--CHOIX DE L'ID ET DU NOM DE L'ORGANISATION !-->
-                            <!--<table>-->
                             <label>Organisation : </label>
                             <select name="ID_Organisation">
                                 <?php if (!empty($organisations) && is_array($organisations)) : ?>
@@ -62,13 +64,12 @@
                                     <?php endforeach; ?>
                                 <?php endif; ?>
                             </select>
-                            <!--</table>-->
                         </div>
                         <button type="submit" class="btn btn-primary btn-block btn-lg float-start">Valider</button>
+                        <form action="<?php echo site_url('Ajouter/ajouter_organisation'); ?>" method="POST">
+                            <button type="submit" class="Add_Organisation btn btn-primary btn-block btn-lg float-end">Ajouter une organisation</button>
+                        </form>    
                     </form>
-                    <form action="<?php echo site_url('Ajouter/ajouter_organisation'); ?>" method="POST">
-                        <button type="submit" class="Add_Organisation btn btn-primary btn-block btn-lg float-end">Ajouter une organisation</button>
-                    </form>         
                 </div>
             </div>
         </div>

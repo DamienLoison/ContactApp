@@ -6,7 +6,6 @@
     </head>
     <style>
         h1 {
-            /*background-color: goldenrod;*/
             background-color: #cdba20;
         }
         .Modification {
@@ -63,7 +62,17 @@
                         </td>
                     </tr>
                 </table>
-            </div>    
+            </div>  
+            <div class="Modification">
+                <h1>Version B:1.0.10</h1>
+                <!-- -------------------------------------- -->
+                <h2>Modification :</h2>
+                <br><h3>Correction/Optimisation</h3>
+                <br>-Suppression lignes de codes inutiles
+                <br>-Suppression dernier fichier inutile
+                <br>-Correction du README
+                <br>-Corrections mineures
+            </div>
             <div class="Modification">
                 <h1>Version B:1.0.9</h1>
                 <!-- -------------------------------------- -->

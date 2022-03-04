@@ -7,7 +7,6 @@ use CodeIgniter\Controller;
 class Accueil extends Controller {
 
     public function index() {
-        // helper(['Accueil', 'url']);
         echo view('Accueil');
     }
 

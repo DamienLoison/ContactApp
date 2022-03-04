@@ -40,22 +40,6 @@
                     <h2>Navigation</h2>
                 </div>
             </div>
-
-            <!--<div class="page-aide">
-                            <div class="container">
-                                <p>
-                                <h4>[Fonctionne sous le modèle MVC]</h4>
-                                |---------------------------------------------<br>
-                                |FrameWork utilisé : <strong>CodeIgniter 4</strong> <br>
-                                |---------------------------------------------<br>
-                                |Accès à la base de donnée via les Models<br>
-                                |Accès aux Models via les controllers<br>
-                                |Accès aux Views via les controllers<br>
-                                |---------------------------------------------<br>
-                                </p>
-                            </div>
-                        </div>-->
-        </div>
     </body>
     <footer>
         <?php echo view('template/footer'); ?>

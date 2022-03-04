@@ -34,7 +34,7 @@
             <a class="nav-link" href="/Accueil/note_patch" tabindex="-1">Note de patch</a>
         </li>
         <li class="nav-item ms-auto">
-            Beta version : B:1.0.9
+            Beta version : B:1.0.10
         </li>
     </ul>
 </html>

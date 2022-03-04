@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr-Fr">
-
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="Style.css" media="all" />
@@ -11,7 +10,6 @@
             height: 75px;
         }
         #right {
-            /* margin-top: 50px; */
             font-size: 20px;
             text-align: center;
             width: 1000px;
@@ -23,7 +21,6 @@
             font-size: 20px;
         }
     </style>
-
     <body>
         <div class="nav">
             <?php echo view('template/header.php') ?>
@@ -51,5 +48,4 @@
             <?php echo view('template/footer.php') ?>
         </div>
     </body>
-
 </html>

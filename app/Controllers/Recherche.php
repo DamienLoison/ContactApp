@@ -6,7 +6,6 @@ use App\Models\ContactModel;
 use App\Models\OrganisationModel;
 use App\Models\LoginModel;
 use CodeIgniter\Controller;
-use CodeIgniter\Model;
 
 class Recherche extends Controller {
 
@@ -17,7 +16,7 @@ class Recherche extends Controller {
 
     public function index() {
         helper(['Contact', 'url']);
-
+        
         echo view('template/header');
         echo view('Recherche/AccueilRecherche');
         echo view('template/footer');
@@ -40,16 +39,6 @@ class Recherche extends Controller {
         ];
         echo view('Recherche/Contact/ListeContact', $data);
     }
-
-//    public function recherche_contact() {
-//        $model = new ContactModel();
-//        $model1 = new OrganisationModel();
-//        $data = [
-//            'contacts' => $model->getContact(),
-//            'organisations' => $model1->getOrganisation()
-//        ];
-//        echo view('Recherche/RechercheContact', $data);
-//    }
 
     public function modifier_contact($ID_Contact = null) {
         $contact = new ContactModel();
@@ -92,14 +81,6 @@ class Recherche extends Controller {
         echo view('Recherche/Organisation/ListeOrganisation', $data);
     }
 
-//    public function recherche_organisation() {
-//        $model = new OrganisationModel();
-//        $data = [
-//            'organisations' => $model->getOrganisation()
-//        ];
-//        echo view('organisation/RechercheOrganisation', $data);
-//    }
-
     public function modifier_organisation($ID_Organisation = null) {
         $organisation = new OrganisationModel();
         $data['organisation'] = $organisation->find($ID_Organisation);
@@ -138,14 +119,6 @@ class Recherche extends Controller {
         ];
         echo view('Recherche/Login/ListeLogin', $data);
     }
-
-//    public function recherche_de_login() {
-//        $model = new LoginModel();
-//        $data = [
-//            'logins' => $model->getLogin(),
-//        ];
-//        echo view('login/RechercheLogin', $data);
-//    }
 
     public function modifier_login($ID_Login = null) {
         $login = new LoginModel();

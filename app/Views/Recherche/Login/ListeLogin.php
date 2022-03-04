@@ -14,8 +14,6 @@
         <div class="nav">
             <?php echo view('template/header.php') ?>
         </div>
-        <!--        <div class="Ajouter d-flex justify-content-center bg-dark">
-                </div>-->
         <div class="bg-dark">
             <?php
             if (session()->getFlashdata('status')) {
@@ -46,7 +44,7 @@
                             <td> <?php echo ($login['Utilisateur_Login']) ?></td>
                             <td> <?php echo ($login['Password_Login']) ?></td>
                             <td>
-                                <form action="<?= Base_url('/Recherche/modifier_login/'.$login['ID_Login']);?>" method="POST">
+                                <form action="<?= Base_url('/Recherche/modifier_login/' . $login['ID_Login']); ?>" method="POST">
                                     <input type="hidden" name="_method" value="MODIFIER">
                                     <button type="submit" class="btn btn-outline-warning" value="">Modifier</button>
                                 </form>

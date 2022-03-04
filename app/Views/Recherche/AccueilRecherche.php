@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr-Fr">
-
     <head>
         <meta charset="utf-8">
         <title>Accueil | Recherche</title>
     </head>
-
     <body>
         <style>
             body {
                 height: 500px;
                 position: relative;
             }
-
             .choix {
                 height: 300px;
-                /* margin: 0; */
                 position: center;
                 text-align: center;
                 margin-top: 200px;
@@ -23,20 +19,16 @@
                 margin-right: auto;
                 width: 300px;
             }
-
             .titre {
                 color: blue;
                 font-size: 20px;
             }
-
             .contact {
                 color: blueviolet;
             }
-
             .Organisation {
                 color: tomato;
             }
-
             .Login {
                 color: seagreen;
             }
