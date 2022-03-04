@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr-Fr">
-
     <head>
         <meta charset="UTF-8">
         <title>Aide</title>
+        <?php echo view('template/header'); ?>
     </head>
     <style>
         body{
-            background-color: rgb(84, 84, 84);
+            margin-top: 40px;
         }
         .page-aide {
             margin-top: 35px;
-            /*font-size: 20px;*/
-            background-color: rgb(84, 84, 84);
-            color: wheat;
-        }
-        footer{
-            margin-top: -20px;
         }
     </style>
     <body>
-        <div class="top">
-            <?php echo view('template/header'); ?>
-        </div>
-        <div class="page-aide">
-            <div class="container">
-                <p>
-                <h4>[Fonctionne sous le modèle MVC]</h4>
-                |---------------------------------------------<br>
-                |FrameWork utilisé : <strong>CodeIgniter 4</strong> <br>
-                |---------------------------------------------<br>
-                |Accès à la base de donnée via les Models<br>
-                |Accès aux Models via les controllers<br>
-                |Accès aux Views via les controllers<br>
-                |---------------------------------------------<br>
-                |<br>
-                |---------------------------------------------<br>
-                </p>
+        <div class="Cadre text-dark">
+            <h1>Aide d'utilisation</h1>
+            <div class="Information d-flex justify-content-center">
+                <div class="Info-gauche border border-primary rounded bg-secondary ">                   
+                    <h2>Recherche</h2>
+                    <p>
+                        Pour n'importe quelle recherche, il suffit de cliqué sur <strong>Recherche</strong> depuis la barre de navigation.<br>
+                        Après quoi il suffira de choisir entre <em>Contact, Organisation, Login</em>.
+                    </p>
+                    <h3>Contact</h3>
+                    <p>
+
+                    </p>
+                    <h3>Organisation</h3>
+                    <p>
+                        •
+                    </p>
+                    <h3>Login</h3>
+                    <p>
+                        •
+                    </p>
+                </div>
+                <div class="Info-droite border border-danger rounded bg-secondary">
+                    <h2>Navigation</h2>
+                </div>
             </div>
+
+            <!--<div class="page-aide">
+                            <div class="container">
+                                <p>
+                                <h4>[Fonctionne sous le modèle MVC]</h4>
+                                |---------------------------------------------<br>
+                                |FrameWork utilisé : <strong>CodeIgniter 4</strong> <br>
+                                |---------------------------------------------<br>
+                                |Accès à la base de donnée via les Models<br>
+                                |Accès aux Models via les controllers<br>
+                                |Accès aux Views via les controllers<br>
+                                |---------------------------------------------<br>
+                                </p>
+                            </div>
+                        </div>-->
         </div>
     </body>
     <footer>

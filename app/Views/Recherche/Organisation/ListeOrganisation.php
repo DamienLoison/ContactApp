@@ -23,6 +23,16 @@
             <?php echo view('template/header.php') ?>
         </div>
         <div class="justify-content-center">
+            <?php
+            if (session()->getFlashdata('status')) {
+                ?>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong><?= session()->getFlashdata('status'); ?></strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-laber="Close"></button>
+                </div>
+                <?php
+            }
+            ?>
             <?php if (!empty($organisations) && is_array($organisations)) : ?>
                 <table class="table table-dark table-borderless table-sm">
                     <thead class="">
@@ -47,14 +57,16 @@
                             <td> <?php echo ($organisation['Mail_Organisation']) ?></td>
                             <td> <?php echo ($organisation['Site_Organisation']) ?></td>
                             <td> <?php echo ($organisation['Telephone_Organisation']) ?></td>
-                            <td>
-                                <form name="Modifier" action="<?php echo Base_url(); ?>/Modifier/modifier_organisation" method="POST">
+                            <td>                   
+                                <form name="Modifier" action="<?= Base_url('/Recherche/modifier_organisation/'. $organisation['ID_Organisation']); ?>" method="POST">
+                                    <input type="hidden" name="_method" value="MODIFIER">
                                     <button type="submit" class="btn btn-outline-warning" value="">Modifier</button>
                                 </form>
                             </td>
                             <td>
-                                <form name="Supprimer" action="<?php echo Base_url(); ?>/Supprimer/supprimer_organisation" method="POST">
-                                    <button type="submit" class="btn btn-outline-dark" value="">&#10060;</button>
+                                <form action="<?= base_url('/Recherche/delete_organisation/' . $organisation['ID_Organisation']) ?>" method="POST">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button type="submit" class="btn btn-dark btn-sm">&#10060;</button>
                                 </form>
                             </td>
                             <td>

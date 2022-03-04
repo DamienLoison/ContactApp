@@ -6,11 +6,12 @@
     </head>
     <style>
         h1 {
-            background-color: tomato;
+            /*background-color: goldenrod;*/
+            background-color: #cdba20;
         }
         .Modification {
             border-top: solid black 5px;
-            background-color: darkcyan;
+            background-color: #0092db;
         }
         .Todo {
             border-top: solid black 5px;
@@ -47,22 +48,6 @@
                         </td>
                     <tr class="border border-danger">
                         <td>
-                            +++
-                        </td>
-                        <td>
-                            Vérifier le fonctionnement des suppressions
-                        </td>
-                    </tr>
-                    <tr class="border border-danger">
-                        <td>
-                            ++
-                        </td>
-                        <td>
-                            Faire les liasons à la base de donnée
-                        </td>
-                    </tr>
-                    <tr class="border border-danger">
-                        <td>
                             ++
                         </td>
                         <td>
@@ -78,13 +63,34 @@
                         </td>
                     </tr>
                 </table>
+            </div>    
+            <div class="Modification">
+                <h1>Version B:1.0.9</h1>
+                <!-- -------------------------------------- -->
+                <h2>Modification :</h2>
+                <br><h3>Ajout</h3>
+                <br>-Fichier nécessaire aux modifications
+                <br> <!-- -------------------------------------- -->
+                <br><h3>Visuel</h3>
+                <br>-Changement des couleurs présent dans les note patchs 
+                <br> <!-- -------------------------------------- -->
+                <br><h3>Correction/Optimisation</h3>
+                <br>-Ajout des routes pour optimiser l'application
+                <br>-Correction de plusieurs noms de fichiers
+                <br>-A présent le bouton supprimer fonctionne !
+                <br>-A présent les modifications sont fonctionnels
+                <br>-Nettoyage code
+                <br>-Suppression fichiers inutiles
+                <br>-Modification des modèles
+                <br>-Correction de liens incorrect
+                <br>-Correction du README
+                <br> <!-- -------------------------------------- -->
             </div>
             <div class="Modification">
                 <h1>Version B:1.0.8</h1>
+                <!-- -------------------------------------- -->
                 <h2>Modification :</h2>
                 <div class="BUG">
-                    <!--                    <h3>BUG :</h3>
-                                        <br>-Erreur à l'ajout de contact !-->
                     <br> <!-- -------------------------------------- -->
                 </div>
                 <br><h3>Ajout</h3>
@@ -171,7 +177,7 @@
                 <br> -Correction visuel dans l'affichage de tout les contacts
             </div>
             <div class="Modification">
-                <h1>Version-B:1.0</h1> 
+                <h1>Version B:1.0</h1> 
                 <h2>Modification :</h2>
                 <br><h3>Ajout</h3>
                 <br>-Ajout des méthodes pour la recherche

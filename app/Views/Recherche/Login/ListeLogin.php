@@ -14,9 +14,19 @@
         <div class="nav">
             <?php echo view('template/header.php') ?>
         </div>
-        <div class="Ajouter d-flex justify-content-center bg-dark">
-        </div>
+        <!--        <div class="Ajouter d-flex justify-content-center bg-dark">
+                </div>-->
         <div class="bg-dark">
+            <?php
+            if (session()->getFlashdata('status')) {
+                ?>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong><?= session()->getFlashdata('status'); ?></strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-laber="Close"></button>
+                </div>
+                <?php
+            }
+            ?>
             <?php if (!empty($logins) && is_array($logins)) : ?>
                 <table class="table table-dark table-borderless table-sm">
                     <thead class="">
@@ -26,7 +36,7 @@
                             <th scope="col">Mot de passe</th>
                             <th scope="col">Modifier</th>
                             <th scope="col">Supprimer</th>
-                            <th scope="col"><a href="/Ajouter/Ajouter_Login">Ajouter Login</a></th>
+                            <th scope="col"><a href="/Ajouter/Ajouter_Login">Ajouter</a></th>
                         </tr>
                     </thead>
                     <?php foreach ($logins as $login) : ?>
@@ -36,13 +46,15 @@
                             <td> <?php echo ($login['Utilisateur_Login']) ?></td>
                             <td> <?php echo ($login['Password_Login']) ?></td>
                             <td>
-                                <form name="Modifier" action="<?php echo Base_url(); ?>/Modifier/modifier_login" method="POST">
+                                <form action="<?= Base_url('/Recherche/modifier_login/'.$login['ID_Login']);?>" method="POST">
+                                    <input type="hidden" name="_method" value="MODIFIER">
                                     <button type="submit" class="btn btn-outline-warning" value="">Modifier</button>
                                 </form>
                             </td>
                             <td>
-                                <form name="Supprimer" action="<?php echo Base_url(); ?>/Supprimer/supprimer_login" method="POST">
-                                    <button type="submit" class="btn btn-outline-dark" value="">&#10060;</button>
+                                <form action="<?= base_url('/Recherche/delete_login/' . $login['ID_Login']) ?>" method="POST">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <button type="submit" class="btn btn-dark btn-sm">&#10060;</button>
                                 </form>
                             </td>
                             <td>

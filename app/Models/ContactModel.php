@@ -11,11 +11,7 @@ class ContactModel extends Model {
     protected $table = 'contact';
     protected $primaryKey = 'ID_Contact';
     protected $useAutoIncrement = true;
-    protected $allowedFields = ['Nom_Contact', 'Prenom_Contact', 'numeroTel_Contact', 'mail_Contact', 'ID_Organisation', 'Nom_Organisation_Contact'];
-    //Variable
-    protected $db;
-    protected $id;
-    protected $choix;
+    protected $allowedFields = ['ID_Contact', 'Nom_Contact', 'Prenom_Contact', 'numeroTel_Contact', 'mail_Contact', 'ID_Organisation', 'Nom_Organisation_Contact'];
 
     public function __construct() {
         parent::__construct();
@@ -33,36 +29,36 @@ class ContactModel extends Model {
             return false;
         }
     }
-
-    public function recherche_contact($choix, $recherche) {
-        $builder = $this->db->table('contact');
-        if ($choix == "ID") {
-            $query = "SELECT ID_Contact FROM contact WHERE $recherche";
-        }
-        if ($choix == "NOM") {
-            $query = "SELECT Nom_Contact FROM contact WHERE $recherche";
-        }
-        if ($choix == "PRENOM") {
-            $query = "SELECT Prenom_Contact FROM contact WHERE $recherche";
-        }
-        if ($choix == "MAIL") {
-            $query = "SELECT mail_Contact FROM contact WHERE $recherche";
-        }
-        if ($choix == "TELEPHONE") {
-            $query = "SELECT numTel_Contact FROM contact WHERE $recherche";
-        } else {
-            $query = null;
-        }
-        // $this->assign('ResultatRecherche', $query);
-        // $query1 = $query->get();
-        // $result = $query1->getResult();
-        // $all = $query1->getResult();
-        $all = $query;
-        return $all;
-        // return $query;
-        // $query   = $builder->get();
-    }
-
+ 
+//    }
+//    public function recherche_contact($choix, $recherche) {
+//        $builder = $this->db->table('contact');
+//        if ($choix == "ID") {
+//            $query = "SELECT ID_Contact FROM contact WHERE $recherche";
+//        }
+//        if ($choix == "NOM") {
+//            $query = "SELECT Nom_Contact FROM contact WHERE $recherche";
+//        }
+//        if ($choix == "PRENOM") {
+//            $query = "SELECT Prenom_Contact FROM contact WHERE $recherche";
+//        }
+//        if ($choix == "MAIL") {
+//            $query = "SELECT mail_Contact FROM contact WHERE $recherche";
+//        }
+//        if ($choix == "TELEPHONE") {
+//            $query = "SELECT numTel_Contact FROM contact WHERE $recherche";
+//        } else {
+//            $query = null;
+//        }
+//        // $this->assign('ResultatRecherche', $query);
+//        // $query1 = $query->get();
+//        // $result = $query1->getResult();
+//        // $all = $query1->getResult();
+//        $all = $query;
+//        return $all;
+//        // return $query;
+//        // $query   = $builder->get();
+//    }
     //Affiche l'ensemble des données 
     public function getContact() {
         return $this->findAll();

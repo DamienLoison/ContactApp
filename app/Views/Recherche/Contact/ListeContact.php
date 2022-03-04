@@ -78,6 +78,16 @@
                 </nav>
             </div>
             <div class="corp justify-content-center">
+                <?php
+                if (session()->getFlashdata('status')) {
+                    ?>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong><?= session()->getFlashdata('status'); ?></strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-laber="Close"></button>
+                    </div>
+                    <?php
+                }
+                ?>
                 <?php if (!empty($contacts) && is_array($contacts)) : ?>
                     <table class="table table-dark table-borderless table-sm">
                         <thead class="">
@@ -90,7 +100,7 @@
                                 <th scope="col">Organisation</th>
                                 <th scope="col">Modifier</th>
                                 <th scope="col">Supprimer</th>
-                                <th scope="col"><a href="/Ajouter/Ajouter_Contacter">Ajouter Contact</a></th>
+                                <th scope="col"><a href="/Ajouter/Ajouter_Contact">Ajouter</a></th>
                             </tr>
                         </thead>
                         <?php foreach ($contacts as $contact) : ?>
@@ -101,17 +111,19 @@
                                 <td><?php echo ($contact['Prenom_Contact']) ?></td>
                                 <td><?php echo ($contact['numeroTel_Contact']) ?></td>
                                 <td><?php echo ($contact['mail_Contact']) ?></td>
-                                <td><?php echo ($contact['Nom_Organisation_Contact']) ?></td>
+                                <td><?php echo ($contact['Nom_Organisation_Contact']) ?></td>                          
                                 <td>
-                                    <form name="Modifier" action="<?php echo Base_url(); ?>/Modifier/modifier_contact" method="POST">
+                                    <form action="<?= base_url('/Recherche/modifier_contact/' . $contact['ID_Contact']); ?>" method="POST">
+                                        <input type="hidden" name="_method" value="MODIFIER">
                                         <button type="submit" class="btn btn-outline-warning" value="">Modifier</button>
                                     </form>
                                 </td>
                                 <td>
-                                    <form name="Supprimer" action="<?php echo Base_url(); ?>/Supprimer/supprimer_contact" method="POST">
-                                        <button type="submit" class="btn btn-outline-dark" value="">&#10060;</button>
+                                    <form action="<?= base_url('/Recherche/delete_contact/' . $contact['ID_Contact']) ?>" method="POST">
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <button type="submit" class="btn btn-dark btn-sm">&#10060;</button>
                                     </form>
-                                </td>
+                                </td>       
                                 <td>
                                     <!--LAISSER VIDE !!!-->
                                 </td>
@@ -121,7 +133,7 @@
                 </table>
             </div>
             <div class="bas">
-            </div>
+            </div>        
         </div>
     </body>
     <footer>

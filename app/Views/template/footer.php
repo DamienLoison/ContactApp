@@ -16,8 +16,8 @@
 ---------------TEST RAPIDITE--------------- -->
         <br>
         2022-footer<br>
-        <a href="https://github.com/DamienLoison/Luzancy-Recherche-App">lien Github</a> |
-        <a href="https://github.com/DamienLoison/ContactApp/issues">Report Bug</a>
+        <a href="https://github.com/DamienLoison/ContactApp">lien Github</a> |
+        <a href="https://github.com/DamienLoison/ContactApp/issues">Signaler un Bug</a>
     </div>
 </footer>
 

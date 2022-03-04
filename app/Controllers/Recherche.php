@@ -27,11 +27,9 @@ class Recherche extends Controller {
         echo view('Recherche/information');
     }
 
-    /*
-     * FONCTION TRAITANT DES CONTACTS
-     *
-     *
-     */
+    //
+    //FONCTION TRAITANT DES CONTACTS
+    // 
 
     public function tout_les_contacts() {
         $model = new ContactModel();
@@ -43,61 +41,49 @@ class Recherche extends Controller {
         echo view('Recherche/Contact/ListeContact', $data);
     }
 
-    public function recherche_contact() {
-        $model = new ContactModel();
-        $model1 = new OrganisationModel();
-        $data = [
-            'contacts' => $model->getContact(),
-            'organisations' => $model1->getOrganisation()
-        ];
-        echo view('Recherche/RechercheContact', $data);
-        // function resultat_contact(){
-        //     $choix = filter_input(INPUT_POST, 'ChoixRechercheContact');
-        //     $recherche = filter_input(INPUT_POST, 'search');
-        //     $model = new ContactModel;
-        //     $data['all'] = $model->recherche_contact($choix, $recherche);
-        //     $data =[
-        //         'contact'   => $model->recherche_contact($choix, $recherche)
-        //     ];
-        //     return $data;
-        //     echo view('Recherche/RechercheContact', $data);
-        //     return $data;
-        //     echo($data);
+//    public function recherche_contact() {
+//        $model = new ContactModel();
+//        $model1 = new OrganisationModel();
+//        $data = [
+//            'contacts' => $model->getContact(),
+//            'organisations' => $model1->getOrganisation()
+//        ];
+//        echo view('Recherche/RechercheContact', $data);
+//    }
+
+    public function modifier_contact($ID_Contact = null) {
+        $contact = new ContactModel();
+        $data['contact'] = $contact->find($ID_Contact);
+
+        return view('Modifier/ModificationContact', $data);
     }
 
-    // public function resultat_contact()
-    // {
-    //     $choix = filter_input(INPUT_POST, 'ChoixRechercheContact');
-    //     $recherche = filter_input(INPUT_POST, 'search');
-    //     $model = new ContactModel;
-    //     $data['all'] = $model->recherche_contact($choix, $recherche);
-    //     // $data =[
-    //     //     'contact'   => $model->recherche_contact($choix, $recherche)
-    //     // ];
-    //     // return $data;
-    //     // echo view('Recherche/RechercheContact', $data);
-    //     // return $data;
-    //     echo ($data);
-    // }
-    //     function recherche_contact_1(){
-    //     $choix = filter_input(INPUT_POST, 'ChoixRechercheContact');
-    //     $recherche = filter_input(INPUT_POST, 'search');
-    //     $model = new ContactModel;
-    //     $data['all'] = $model->recherche_contact($choix, $recherche);
-    //     // $data =[
-    //     //     'contact'   => $model->recherche_contact($choix, $recherche)
-    //     // ];
-    //     // return $data;
-    //     // echo view('Recherche/RechercheContact', $data);
-    //     // return $data;
-    //     echo("$choix, $recherche, $data");
-    // }
+    public function update_contact($ID_Contact = null) {
+        $contact = new ContactModel();
+        $data = [
+            'Nom_Contact' => $this->request->getPost('Nom_Contact'),
+            'Prenom_Contact' => $this->request->getPost('Prenom_Contact'),
+            'numeroTel_Contact' => $this->request->getPost('numeroTel_Contact'),
+            'mail_Contact' => $this->request->getPost('mail_Contact'),
+            'ID_Organisation' => $this->request->getPost('ID_Organisation'),
+            'Nom_Organisation_Contact' => $this->request->getPost('Nom_Organisation_Contact'),
+        ];
+        $contact->update($ID_Contact, $data);
 
-    /*
-     * FONCTION TRAITANT DES ORGANISATIONS
-     *
-     *
-     */
+        return redirect()->to(base_url('Recherche/tout_les_contacts'))->with('status', 'Modification effectué');
+    }
+
+    public function delete_contact($ID_Contact) {
+        $con = new ContactModel();
+        $con->delete($ID_Contact);
+
+        return redirect()->to(base_url('Recherche/tout_les_contacts'))->with('status', 'Suppression effectué');
+    }
+
+    //
+    // FONCTION TRAITANT DES ORGANISATIONS
+    //
+
     public function toute_les_organisations() {
         $model = new OrganisationModel();
         $data = [
@@ -106,19 +92,44 @@ class Recherche extends Controller {
         echo view('Recherche/Organisation/ListeOrganisation', $data);
     }
 
-    public function recherche_organisation() {
-        $model = new OrganisationModel();
-        $data = [
-            'organisations' => $model->getOrganisation()
-        ];
-        echo view('organisation/RechercheOrganisation', $data);
+//    public function recherche_organisation() {
+//        $model = new OrganisationModel();
+//        $data = [
+//            'organisations' => $model->getOrganisation()
+//        ];
+//        echo view('organisation/RechercheOrganisation', $data);
+//    }
+
+    public function modifier_organisation($ID_Organisation = null) {
+        $organisation = new OrganisationModel();
+        $data['organisation'] = $organisation->find($ID_Organisation);
+
+        return view('Modifier/ModificationOrganisation', $data);
     }
 
-    /*
-     * FONCTION TRAITANT DES LOGINS
-     *
-     *
-     */
+    public function update_organisation($ID_Organisation = null) {
+        $organisation = new OrganisationModel();
+        $data = [
+            'Nom_Organisation' => $this->request->getPost('Nom_Organisation'),
+            'Adresse_Organisation' => $this->request->getPost('Adresse_Organisation'),
+            'Mail_Organisation' => $this->request->getPost('Mail_Organisation'),
+            'Site_Organisation' => $this->request->getPost('Site_Organisation'),
+            'Telephone_Organisation' => $this->request->getPost('Telephone_Organisation'),
+        ];
+        $organisation->update($ID_Organisation, $data);
+        return redirect()->to(base_url('Recherche/toute_les_organisations'))->with('status', 'Modification effectué');
+    }
+
+    public function delete_organisation($ID_Organisation) {
+        $org = new OrganisationModel();
+        $org->delete($ID_Organisation);
+
+        return redirect()->to(base_url('Recherche/toute_les_organisations'));
+    }
+
+    //
+    //FONCTION TRAITANT DES LOGINS
+    //
 
     public function tout_les_login() {
         $model = new LoginModel();
@@ -128,90 +139,36 @@ class Recherche extends Controller {
         echo view('Recherche/Login/ListeLogin', $data);
     }
 
-    public function recherche_de_login() {
-        $model = new LoginModel();
+//    public function recherche_de_login() {
+//        $model = new LoginModel();
+//        $data = [
+//            'logins' => $model->getLogin(),
+//        ];
+//        echo view('login/RechercheLogin', $data);
+//    }
+
+    public function modifier_login($ID_Login = null) {
+        $login = new LoginModel();
+        $data['login'] = $login->find($ID_Login);
+
+        return view('Modifier/ModificationLogin', $data);
+    }
+
+    public function update_login($ID_Login = null) {
+        $login = new LoginModel();
         $data = [
-            'logins' => $model->getLogin(),
+            'Utilisateur_Login' => $this->request->getPost('Utilisateur_Login'),
+            'Password_Login' => $this->request->getPost('Password_Login'),
         ];
-        echo view('login/RechercheLogin', $data);
+        $login->update($ID_Login, $data);
+        return redirect()->to(base_url('Recherche/tout_les_login'))->with('status', 'Modification effectué');
     }
 
-    /* --------------------------------------------------------
-      ----------------------------------------------------------
-      -------------------------------------------------------- */
+    public function delete_login($ID_Login) {
+        $log = new LoginModel();
+        $log->delete($ID_Login);
 
-    /* --------------------------------------------------------
-      ----------------------------------------------------------
-      -------------------------------------------------------- */
-
-    public function Contact() {
-        helper(['Recherche', 'url']);
-
-        $model = new ContactModel();
-        $model1 = new OrganisationModel();
-        $model2 = new LoginModel();
-        $data = [
-            'contacts' => $model->getContact(),
-            'organisations' => $model1->getOrganisation(),
-            'logins' => $model2->getLogin(),
-                //     // '' => $model->getContact
-        ];
-        return view('Recherche', $data);
-    }
-
-    public function formulaire_contact() {
-        // //Formulaire//
-        // $attributes = ['class' => 'myclass', 'id' => 'myid'];
-        // echo form_open('formulaireContact2', $attributes);
-        // //Fermeture du Formulaire//
-        // form_close();
-        // return view('FormulaireContact');
-        echo view('contact/FormulaireContact');
-    }
-
-    public function add_contact() {
-        // $NomContact, $PrenomContact, $MailContact, $NumeroTelContact, $IDOrganisationContact)
-        //modèle//
-        // form_open();
-        // $model = new ContactModel;
-        // print_r($model->add_contact($NomContact, $PrenomContact, $MailContact, $NumeroTelContact, $IDOrganisationContact));
-
-        $isValid = $this->validate([
-            'NomContact' => 'trim|required|min_length[1]|max_length[40]',
-            'PrenomContact' => 'trim|required|min_length[1]|max_length[40]',
-            'NumeroTelephoneContact' => 'trim|required|min_length[10]|max_length[10]',
-            'MailContact' => 'trim|required|valid_email',
-        ]);
-
-        if (!$isValid) {
-            return view('contact/accueil', [
-                'validation' => \Config\Services::validation()
-            ]);
-        } else {
-            $request = \Config\Services::request();
-            $data['contact'] = $request->getPost();
-            return view('contact/success', $data);
-        }
-    }
-
-    public function add_ignore_contact() {
-        $model = new ContactModel;
-        print_r($model->add_ignore_contact());
-    }
-
-    public function compiled_add_contact() {
-        $model = new ContactModel;
-        print_r($model->compiled_add_contact());
-    }
-
-    public function batch_contact() {
-        $model = new ContactModel;
-        print_r($model->batch_contact());
-    }
-
-    public function set_update_contact($id) {
-        $model = new ContactModel;
-        print_r($model->set_update_contact($id));
+        return redirect()->to(base_url('Recherche/tout_les_login'));
     }
 
 }

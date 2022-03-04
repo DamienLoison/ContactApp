@@ -50,6 +50,7 @@ $routes->get('/', 'Recherche::tout_les_login');
 
 //Autres route
 
+$routes->get('/', 'Recherche::delete_contact');
 
 $routes->get('/', 'Supprimer::supprimer_contact');
 $routes->get('/', 'Supprimer::supprimer_organisation');

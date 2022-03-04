@@ -1,0 +1,218 @@
+CRITICAL - 2022-03-01 07:26:43 --> Class 'App\Controllers\UserModel' not found
+#0 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-03-01 07:47:53 --> Declaration of App\Models\ContactModel::delete($id) should be compatible with CodeIgniter\BaseModel::delete($id = NULL, bool $purge = false)
+#0 C:\laragon\www\ContactApp\app\Models\ContactModel.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\laragon\\www\\...', 45, Array)
+#1 C:\laragon\www\ContactApp\system\Autoloader\Autoloader.php(264): include_once('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#3 C:\laragon\www\ContactApp\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Cont...')
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Cont...')
+#5 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(35): spl_autoload_call('App\\Models\\Cont...')
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->tout_les_contacts()
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#8 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-03-01 07:48:47 --> syntax error, unexpected '?'
+#0 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/Conta...', Array, true)
+#2 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(41): view('Recherche/Conta...', Array)
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->tout_les_contacts()
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-03-01 08:00:23 --> Trying to get property 'first_name' of non-object
+#0 C:\laragon\www\ContactApp\app\Views\Recherche\Contact\ListeContact.php(101): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\laragon\\www\\...', 101, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/Conta...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(41): view('Recherche/Conta...', Array)
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->tout_les_contacts()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-01 08:01:19 --> Trying to get property 'ID_Contact' of non-object
+#0 C:\laragon\www\ContactApp\app\Views\Recherche\Contact\ListeContact.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\laragon\\www\\...', 99, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/Conta...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(41): view('Recherche/Conta...', Array)
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->tout_les_contacts()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-01 08:03:05 --> Trying to get property 'ID_Contact' of non-object
+#0 C:\laragon\www\ContactApp\app\Views\Recherche\Contact\ListeContact.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\laragon\\www\\...', 99, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/Conta...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(41): view('Recherche/Conta...', Array)
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->tout_les_contacts()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-01 08:19:36 --> Undefined property: App\Controllers\Recherche::$input
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\laragon\\www\\...', 65, Array)
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 08:28:18 --> Undefined variable: id
+#0 C:\laragon\www\ContactApp\app\Models\ContactModel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 08:28:34 --> Too few arguments to function App\Models\ContactModel::delete_contact(), 0 passed in C:\laragon\www\ContactApp\app\Controllers\Recherche.php on line 67 and exactly 1 expected
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 08:39:05 --> Undefined variable: id
+#0 C:\laragon\www\ContactApp\app\Models\ContactModel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 08:41:55 --> Undefined variable: id
+#0 C:\laragon\www\ContactApp\app\Models\ContactModel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 08:42:33 --> Too few arguments to function App\Models\ContactModel::delete_contact(), 0 passed in C:\laragon\www\ContactApp\app\Controllers\Recherche.php on line 67 and exactly 1 expected
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 08:43:05 --> Too few arguments to function App\Models\ContactModel::delete_contact(), 0 passed in C:\laragon\www\ContactApp\app\Controllers\Recherche.php on line 67 and exactly 1 expected
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 08:43:20 --> syntax error, unexpected '$', expecting variable (T_VARIABLE)
+#0 C:\laragon\www\ContactApp\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\ContactApp\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Cont...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Cont...')
+#3 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(35): spl_autoload_call('App\\Models\\Cont...')
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->tout_les_contacts()
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-03-01 08:43:29 --> Undefined variable: id
+#0 C:\laragon\www\ContactApp\app\Models\ContactModel.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 47, Array)
+#1 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-03-01 08:44:04 --> Too few arguments to function App\Models\ContactModel::delete_contact(), 0 passed in C:\laragon\www\ContactApp\app\Controllers\Recherche.php on line 67 and exactly 1 expected
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 08:44:51 --> Too few arguments to function App\Models\ContactModel::delete_contact(), 0 passed in C:\laragon\www\ContactApp\app\Controllers\Recherche.php on line 67 and exactly 1 expected
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 08:44:56 --> Too few arguments to function App\Models\ContactModel::delete_contact(), 0 passed in C:\laragon\www\ContactApp\app\Controllers\Recherche.php on line 67 and exactly 1 expected
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 08:45:15 --> Too few arguments to function App\Models\ContactModel::delete_contact(), 0 passed in C:\laragon\www\ContactApp\app\Controllers\Recherche.php on line 67 and exactly 1 expected
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 08:47:54 --> Undefined variable: id
+#0 C:\laragon\www\ContactApp\app\Views\Recherche\Contact\ListeContact.php(110): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 110, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/Conta...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(41): view('Recherche/Conta...', Array)
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->tout_les_contacts()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-01 08:49:05 --> Too few arguments to function App\Models\ContactModel::delete_contact(), 0 passed in C:\laragon\www\ContactApp\app\Controllers\Recherche.php on line 67 and exactly 1 expected
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 08:50:35 --> Too few arguments to function App\Models\ContactModel::delete_contact(), 0 passed in C:\laragon\www\ContactApp\app\Controllers\Recherche.php on line 67 and exactly 1 expected
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 08:51:06 --> Too few arguments to function App\Models\ContactModel::delete_contact(), 0 passed in C:\laragon\www\ContactApp\app\Controllers\Recherche.php on line 67 and exactly 1 expected
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 08:52:00 --> Too few arguments to function App\Models\ContactModel::delete_contact(), 0 passed in C:\laragon\www\ContactApp\app\Controllers\Recherche.php on line 67 and exactly 1 expected
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 08:52:58 --> Too few arguments to function App\Models\ContactModel::delete_contact(), 0 passed in C:\laragon\www\ContactApp\app\Controllers\Recherche.php on line 67 and exactly 1 expected
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 08:56:13 --> Too few arguments to function App\Models\ContactModel::delete_contact(), 0 passed in C:\laragon\www\ContactApp\app\Controllers\Recherche.php on line 67 and exactly 1 expected
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-01 09:15:52 --> Too few arguments to function App\Models\ContactModel::delete_contact(), 0 passed in C:\laragon\www\ContactApp\app\Controllers\Recherche.php on line 67 and exactly 1 expected
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(67): App\Models\ContactModel->delete_contact()
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

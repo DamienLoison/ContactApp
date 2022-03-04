@@ -34,7 +34,7 @@ class Ajouter extends Controller {
      * --------------------------------|
      * --------------------------------| */
 
-    public function ajouter_contacter() {
+    public function ajouter_contact() {
         $model = new OrganisationModel();
         $data = [
             'organisations' => $model->getOrganisation()

@@ -12,9 +12,6 @@
             margin-top: 70px;
             height: 500px;
         }
-        .Add_Organisation{
-
-        }
     </style>
     <body>
         <div class="nav">
@@ -44,7 +41,8 @@
                         </div>
                         <div class="mb-3">
                             <!--CHOIX DE L'ID ET DU NOM DE L'ORGANISATION !-->
-                            <label>Organisation :</label>
+                            <!--<table>-->
+                            <label>Organisation : </label>
                             <select name="ID_Organisation">
                                 <?php if (!empty($organisations) && is_array($organisations)) : ?>
                                     <?php foreach ($organisations as $organisation): ?>
@@ -55,6 +53,16 @@
                                     <?php endforeach; ?>
                                 <?php endif; ?>
                             </select>
+                            <select name="Nom_Organisation_Contact">
+                                <?php if (!empty($organisations) && is_array($organisations)) : ?>
+                                    <?php foreach ($organisations as $organisation): ?>
+                                        <option>
+                                            <?php echo ($organisation['Nom_Organisation']) ?>
+                                        </option>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </select>
+                            <!--</table>-->
                         </div>
                         <button type="submit" class="btn btn-primary btn-block btn-lg float-start">Valider</button>
                     </form>

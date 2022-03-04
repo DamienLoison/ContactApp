@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr-Fr">
-
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="Style.css" media="all" />
@@ -9,13 +8,11 @@
             .a-faire {
                 background-color: #00ad81;
             }
-
             .nav {
                 height: 40px;
             }
         </style>
     </head>
-
     <body>
         <div class="nav">
             <?php echo view('template/header.php') ?>
@@ -29,7 +26,6 @@
             -le faire en pop-up ?<br>
             </p>
         </div>
-
         <div class="information">
             <style>
                 /* .information {
@@ -37,33 +33,28 @@
                     text-align: center;
                     width: 90%;
                 }
-    
                 .leftInformation {
                     border: solid red 5px;
                     position: static;
                     width: 32%;
                     float: right;
                 }
-    
                 .centerInformation {
                     border: solid green 5px;
                     position: static;
                     width: 33%;
                     float: right;
                 }
-    
                 .rightInformation {
                     border: solid violet 5px;
                     position: static;
                     width: 32%;
                     float: right;
                 }
-    
                 .information1 {
                     border: solid black 5px;
                     text-align: center;
                 } */
-
             </style>
             <!-- <div class="leftInformation">
                 <h4>Toutes les pages disponibles</h4>
@@ -94,19 +85,34 @@
                 <h4>Utilisation de la recherche</h4>
             </div>
         </div> -->
+            <div class="Information">
+                <h1>Information d'utilisation</h1>
+                <div class="Info-gauche">
+                    <h2>Recherche</h2>
+                </div>
+                <div class="Info-droite">
 
-            <div class="Aide">
-                <p>
-                <h4>[Fonctionne sous le modèle MVC]</h4>
-                |---------------------------------------------<br>
-                |FrameWork utilisé : <strong>CodeIgniter 4</strong> <br>
-                |---------------------------------------------<br>
-                |Accès à la base de donnée via les Models<br>
-                |Accès aux Models via les controllers<br>
-                |Accès aux Views via les controllers<br>
-                |---------------------------------------------<br>
-                |<br>
-                |---------------------------------------------<br>
-                </p>
+                </div>
             </div>
+<!--            <div>
+                <div class="Aide">
+                    <p>
+                    <h4>[Fonctionne sous le modèle MVC]</h4>
+                    |---------------------------------------------<br>
+                    |FrameWork utilisé : <strong>CodeIgniter 4</strong> <br>
+                    |---------------------------------------------<br>
+                    |Accès à la base de donnée via les Models<br>
+                    |Accès aux Models via les controllers<br>
+                    |Accès aux Views via les controllers<br>
+                    |---------------------------------------------<br>
+                    |<br>
+                    |---------------------------------------------<br>
+                    </p>
+                </div>
+            </div>-->
+        </div>
     </body>
+    <footer>
+        <?php echo view('template/footer.php') ?>
+    </footer>
+</html>
