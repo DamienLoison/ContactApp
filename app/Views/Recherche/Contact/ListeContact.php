@@ -29,8 +29,6 @@
     </style>
     <body>
         <div class="fiche">
-            <div class="TOP">
-            </div>
             <div class="corp justify-content-center">
                 <?php
                 if (session()->getFlashdata('status')) {

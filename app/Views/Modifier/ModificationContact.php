@@ -44,9 +44,10 @@
                             <label>Nom de l'organisation :</label>
                             <input type="text" name="Nom_Organisation_Contact" value="<?= $contact['Nom_Organisation_Contact'] ?>" class="form-control" placeholder="Entrer le nom de l'organisation" disabled required>
                         </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg float-start">Valider</button>
                     </form>
                     <div class="d-flex align-content-start">
-                        <button type="submit" class="btn btn-primary btn-block btn-lg float-start">Valider</button>
+                        
                         <form action="<?= base_url('Recherche/tout_les_contacts'); ?>" method="POST">
                             <button type="submit" class="btn btn-danger btn-block btn-lg float-end">Retour</button>
                         </form>   
