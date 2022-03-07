@@ -31,33 +31,35 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-//ACCUEIL
+//ROUTES ACCUEIL
 $routes->get('/', 'Accueil::index');
 $routes->get('/', 'Accueil::note_patch');
 
-//RECHERCHE
+//ROUTES RECHERCHE
 $routes->get('/', 'Recherche::index');
 
-//RECHERCHE CONTACT
+//ROUTES CONTACT
 $routes->get('/', 'Recherche::tout_les_contacts');
 $routes->get('/', 'Recherche::recherche_contact');
 $routes->get('/', 'Recherche::delete_contact');
 $routes->get('/', 'Recherche::modifier_contact');
 $routes->get('/', 'Recherche::update_contact');
 
-//RECHERCHE ORGANISATION
+//ROUTES ORGANISATION
 $routes->get('/', 'Recherche::toute_les_organisations');
 $routes->get('/', 'Recherche::recherche_organisation');
 $routes->get('/', 'Recherche::delete_organisation');
 $routes->get('/', 'Recherche::modifier_organisation');
 $routes->get('/', 'Recherche::update_organisation');
 
-//RECHERCHE LOGIN
+//ROUTES LOGIN
 $routes->get('/', 'Recherche::recherche_de_login');
 $routes->get('/', 'Recherche::tout_les_login');
 $routes->get('/', 'Recherche::delete_login');
 $routes->get('/', 'Recherche::modifier_login');
 $routes->get('/', 'Recherche::update_login');
+
+//ROUTES 
 
 /*
  * --------------------------------------------------------------------
