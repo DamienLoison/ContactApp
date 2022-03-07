@@ -21,7 +21,7 @@
                 <div class="col-sm-4 offset-4 my-3">
                     <a href="ModificationContact.php"></a>
                     <h2>Modifier un contact</h2>
-                    <form action="<?= base_url('Recherche/update_contact/'.$contact['ID_Contact']); ?>" method="POST">
+                    <form action="<?= base_url('Recherche/update_contact/' . $contact['ID_Contact']); ?>" method="POST">
                         <div class="mb-3 mt-3">
                             <label>Nom du contact :</label>
                             <input type="text" name="Nom_Contact" value="<?= $contact['Nom_Contact'] ?>" class="form-control"  placeholder="Entrer le nom" required>
@@ -38,23 +38,19 @@
                             <label>Email du contact :</label>
                             <input type="text" name="mail_Contact" value="<?= $contact['mail_Contact'] ?>" class="form-control" placeholder="Entrer le mail" required>
                         </div>
-                        <div class="mb-3 mt-3 float-start">
+                        <div class="mb-3 mt-3 align-content-start">
                             <label>ID de l'organisation :</label>
                             <input type="text" name="ID_Organisation" value="<?= $contact['ID_Organisation'] ?>" class="form-control" placeholder="Entrer le mail" required>
-                        </div>
-                        <div class="mb-3 mt-3 float-start">
                             <label>Nom de l'organisation :</label>
-                            <input type="text" name="Nom_Organisation_Contact" value="<?= $contact['Nom_Organisation_Contact'] ?>" class="form-control" placeholder="Entrer le mail" disabled required>
-                        </div>
-                        <div>
-                            <form>
-                                <button type="submit" class="btn btn-primary btn-block btn-lg float-start">Valider</button>
-                            </form>
-                            <form action="<?= base_url('Recherche/tout_les_contacts'); ?>" method="POST">
-                                <button type="submit" class="btn btn-danger btn-block btn-lg float-end">Retour</button>
-                            </form>     
+                            <input type="text" name="Nom_Organisation_Contact" value="<?= $contact['Nom_Organisation_Contact'] ?>" class="form-control" placeholder="Entrer le nom de l'organisation" disabled required>
                         </div>
                     </form>
+                    <div class="d-flex align-content-start">
+                        <button type="submit" class="btn btn-primary btn-block btn-lg float-start">Valider</button>
+                        <form action="<?= base_url('Recherche/tout_les_contacts'); ?>" method="POST">
+                            <button type="submit" class="btn btn-danger btn-block btn-lg float-end">Retour</button>
+                        </form>   
+                    </div>  
                 </div>
             </div>
         </div>
