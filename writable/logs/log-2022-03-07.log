@@ -1,0 +1,21 @@
+CRITICAL - 2022-03-07 03:02:20 --> Undefined variable: ID_Organisation
+#0 C:\laragon\www\Luzancy-App\app\Controllers\Recherche.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 47, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_contact('5')
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-07 03:07:01 --> Undefined variable: ID_Organisation
+#0 C:\laragon\www\Luzancy-App\app\Controllers\Recherche.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 47, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_contact('5')
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-07 03:07:35 --> Undefined variable: ID_Organisation
+#0 C:\laragon\www\Luzancy-App\app\Controllers\Recherche.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 47, Array)
+#1 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_contact('5')
+#2 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\Luzancy-App\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\Luzancy-App\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

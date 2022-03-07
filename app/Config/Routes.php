@@ -17,7 +17,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('Accueil');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -31,26 +31,33 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-//Accueil route
+//ACCUEIL
 $routes->get('/', 'Accueil::index');
 $routes->get('/', 'Accueil::note_patch');
-//Recherche route
+
+//RECHERCHE
 $routes->get('/', 'Recherche::index');
-//Recherche route -> CONTACT
-$routes->get('/', 'Recherche::aide_contact');
+
+//RECHERCHE CONTACT
 $routes->get('/', 'Recherche::tout_les_contacts');
 $routes->get('/', 'Recherche::recherche_contact');
-//Recherche route -> ORGANISATION
+$routes->get('/', 'Recherche::delete_contact');
+$routes->get('/', 'Recherche::modifier_contact');
+$routes->get('/', 'Recherche::update_contact');
+
+//RECHERCHE ORGANISATION
 $routes->get('/', 'Recherche::toute_les_organisations');
 $routes->get('/', 'Recherche::recherche_organisation');
-//Recherche route -> LOGIN
+$routes->get('/', 'Recherche::delete_organisation');
+$routes->get('/', 'Recherche::modifier_organisation');
+$routes->get('/', 'Recherche::update_organisation');
+
+//RECHERCHE LOGIN
 $routes->get('/', 'Recherche::recherche_de_login');
 $routes->get('/', 'Recherche::tout_les_login');
-
-//Autres route
-
-$routes->get('/', 'Recherche::delete_contact');
-
+$routes->get('/', 'Recherche::delete_login');
+$routes->get('/', 'Recherche::modifier_login');
+$routes->get('/', 'Recherche::update_login');
 
 /*
  * --------------------------------------------------------------------
