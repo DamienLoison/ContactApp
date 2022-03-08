@@ -55,7 +55,7 @@
                             <td> <?php echo ($organisation['Nom_Organisation']) ?></td>
                             <td> <?php echo ($organisation['Adresse_Organisation']) ?></td>
                             <td> <?php echo ($organisation['Mail_Organisation']) ?></td>
-                            <td> <?php echo ($organisation['Site_Organisation']) ?></td>
+                            <td> <a href="https://www.<?php echo ($organisation['Site_Organisation'])?>">Direction <?php echo ($organisation['Nom_Organisation']) ?></a></td>
                             <td> <?php echo ($organisation['Telephone_Organisation']) ?></td>
                             <td>                   
                                 <form name="Modifier" action="<?= Base_url('/Recherche/modifier_organisation/'. $organisation['ID_Organisation']); ?>" method="POST">

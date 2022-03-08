@@ -62,7 +62,7 @@
                                     //AFFICHE LE NOM DE L ORGANISATION EN FONCTION DE SON ID
                                     foreach ($organisations as $organisation) {
                                         if ($organisation['ID_Organisation'] == $contact['ID_Organisation']) {
-                                            $NomOrganisation = $organisation['ID_Organisation'] . $organisation['Nom_Organisation'];
+                                            $NomOrganisation = $organisation['ID_Organisation']. " " .$organisation['Nom_Organisation'];
                                             echo $NomOrganisation;
                                         }
                                     }
