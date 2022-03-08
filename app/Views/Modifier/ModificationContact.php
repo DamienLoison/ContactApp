@@ -51,43 +51,39 @@
                         </div>
                         <div class="mb-3 mt-3 align-content-start">
                             <label>ID de l'organisation :</label>
-                            <input type="text" name="ID_Organisation" value="<?= $contact['ID_Organisation'] ?>" class="form-control" placeholder="Entrer le mail" required>
-                            <label>Nom de l'organisation :</label>
-                            <input type="text" name="Nom_Organisation_Contact" value="<?= $contact['Nom_Organisation_Contact'] ?>" class="form-control" placeholder="Entrer le nom de l'organisation" disabled required>
+                            <input DISABLED type="text" name="ID_Organisation" value="<?= $contact['ID_Organisation'] ?>" class="form-control" placeholder="Entrer le mail" required>
                         </div>
-
-                        <!--TEST-->
                         <div>
-                            <select class="" value="" name="ID_Organisation" methode="POST">
-                                <option disabled>AFFICHAGE DES ORGANISATIONS :</option>
+                            <label>AFFICHAGE DES ORGANISATIONS :</label>
+                            <select class="" value="" name="ID_Organisation" methode="POST"> 
+                                <option selected disabled></option>
                                 <?php foreach ($organisation as $organisation) { ?>
                                     <?php
-                                    $organisation['ID_Organisation'] = $contact['ID_Organisation'];
                                     $test = $contact['ID_Organisation'];
-                                    $VARIABLE = "BONJOUR TEST";
-                                    $tests = $organisation['ID_Organisation'];
-                                    if ($test = $tests) {
-                                        echo "<option selected disabled>" . $VARIABLE . "</option>";
+                                    $tests = $organisation['ID_Organisation'] . $organisation['Nom_Organisation'];
+                                    //AFFICHE BIEN LE RESULTAT DE VARIABLE
+                                    if ($contact['ID_Organisation'] == $organisation['ID_Organisation']) {
+                                        $VARIABLE = $contact['ID_Organisation'] . " " . $organisation['Nom_Organisation'];
                                     } else {
-                                        echo "ERREUR !";
+                                        
                                     }
                                     ?>
-                                    <option selected disabled><?= $contact['ID_Organisation'] . " " . $organisation['Nom_Organisation'] ?></option>
+                                    <!--AFFICHE CORRECTEMENT !-->
                                     <option><?php echo $organisation['ID_Organisation'] . " " . $organisation['Nom_Organisation'] ?></option>
-                                <?php } ?>
+                                    <?php
+                                    echo "<option>" . $organisation['ID_Organisation'] . " " . $organisation['Nom_Organisation'] . "</option>";
+                                }
+                                ?>
                             </select>
                         </div>
-                        <!--FIN TEST-->
-
                         <button type="submit" class="btn btn-primary btn-block btn-lg float-start">Valider</button>
                     </form>
                     <div class="d-flex align-content-start">                        
-                        <form action="<?= base_url('Recherche/tout_les_contacts'); ?>" method="POST">
+                        <form action="<?= base_url('Recherche/tout_les_contacts');
+                                ?>" method="POST">
                             <button type="submit" class="btn btn-danger btn-block btn-lg float-end">Retour</button>
                         </form>   
                     </div>
-
-
                 </div>
             </div>
         </div>
