@@ -7,12 +7,6 @@
         <?php echo view('template/header.php') ?>
     </head>
     <style>
-        #right {
-            font-size: 20px;
-            text-align: center;
-            width: 1200px;
-            background-color: #545454;
-        }
         .fiche{
             margin-top: 40px;
             margin-left: 0.4px;
@@ -63,7 +57,17 @@
                                 <td><?php echo ($contact['Prenom_Contact']) ?></td>
                                 <td><?php echo ($contact['numeroTel_Contact']) ?></td>
                                 <td><?php echo ($contact['mail_Contact']) ?></td>
-                                <td><?php echo ($contact['Nom_Organisation_Contact']) ?></td>                          
+                                <td>
+                                    <?php
+                                    //AFFICHE LE NOM DE L ORGANISATION EN FONCTION DE SON ID
+                                    foreach ($organisations as $organisation) {
+                                        if ($organisation['ID_Organisation'] == $contact['ID_Organisation']) {
+                                            $NomOrganisation = $organisation['ID_Organisation'] . $organisation['Nom_Organisation'];
+                                            echo $NomOrganisation;
+                                        }
+                                    }
+                                    ?>
+                                </td>
                                 <td>
                                     <form action="<?= base_url('/Recherche/modifier_contact/' . $contact['ID_Contact']); ?>" method="POST">
                                         <input type="hidden" name="_method" value="MODIFIER">
