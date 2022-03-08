@@ -55,15 +55,6 @@
                                     <?php endforeach; ?>
                                 <?php endif; ?>
                             </select>
-                            <select name="Nom_Organisation_Contact">
-                                <?php if (!empty($organisations) && is_array($organisations)) : ?>
-                                    <?php foreach ($organisations as $organisation): ?>
-                                        <option>
-                                            <?php echo ($organisation['Nom_Organisation']) ?>
-                                        </option>
-                                    <?php endforeach; ?>
-                                <?php endif; ?>
-                            </select>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block btn-lg float-start">Valider</button>
                         <form action="<?php echo site_url('Ajouter/ajouter_organisation'); ?>" method="POST">
