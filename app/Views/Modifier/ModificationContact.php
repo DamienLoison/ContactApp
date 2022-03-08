@@ -4,7 +4,11 @@
         <meta charset="UTF-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
         <title>Modification contact</title>
+        <?php echo view('template/header.php') ?>
     </head>
     <style>
         .container {
@@ -13,9 +17,16 @@
         }
     </style>
     <body>
-        <div class="nav">
-            <?php echo view('template/header.php') ?>
-        </div>
+        <!--SCRIPT POUR LA LISTE DES ORGANISATIONS-->
+        <!--PERMET D ECRIRE DANS UNE BARRE DE RECHERCHE POUR TROUVER PLUS FACILEMENT--> 
+        <!--L ORGANISATION RECHERCHE-->
+        <script>
+            $(document).ready(function () {
+                $('select').selectize({
+                    sortField: 'text'
+                });
+            });
+        </script>
         <div class="container mt-3">
             <div class="row">
                 <div class="col-sm-4 offset-4 my-3">
@@ -44,14 +55,39 @@
                             <label>Nom de l'organisation :</label>
                             <input type="text" name="Nom_Organisation_Contact" value="<?= $contact['Nom_Organisation_Contact'] ?>" class="form-control" placeholder="Entrer le nom de l'organisation" disabled required>
                         </div>
+
+                        <!--TEST-->
+                        <div>
+                            <select class="" value="" name="ID_Organisation" methode="POST">
+                                <option disabled>AFFICHAGE DES ORGANISATIONS :</option>
+                                <?php foreach ($organisation as $organisation) { ?>
+                                    <?php
+                                    $organisation['ID_Organisation'] = $contact['ID_Organisation'];
+                                    $test = $contact['ID_Organisation'];
+                                    $VARIABLE = "BONJOUR TEST";
+                                    $tests = $organisation['ID_Organisation'];
+                                    if ($test = $tests) {
+                                        echo "<option selected disabled>" . $VARIABLE . "</option>";
+                                    } else {
+                                        echo "ERREUR !";
+                                    }
+                                    ?>
+                                    <option selected disabled><?= $contact['ID_Organisation'] . " " . $organisation['Nom_Organisation'] ?></option>
+                                    <option><?php echo $organisation['ID_Organisation'] . " " . $organisation['Nom_Organisation'] ?></option>
+                                <?php } ?>
+                            </select>
+                        </div>
+                        <!--FIN TEST-->
+
                         <button type="submit" class="btn btn-primary btn-block btn-lg float-start">Valider</button>
                     </form>
-                    <div class="d-flex align-content-start">
-                        
+                    <div class="d-flex align-content-start">                        
                         <form action="<?= base_url('Recherche/tout_les_contacts'); ?>" method="POST">
                             <button type="submit" class="btn btn-danger btn-block btn-lg float-end">Retour</button>
                         </form>   
-                    </div>  
+                    </div>
+
+
                 </div>
             </div>
         </div>
