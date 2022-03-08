@@ -20,6 +20,9 @@
         <div class="container mt-3">
             <div class="row">
                 <div class="col-sm-4 offset-4 my-3">
+                    <form action="<?= base_url('Recherche/tout_les_login'); ?>" method="POST">
+                        <button type="submit" class="btn btn-danger btn-block btn-lg float-end">Retour</button>
+                    </form>  
                     <h2>Ajouter un Login</h2>
                     <form action="<?php echo site_url('Ajouter/ajouter_login_record'); ?>" method="POST">
                         <div class="mb-3 mt-3">
@@ -30,7 +33,7 @@
                             <label>Mot de passe :</label>
                             <input type="text" class="form-control" id="Password_Login" placeholder="Entrer le mot de passe" name="Password_Login" required>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block btn-lg">Submit</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">Valider</button>
                     </form>
                 </div>
             </div>
