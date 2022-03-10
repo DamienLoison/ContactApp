@@ -61,8 +61,6 @@
                 <div class="milieu col-8 bg-dark text-white ">
                     <h3 class="bg-danger text-white">INFORMATION CENTER</h3>
                     <h4>se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
-                    BETA VERSION B:1.0.11<br>
-                    Experimental version<br><br>
                     <h4>DERNIER AJOUT :</h4>
                     CONTACT : • | <!-- AFFICHAGE DU DERNIER CONTACT AJOUTER-->
                     ORGANISATION : • |  <!-- AFFICHAGE DE LA DERNIERE ORGANISATION AJOUTER -->
