@@ -18,18 +18,6 @@ class ContactModel extends Model {
         $this->db = db_connect();
     }
 
-    public function SaveData($data) {
-        $db = \Config\Database::connect();
-        $builder = $this->db->table('contact');
-
-        $res = $builder->insert($data);
-        if ($res->connID->affected_rows >= 1) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
     //Affiche l'ensemble des données 
     public function getContact() {
         return $this->findAll();
