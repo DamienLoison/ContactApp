@@ -40,13 +40,6 @@
                     </thead>
                     <tr class="border border-danger">
                         <td>
-                            +++
-                        </td>
-                        <td>
-                            FAIRE ACCUEIL
-                        </td>
-                    <tr class="border border-danger">
-                        <td>
                             ++
                         </td>
                         <td>
