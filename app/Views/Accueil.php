@@ -7,33 +7,42 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <title>Accueil</title>
+        <?php echo view('template/header.php') ?>
     </head>
     <style>
+        body{
+            margin-top: 40px;
+            height: 500px;
+            width: auto;
+        }
+        .Accueil{
+        }
         .corps{
         }
         .gauche{
+            width: 25%;
+            height: 100%;
         }
         .milieu{
+            width: 50%;
+            height: 100%;
         }
         .droite{
+            width: 25%;
+            height: 100%;
         }
     </style>
     <body>
-        <div class="nav">
-            <?php echo view('template/header.php') ?>
-        </div>
         <div class="Accueil">
-            <!--BARRE TOP--> 
             <div class="text-center bg-secondary">
                 <h1>ContactApp</h1>
                 <h4>se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
                 BETA VERSION B:1.0.11<br>
                 Experimental version
             </div>
-            <!--CORPS--> 
             <div class="corps row align-items-start text-center">
                 <!--AFFICHAGE A GAUCHE--> 
-                <div class="gauche col  bg-dark text-white">
+                <div class="gauche col-2 bg-dark text-white">
                     GAUCHE
                     <br><br><br><br><br>
                     <div class="dropdown">
@@ -59,8 +68,8 @@
                     <!-- CREATION BARRE DE RECHERCHE -->
                     login<br>
                     <!-- CREATION BARRE DE RECHERCHE -->
-                    
-                    
+
+
                     <!--  MISE EN PLACE D UNE SOLUTION DE RECHERCHE 
                                         DANS LES CONTACT / ORGANISATION / LOGIN
                                         SELON LE CHOIX FAIT 
@@ -69,7 +78,7 @@
 
                 </div>
                 <!--AFFICHAGE A DROITE--> 
-                <div class="droite col bg-dark text-white">
+                <div class="droite col-2 bg-dark text-white">
                     DROITE
                     <br><br><br><br><br>
                     <div class="dropdown">
@@ -83,8 +92,6 @@
                     <br><br><br><br><br>
                 </div>
             </div>
-
-
         </div>
     </body>
     <footer>
