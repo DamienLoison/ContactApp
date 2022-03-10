@@ -4,16 +4,89 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="style/MiseEnPage">
         <title>Liste |Login</title>
+        <?php echo view('template/header.php') ?>
     </head>
     <style>
+        body {
+            margin-top: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        /* Bouton permettant d'ouvrir le formulaire' */
+        .open-button {
+            background-color: #555;
+            color: white;
+            /*padding: 16px 20px;*/
+            border: none;
+            cursor: pointer;
+            width: 120px;
+        }
+        /* POPUP formulaire (caché par défaut) */
+        .form-popup {
+            display: none;
+            position: fixed;
+            border: 3px solid black;
+            z-index: 9;
+        }
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: black;
+        }
+        .form-container input[type=text], .form-container input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+        .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        .form-container .btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom:10px;
+            opacity: 0.8;
+        }
+        .form-container .cancel {
+            background-color: red;
+        }
+        .form-container .btn:hover, .open-button:hover {
+            opacity: 1;
+        }
         .footer {
             margin-top: -16px;
         }
     </style>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+        function Afficher()
+        {
+            var input = document.getElementById("password");
+            if (input.type === "password")
+            {
+                input.type = "text";
+            } else
+            {
+                input.type = "password";
+            }
+        }
+    </script>
     <body>
-        <div class="nav">
-            <?php echo view('template/header.php') ?>
-        </div>
         <div class="bg-dark">
             <?php
             if (session()->getFlashdata('status')) {
@@ -42,7 +115,22 @@
                             <!--MISE EN PLACE DE LA RECHERCHE DES INFORMATIONS-->
                             <td> <?php echo ($login['ID_Login']) ?></td>
                             <td> <?php echo ($login['Utilisateur_Login']) ?></td>
-                            <td> <?php echo ($login['Password_Login']) ?></td>
+                            <td>
+                                <button class="open-button" onclick="openForm()">voir identifiant</button>
+                                <div class="form-popup" id="myForm">
+                                    <form action="/action_page.php" class="form-container">
+                                        <h1>Login</h1>
+                                        <label><b>Nom d'utilisateur</b></label>
+                                        <input Disabled type="text" name="Utilisateur_Login" value="<?= $login['Utilisateur_Login'] ?>" required>
+
+                                        <label for="psw"><b>Password</b></label>
+                                        <input Disabled type="password" name="Password_Login" value="<?= $login['Password_Login'] ?>" id="password" required>
+                                        <input type="checkbox" onclick="Afficher()"> afficher mot de passe</input>
+
+                                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                    </form>
+                                </div>
+                            </td>
                             <td>
                                 <form action="<?= Base_url('/Recherche/modifier_login/' . $login['ID_Login']); ?>" method="POST">
                                     <input type="hidden" name="_method" value="MODIFIER">
