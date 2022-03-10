@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr-Fr">
-
     <head>
         <meta charset="utf-8">
         <title>Recherche |Liste Organisation</title>
+        <?php echo view('template/header.php') ?>
     </head>
-
     <style>
+        body{
+            margin-top: 40px;
+        }
         #indication {
             margin-top: 40px;
             color: white;
@@ -17,11 +19,7 @@
             margin-top: -16px;
         }
     </style>
-
     <body>
-        <div class="nav">
-            <?php echo view('template/header.php') ?>
-        </div>
         <div class="justify-content-center">
             <?php
             if (session()->getFlashdata('status')) {
@@ -40,6 +38,7 @@
                             <th scope="col">ID</th>
                             <th scope="col">Nom</th>
                             <th scope="col">Adresse</th>
+                            <th scope="col">Ville</th>
                             <th scope="col">Mail</th>
                             <th scope="col">Site</th>
                             <th scope="col">Téléphone</th>
@@ -54,11 +53,12 @@
                             <td> <?php echo ($organisation['ID_Organisation']) ?></td>
                             <td> <?php echo ($organisation['Nom_Organisation']) ?></td>
                             <td> <?php echo ($organisation['Adresse_Organisation']) ?></td>
+                            <td> <?php echo ($organisation['Ville_Organisation']) ?></td>
                             <td> <?php echo ($organisation['Mail_Organisation']) ?></td>
-                            <td> <?php echo ($organisation['Site_Organisation']) ?></td>
+                            <td> <a href="https://www.<?php echo ($organisation['Site_Organisation']) ?>">Direction <?php echo ($organisation['Nom_Organisation']) ?></a></td>
                             <td> <?php echo ($organisation['Telephone_Organisation']) ?></td>
                             <td>                   
-                                <form name="Modifier" action="<?= Base_url('/Recherche/modifier_organisation/'. $organisation['ID_Organisation']); ?>" method="POST">
+                                <form name="Modifier" action="<?= Base_url('/Recherche/modifier_organisation/' . $organisation['ID_Organisation']); ?>" method="POST">
                                     <input type="hidden" name="_method" value="MODIFIER">
                                     <button type="submit" class="btn btn-outline-warning" value="">Modifier</button>
                                 </form>

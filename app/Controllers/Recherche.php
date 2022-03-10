@@ -16,14 +16,10 @@ class Recherche extends Controller {
 
     public function index() {
         helper(['Contact', 'url']);
-        
+
         echo view('template/header');
         echo view('Recherche/AccueilRecherche');
         echo view('template/footer');
-    }
-
-    public function aide_contact() {
-        echo view('Recherche/information');
     }
 
     //
@@ -42,8 +38,11 @@ class Recherche extends Controller {
 
     public function modifier_contact($ID_Contact = null) {
         $contact = new ContactModel();
-        $data['contact'] = $contact->find($ID_Contact);
-
+        $organisation = new OrganisationModel();
+        $data = [
+            'contact' => $contact->find($ID_Contact),
+            'organisation' => $organisation->getOrganisation(),
+        ];
         return view('Modifier/ModificationContact', $data);
     }
 
