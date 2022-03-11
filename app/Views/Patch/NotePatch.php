@@ -86,8 +86,9 @@
                     ___________________________________________________<br>
                     <div id="visuel" class="">
                         <h3>VISUEL</h3>
-                        Ajout du visuel pour l'accueil
-                        Ajout d'image pour accéder aux pages d'ajouts
+                        Ajout du visuel pour l'accueil<br>
+                        Ajout d'image pour accéder aux pages d'ajouts<br>
+                        Changement du visuel de la page "<em>Aide</em>"
                     </div>
                     <!-- -------------------------------------- -->
                     ___________________________________________________<br>
@@ -95,6 +96,7 @@
                         <h3>CORRECTION/OPTIMISATION</h3>
                         Ajout de routes<br>
                         Suppression ligne de code inutile<br>
+                        Modification de la page "<em>Aide</em>"<br>
                         Modification affichage des logins<br>
                         Modification du Note Patch<br>
                         Modification du footer<br>
