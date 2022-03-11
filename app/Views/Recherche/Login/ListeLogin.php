@@ -67,6 +67,7 @@
         }
     </style>
     <script>
+        //POUR LA RECHERCHE VIA L ID
         function myFunction() {
             // Declare variables
             var input, filter, table, tr, td, i, txtValue;
@@ -90,6 +91,7 @@
         }
     </script>
     <script>
+        //POUR LE MOT DE PASSE
         function openForm() {
             document.getElementById("myForm").style.display = "block";
         }

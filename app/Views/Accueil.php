@@ -59,14 +59,14 @@
                 </div>
                 <!--AFFICHAGE CENTRAL --> 
                 <div class="milieu col-8 bg-dark text-white ">
-                    <h3 class="bg-danger text-white">INFORMATION CENTER</h3>
+                    <h3 class="bg-danger text-white">CENTRE D'INFORMATION</h3>
                     <h4>se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
-                    <h4>DERNIER AJOUT :</h4>
-                    CONTACT : • | <!-- AFFICHAGE DU DERNIER CONTACT AJOUTER-->
-                    ORGANISATION : • |  <!-- AFFICHAGE DE LA DERNIERE ORGANISATION AJOUTER -->
-                    LOGIN : •  <!-- AFFICHAGE DU DERNIER LOGIN AJOUTER -->
+<!--                    <h4>DERNIER AJOUT :</h4>
+                    CONTACT : • |  AFFICHAGE DU DERNIER CONTACT AJOUTER
+                    ORGANISATION : • |   AFFICHAGE DE LA DERNIERE ORGANISATION AJOUTER 
+                    LOGIN : •   AFFICHAGE DU DERNIER LOGIN AJOUTER 
                     
-                    <br>
+                    <br>-->
                 </div>
             </div>
         </div>

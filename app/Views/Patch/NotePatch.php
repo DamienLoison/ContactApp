@@ -19,9 +19,6 @@
             border-top: solid  rgb(84,84,84) 5px; 
             margin-top: -8px;
         }
-        .notePatch{
-            /*margin-top: px;*/
-        }
         #ajout{
 
         }
@@ -60,7 +57,8 @@
                         Ajout de bouton de retour sur la modification de contact/organisation/login<br>
                         Ajout de la ville de l'organisation dans la modification et dans l'affichage d'organisation<br>
                         Ajout d'un moyen de me contacter<br>
-                        Ajout barre de recherche par ID
+                        Ajout barre de recherche par ID pour les Logins<br>
+                        Ajout barre de recherche par le <strong>nom</strong> pour les contacts et les organisations
                     </div>
                     <!-- -------------------------------------- -->
                     ___________________________________________________<br>
