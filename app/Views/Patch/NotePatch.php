@@ -87,6 +87,7 @@
                     <div id="visuel" class="">
                         <h3>VISUEL</h3>
                         Ajout du visuel pour l'accueil
+                        Ajout d'image pour accéder aux pages d'ajouts
                     </div>
                     <!-- -------------------------------------- -->
                     ___________________________________________________<br>

@@ -46,7 +46,7 @@
                                 <th scope="col">Organisation</th>
                                 <th scope="col">Modifier</th>
                                 <th scope="col">Supprimer</th>
-                                <th scope="col"><a href="/Ajouter/Ajouter_Contact">Ajouter</a></th>
+                                <th scope="col"><a href="/Ajouter/Ajouter_Contact"><img src="https://www.pngmart.com/files/8/Plus-Transparent-Images-PNG.png" width="20" height="20"/></a></th>
                             </tr>
                         </thead>
                         <?php foreach ($contacts as $contact) : ?>
@@ -62,7 +62,7 @@
                                     //AFFICHE LE NOM DE L ORGANISATION EN FONCTION DE SON ID
                                     foreach ($organisations as $organisation) {
                                         if ($organisation['ID_Organisation'] == $contact['ID_Organisation']) {
-                                            $NomOrganisation = $organisation['ID_Organisation']. " " .$organisation['Nom_Organisation'];
+                                            $NomOrganisation = $organisation['ID_Organisation'] . " " . $organisation['Nom_Organisation'];
                                             echo $NomOrganisation;
                                         }
                                     }

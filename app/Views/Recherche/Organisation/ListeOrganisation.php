@@ -44,7 +44,7 @@
                             <th scope="col">Téléphone</th>
                             <th scope="col">Modifier</th>
                             <th scope="col">Supprimer</th>
-                            <th scope="col"><a href="/Ajouter/Ajouter_Organisation">Ajouter Organisation</a></th>
+                            <th scope="col"><a href="/Ajouter/Ajouter_Organisation"><img src="https://www.pngmart.com/files/8/Plus-Transparent-Images-PNG.png" width="20" height="20"/></a></th>
                         </tr>
                     </thead>
                     <?php foreach ($organisations as $organisation) : ?>
