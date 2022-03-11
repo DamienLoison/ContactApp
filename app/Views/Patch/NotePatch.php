@@ -12,17 +12,15 @@
             border-top: solid black 5px;
             background-color: #0092db;
         }
-        .Todo {
-            border-top: solid black 5px;
-            border-bottom: solid black 5px;
-            margin-top: -10px;
-            margin-bottom: -22px;
-        }
         .BUG{
             color: #d00;
         }
+        #corps{
+            border-top: solid  rgb(84,84,84) 5px; 
+            margin-top: -8px;
+        }
         .notePatch{
-            /*margin-top: 12px;*/
+            /*margin-top: px;*/
         }
         #ajout{
 
@@ -48,26 +46,7 @@
             <div id="Titre" class="bg-dark text-white text-center">
                 <h1>NOTE PATCH</h1>
             </div>
-            <div class="Todo text-center">
-                <table class="table table-dark table-borderless table-sm">
-                    <thead>
-                        <tr>
-                            <th scope="col">IMPORTANCE</th>
-                            <th scope="col">TACHE</th>
-                        </tr>
-                    </thead>
-                    <tr class="border border-danger">
-                        <td>
-                            ++
-                        </td>
-                        <td>
-                            Mise en place des moyens de recherche par ID
-                        </td>
-                    </tr>
-                </table>
-            </div>  
-
-            <div class="bg-dark text-white ">
+            <div id="corps" class="bg-dark text-white ">
                 <h1 class="text-center">VERSION B:1.0.11</h1>
                 <!-- -------------------------------------- -->
                 <div id="modif">
@@ -80,7 +59,8 @@
                         Possibilité d'accéder directement au site de l'organisation dans l'affichage des organisations<br>
                         Ajout de bouton de retour sur la modification de contact/organisation/login<br>
                         Ajout de la ville de l'organisation dans la modification et dans l'affichage d'organisation<br>
-                        Ajout d'un moyen de me contacter
+                        Ajout d'un moyen de me contacter<br>
+                        Ajout barre de recherche par ID
                     </div>
                     <!-- -------------------------------------- -->
                     ___________________________________________________<br>

@@ -67,6 +67,29 @@
         }
     </style>
     <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
         function openForm() {
             document.getElementById("myForm").style.display = "block";
         }
@@ -98,8 +121,9 @@
                 <?php
             }
             ?>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
             <?php if (!empty($logins) && is_array($logins)) : ?>
-                <table class="table table-dark table-borderless table-sm">
+                <table id="myTable" class="table table-dark table-borderless table-sm">
                     <thead class="">
                         <tr>
                             <th scope="col">ID</th>
@@ -118,7 +142,7 @@
                             <td>
                                 <button class="open-button" onclick="openForm()">voir identifiant</button>
                                 <div class="form-popup" id="myForm">
-                                    <form action="/action_page.php" class="form-container">
+                                    <form class="form-container">
                                         <h1>Login</h1>
                                         <label><b>Nom d'utilisateur</b></label>
                                         <input Disabled type="text" name="Utilisateur_Login" value="<?= $login['Utilisateur_Login'] ?>" required>

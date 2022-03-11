@@ -48,7 +48,7 @@
                         <a style="color: tomato;" href="/Recherche/toute_les_organisations">AFFICHER ORGANISATION</a><br>
                         ___________________________ <br>
                         <a style="color: tomato;" href="/Ajouter/ajouter_organisation">AJOUTER ORGANISATION</a><br>
-                    </div>
+                    </div><br>
                     <div>
                         <h4 style="background-color: seagreen;">LOGIN</h4>
                         <a style="color: seagreen;" href="/Recherche/tout_les_login">AFFICHER LOGIN</a><br>
