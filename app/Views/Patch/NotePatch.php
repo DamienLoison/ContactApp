@@ -97,8 +97,10 @@
                         Modification affichage des logins<br>
                         Modification du Note Patch<br>
                         Modification du footer<br>
-                        Correction bouton dans ModificationContact<br>
+                        Modification de la page architecture<br>
+                        Correction bouton dans la modification des contact<br>
                         Correction visuel<br>
+                        Correction lien dans la page architecture<br>
                         Correction du nom des boutons                       
                     </div>
                 </div>

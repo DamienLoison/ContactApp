@@ -1,65 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr-Fr">
 
-<head>
-    <meta charset="fr-Fr">
-    <link rel="stylesheet" href="style/MiseEnPage">
-    <title>Architecture ContactApp</title>
-</head>
-
-<style>
-    .nav {
-        height: 40px;
-    }
-
-    .footer {
-        height: 75px;
-    }
-
-    #titre {
-        font-size: 24px;
-    }
-
-    #sous-titre {
-        font-size: 16px;
-    }
-
-    .disabled {
-        pointer-events: none;
-        text-decoration: none;
-        color: grey;
-    }
-</style>
-
-<body>
-    <div class="nav">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/MiseEnPage">
+        <title>Architecture ContactApp</title>
         <?php echo view('template/header.php') ?>
-    </div>
-
-    <div class="Architecture">
-        <pre>
-            <strong><a id="titre" style="color:black;" href="/AccueilController/index">• Accueil</a><br></strong>
-                <a id="sous-titre"  href="">-> Architecture</a><br>
-                <a id="sous-titre" class="disabled" href="/ContactController/aide_contact">-> Aide [Désactiver momentanément]</a><br>
-                <a id="sous-titre"  href="/AccueilController/note_patch">-> Note de patch</a><br>
-            <strong><a id="titre" style="color:black;" href="/ContactController/index">• Recherche</a><br></strong>
-                <a id="sous-titre" href="/ContactController/tout_les_contacts">-> Liste des contacts</a><br>
-                <a id="sous-titre" href="/ContactController/recherche_contact">-> Recherche de contact</a><br>
-                <a id="sous-titre" href="/ContactController/toute_les_organisations">-> Liste des organisations</a><br>
-                <a id="sous-titre" href="/ContactController/recherche_organisation">-> Recherche des organisations</a><br>
-                <a id="sous-titre" href="/ContactController/tout_les_login">-> Liste des logins</a><br>
-                <a id="sous-titre" href="/ContactController/recherche_de_login">-> Recherche des logins</a><br>
-            <strong><a id="titre" style="color:black;" href="">• Test</a>-<br></strong>
-                <a id="sous-titre" href="/FormulaireController?NomContact=&PrenomContact=&NumeroTelephoneContact=&EmailContact=">-> Formulaire</a><br>
-                <!-- <a id="sous-titre" href="">-> </a><br>
-                <a id="sous-titre" href="">-> </a><br> -->
-
-        </pre>
-    </div>
-
-    <div class="footer">
+    </head>
+    <style>
+        body {
+            margin-top: 20px;
+        }
+        #titre {
+            font-size: 24px;
+        }
+        #sous-titre {
+            font-size: 16px;
+        }
+        .disabled {
+            pointer-events: none;
+            text-decoration: none;
+            color: grey;
+        }
+    </style>
+    <body>
+        <div class="Architecture">
+            <pre>
+            <!--ACCUEIL-->
+            <strong><a id="titre" style="color:black;" href="/Accueil/index">• ACCUEIL</a><br></strong>
+                <a id="sous-titre" href="">-> Architecture</a><br>
+                <a id="sous-titre" href="/Accueil/aide">-> Aide</a><br>
+                <a id="sous-titre" href="/Accueil/note_patch">-> Note de patch</a>
+            <!--RECHERCHE-->
+            <strong><a id="titre" style="color:black;">• RECHERCHE</a><br></strong>
+                <a id="sous-titre" href="/Recherche/tout_les_contacts">-> Liste des contacts</a><br>
+                <a id="sous-titre" href="/Recherche/toute_les_organisations">-> Liste des organisations</a><br>
+                <a id="sous-titre" href="/Recherche/tout_les_login">-> Liste des logins</a>
+            <!--AJOUTER-->
+            <strong><a id="titre" style="color:black;">• AJOUTER</a></strong><br>
+                <a id="sous-titre" href="/Ajouter/ajouter_contact">-> Ajout d'un contact</a><br>
+                <a id="sous-titre" href="/Ajouter/ajouter_organisation">-> Ajout d'une orgnisation</a><br>
+                <a id="sous-titre" href="/Ajouter/ajouter_login">-> Ajout d'un login</a>
+            </pre>
+        </div>
+    </body>
+    <footer>
         <?php echo view('template/footer.php') ?>
-    </div>
-</body>
-
+    </footer>
 </html>
