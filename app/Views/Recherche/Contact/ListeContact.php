@@ -90,7 +90,7 @@
                     <?php
                 }
                 ?>
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Rechercher par le nom..">
                 <?php if (!empty($contacts) && is_array($contacts)) : ?>
                 <table id="myTable" class="table table-dark table-borderless table-sm">
                         <thead class="">

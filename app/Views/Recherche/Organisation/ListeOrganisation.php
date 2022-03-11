@@ -57,7 +57,7 @@
                 <?php
             }
             ?>
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Rechercher par le nom..">
             <?php if (!empty($organisations) && is_array($organisations)) : ?>
                 <table id="myTable" class="table table-dark table-borderless table-sm">
                     <thead class="">
