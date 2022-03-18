@@ -54,7 +54,7 @@ class Recherche extends Controller {
             'numeroTel_Contact' => $this->request->getPost('numeroTel_Contact'),
             'mail_Contact' => $this->request->getPost('mail_Contact'),
             'ID_Organisation' => $this->request->getPost('ID_Organisation'),
-            'Nom_Organisation_Contact' => $this->request->getPost('Nom_Organisation_Contact'),
+//            'Nom_Organisation_Contact' => $this->request->getPost('Nom_Organisation_Contact'),
         ];
         $contact->update($ID_Contact, $data);
 

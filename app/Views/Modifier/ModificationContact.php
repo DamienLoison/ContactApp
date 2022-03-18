@@ -55,9 +55,15 @@
                         </div>
                         <div>
                             <label>AFFICHAGE DES ORGANISATIONS :</label>
-                            <select class="" value="" name="ID_Organisation" methode="POST"> 
-                                <option selected disabled></option>
+                            <select class="" name="ID_Organisation" methode="POST"> 
                                 <?php foreach ($organisation as $organisation) { ?>
+                                    <?php
+                                    if ($contact['ID_Organisation'] == $organisation['ID_Organisation']) {
+                                        ?>
+                                        <option selected disabled>Organisation actuelle : <?= $contact['ID_Organisation'] . "." . $organisation['Nom_Organisation'] ?></option>
+                                        <?php
+                                    }
+                                    ?>
                                     <?php
                                     $test = $contact['ID_Organisation'];
                                     $tests = $organisation['ID_Organisation'] . $organisation['Nom_Organisation'];
@@ -71,7 +77,6 @@
                                     <!--AFFICHE CORRECTEMENT !-->
                                     <option><?php echo $organisation['ID_Organisation'] . " " . $organisation['Nom_Organisation'] ?></option>
                                     <?php
-                                    echo "<option>" . $organisation['ID_Organisation'] . " " . $organisation['Nom_Organisation'] . "</option>";
                                 }
                                 ?>
                             </select>

@@ -66,10 +66,11 @@
                     <div id="correction" class="">
                         <h3>CORRECTION/OPTIMISATION</h3>
                         Correction titre<br>
-
+                        Correction erreur lors de la modification d'un contact avec l'organisation<br>
+                        affichage du nom et de l'id de l'organisation lors de la modification d'un contact
                     </div>
                 </div>
-
+                <br>
                 <h1 class="text-center">VERSION B:1.0.11</h1>
                 <!-- -------------------------------------- -->
                 <div id="modif">
