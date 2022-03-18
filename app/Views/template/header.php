@@ -27,8 +27,14 @@
         <li class="nav-item">
             <a class="nav-link" href="/Accueil/aide">Aide</a>
         </li>
-        <li class="nav-item ms-auto">
+        <li class="nav-item">
             <a class="nav-link" href="/Accueil/architecture_site" tabindex="-1">Ensembles des pages</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Accueil/note_patch" tabindex="-1">Note de patch</a>
+        </li>
+        <li class="nav-item ms-auto">
+            Beta version : B:1.0.12
         </li>
     </ul>
 </html>
