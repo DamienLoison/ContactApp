@@ -12,9 +12,8 @@
 <footer>
     <div class="row ">
         <div class="col">
-            
-            <a href="https://github.com/DamienLoison/ContactApp">lien Github</a> <br>
-            <a href="https://github.com/DamienLoison/ContactApp/issues">Signaler un Bug</a>
+            <a href="https://github.com/DamienLoison/ContactApp/issues">Une faute/un bug/une question ? </a>
+            <br><a href="https://github.com/DamienLoison/ContactApp">lien Github</a> 
         </div>
         <div class="col">
             <a href="Accueil/me_contacter">Me contacter </a>
