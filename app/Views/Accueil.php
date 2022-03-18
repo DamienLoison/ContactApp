@@ -27,8 +27,36 @@
             width: 65%;
             height: 100%;
         }
+        #information{
+            background-color: white;
+            color: black;
+            width: 50%;
+            height: 20%;
+        }
     </style>
     <body>
+        <script>
+            function myFunction() {
+                // Declare variables
+                var input, filter, input, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("myTable");
+                tr = table.getElementsByTagName("tr");
+                // Loop through all table rows, and hide those who don't match the search query
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[1];
+                    if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                        } else {
+                            tr[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+        </script>
         <div class="Accueil">
             <div class="text-center bg-dark text-white">
                 <h1>ContactApp</h1>
@@ -60,18 +88,29 @@
                 <!--AFFICHAGE CENTRAL --> 
                 <div class="milieu col-8 bg-dark text-white ">
                     <h3 class="bg-danger text-white">CENTRE D'INFORMATION</h3>
-                    <h4>se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
-<!--                    <h4>DERNIER AJOUT :</h4>
-                    CONTACT : • |  AFFICHAGE DU DERNIER CONTACT AJOUTER
-                    ORGANISATION : • |   AFFICHAGE DE LA DERNIERE ORGANISATION AJOUTER 
-                    LOGIN : •   AFFICHAGE DU DERNIER LOGIN AJOUTER 
+                    <h4>
+                        <?php
+                        setlocale(LC_ALL, 'fr_fr');
+                        echo strftime('%A %d %B %Y');
+                        ?>
+                        <br>
+                        <?php
+                        echo strftime('%H:%M');
+                        ?>
+                    </h4>
                     
-                    <br>-->
+                    <!--                    <h4>DERNIER AJOUT :</h4>
+                                        CONTACT : • |  AFFICHAGE DU DERNIER CONTACT AJOUTER
+                                        ORGANISATION : • |   AFFICHAGE DE LA DERNIERE ORGANISATION AJOUTER 
+                                        LOGIN : •   AFFICHAGE DU DERNIER LOGIN AJOUTER 
+                                        
+                                        <br>-->
+                    <h4 style="font-size: 11px; margin-top: 240px">se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
                 </div>
             </div>
         </div>
     </body>
     <footer>
-        <?php echo view('template/footer.php') ?>
+<?php echo view('template/footer.php') ?>
     </footer>
 </html>
