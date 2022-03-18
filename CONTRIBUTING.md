@@ -1,6 +1,4 @@
-# Contributing to CodeIgniter4
+# Contribué à ContactApp
 
-CodeIgniter is a community driven project and accepts contributions of
-code and documentation from the community.
-
-If you'd like to contribute, please read the [Contributing to CodeIgniter](./contributing/README.md).
+ContactApp est une application destiné à sauvegarder des contacts et des organisations.
+Il est possible de participé à l'amélioration de cette application.
