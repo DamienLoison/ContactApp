@@ -13,6 +13,7 @@
         }
         #titre {
             font-size: 24px;
+            color: white;
         }
         #sous-titre {
             font-size: 16px;
@@ -23,21 +24,21 @@
             color: grey;
         }
     </style>
-    <body>
+    <body class="bg-dark">
         <div class="Architecture">
             <pre>
             <!--ACCUEIL-->
-            <strong><a id="titre" style="color:black;" href="/Accueil/index">• ACCUEIL</a><br></strong>
+            <strong><a id="titre" href="/Accueil/index">• ACCUEIL</a><br></strong>
                 <a id="sous-titre" href="">-> Architecture</a><br>
                 <a id="sous-titre" href="/Accueil/aide">-> Aide</a><br>
                 <a id="sous-titre" href="/Accueil/note_patch">-> Note de patch</a>
             <!--RECHERCHE-->
-            <strong><a id="titre" style="color:black;">• RECHERCHE</a><br></strong>
+            <strong><a id="titre">• RECHERCHE</a><br></strong>
                 <a id="sous-titre" href="/Recherche/tout_les_contacts">-> Liste des contacts</a><br>
                 <a id="sous-titre" href="/Recherche/toute_les_organisations">-> Liste des organisations</a><br>
                 <a id="sous-titre" href="/Recherche/tout_les_login">-> Liste des logins</a>
             <!--AJOUTER-->
-            <strong><a id="titre" style="color:black;">• AJOUTER</a></strong><br>
+            <strong><a id="titre">• AJOUTER</a></strong><br>
                 <a id="sous-titre" href="/Ajouter/ajouter_contact">-> Ajout d'un contact</a><br>
                 <a id="sous-titre" href="/Ajouter/ajouter_organisation">-> Ajout d'une orgnisation</a><br>
                 <a id="sous-titre" href="/Ajouter/ajouter_login">-> Ajout d'un login</a>
