@@ -49,10 +49,6 @@
                             <label>Email du contact :</label>
                             <input type="text" name="mail_Contact" value="<?= $contact['mail_Contact'] ?>" class="form-control" placeholder="Entrer le mail" required>
                         </div>
-                        <div class="mb-3 mt-3 align-content-start">
-                            <label>ID de l'organisation :</label>
-                            <input DISABLED type="text" name="ID_Organisation" value="<?= $contact['ID_Organisation'] ?>" class="form-control" placeholder="Entrer le mail" required>
-                        </div>
                         <div>
                             <label>AFFICHAGE DES ORGANISATIONS :</label>
                             <select class="" name="ID_Organisation" methode="POST"> 
@@ -60,7 +56,7 @@
                                     <?php
                                     if ($contact['ID_Organisation'] == $organisation['ID_Organisation']) {
                                         ?>
-                                        <option selected disabled>Organisation actuelle : <?= $contact['ID_Organisation'] . "." . $organisation['Nom_Organisation'] ?></option>
+                                        <option selected disabled><?= $contact['ID_Organisation'] . "." . $organisation['Nom_Organisation'] ?></option>
                                         <?php
                                     }
                                     ?>

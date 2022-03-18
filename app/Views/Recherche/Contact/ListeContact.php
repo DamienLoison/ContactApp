@@ -82,14 +82,14 @@
         <div class="fiche">
             <div class="corp justify-content-center">
                 <?php
-//                if (session()->getFlashdata('status')) {
+                if (session()->getFlashdata('status')) {
                     ?>
                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
                         <strong><?= session()->getFlashdata('status'); ?></strong>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-laber="Close"></button>
                     </div>
                     <?php
-//                }
+                }
                 ?>
                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Rechercher par le nom..">
                 <?php if (!empty($contacts) && is_array($contacts)) : ?>
