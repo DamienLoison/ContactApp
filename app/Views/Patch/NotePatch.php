@@ -16,7 +16,7 @@
             color: #d00;
         }
         #corps{
-            border-top: solid  rgb(84,84,84) 5px; 
+            border-top: solid  rgb(84,84,84) 5px;
             margin-top: -8px;
         }
         #ajout{
@@ -44,6 +44,32 @@
                 <h1>NOTE PATCH</h1>
             </div>
             <div id="corps" class="bg-dark text-white ">
+                <h1 class="text-center">VERSION B:1.0.12</h1>
+                <!-- -------------------------------------- -->
+                <div id="modif">
+                    <h2>MODIFICATION DE VERSION</h2>
+                    <!-- -------------------------------------- -->
+                    ___________________________________________________<br>
+                    <div id="ajout" class="">
+                        <h3>AJOUT</h3>
+                        Ajout d'un nom si une image ne s'affiche pas<br>
+                        <h6 style="color: green;">-> image Ajouter qui si ne s'affiche pas affiche Ajouter</h6>
+                        Ajout d'image à la barre de recherche
+                    </div>
+                    <!-- -------------------------------------- -->
+                    ___________________________________________________<br>
+                    <div id="visuel" class="">
+                        <h3>VISUEL</h3>
+                    </div>
+                    <!-- -------------------------------------- -->
+                    ___________________________________________________<br>
+                    <div id="correction" class="">
+                        <h3>CORRECTION/OPTIMISATION</h3>
+                        Correction titre<br>
+
+                    </div>
+                </div>
+
                 <h1 class="text-center">VERSION B:1.0.11</h1>
                 <!-- -------------------------------------- -->
                 <div id="modif">

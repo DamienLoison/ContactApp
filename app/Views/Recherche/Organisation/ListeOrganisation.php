@@ -18,6 +18,20 @@
         .footer {
             margin-top: -16px;
         }
+        #corps{
+            background-color: #545454;
+        }
+        #myInput {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/36/Search_Icon.png?20200524051850'); /* Add a search icon to input */
+            background-size: auto 25px;
+            background-position: 10px 12px; /* Position the search icon */
+            background-repeat: no-repeat; /* Do not repeat the icon image */
+            width: 100%; /* Full-width */
+            font-size: 16px; /* Increase font-size */
+            padding: 12px 20px 12px 40px; /* Add some padding */
+            border: 1px solid #ddd; /* Add a grey border */
+            margin-bottom: 12px; /* Add some space below the input */
+        }
     </style>
     <body>
         <script>
@@ -46,7 +60,7 @@
                 }
             }
         </script>
-        <div class="justify-content-center">
+        <div id="corps" class="justify-content-center">
             <?php
             if (session()->getFlashdata('status')) {
                 ?>
@@ -71,7 +85,7 @@
                             <th scope="col">Téléphone</th>
                             <th scope="col">Modifier</th>
                             <th scope="col">Supprimer</th>
-                            <th scope="col"><a href="/Ajouter/Ajouter_Organisation"><img src="https://www.pngmart.com/files/8/Plus-Transparent-Images-PNG.png" width="20" height="20"/></a></th>
+                            <th scope="col"><a href="/Ajouter/Ajouter_Organisation"><img src="https://www.pngmart.com/files/8/Plus-Transparent-Images-PNG.png" alt="ajouter" width="20" height="20"/></a></th>
                         </tr>
                     </thead>
                     <?php foreach ($organisations as $organisation) : ?>

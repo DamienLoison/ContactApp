@@ -22,7 +22,8 @@
         }
 
         #myInput {
-            background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/36/Search_Icon.png?20200524051850'); /* Add a search icon to input */
+            background-size: auto 25px;
             background-position: 10px 12px; /* Position the search icon */
             background-repeat: no-repeat; /* Do not repeat the icon image */
             width: 100%; /* Full-width */
@@ -92,7 +93,7 @@
                 ?>
                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Rechercher par le nom..">
                 <?php if (!empty($contacts) && is_array($contacts)) : ?>
-                <table id="myTable" class="table table-dark table-borderless table-sm">
+                    <table id="myTable" class="table table-dark table-borderless table-sm">
                         <thead class="">
                             <tr>
                                 <th scope="col">ID</th>
@@ -103,7 +104,7 @@
                                 <th scope="col">Organisation</th>
                                 <th scope="col">Modifier</th>
                                 <th scope="col">Supprimer</th>
-                                <th scope="col"><a href="/Ajouter/Ajouter_Contact"><img src="https://www.pngmart.com/files/8/Plus-Transparent-Images-PNG.png" width="20" height="20"/></a></th>
+                                <th scope="col"><a href="/Ajouter/Ajouter_Contact"><img src="https://www.pngmart.com/files/8/Plus-Transparent-Images-PNG.png" alt="ajouter" width="20" height="20"/></a></th>
                             </tr>
                         </thead>
                         <?php foreach ($contacts as $contact) : ?>

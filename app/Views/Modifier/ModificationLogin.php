@@ -29,7 +29,7 @@
                     <form action="<?= base_url('Recherche/tout_les_login'); ?>" method="POST">
                         <button type="submit" class="btn btn-danger btn-block btn-lg float-end">Retour</button>
                     </form>  
-                    <h2>Ajouter un Login</h2>
+                    <h2>Modifier un Login</h2>
                     <form action="<?= base_url('Recherche/update_login/' . $login['ID_Login']); ?>" method="POST">
                         <div class="mb-3 mt-3">
                             <label>Utilisateur :</label>

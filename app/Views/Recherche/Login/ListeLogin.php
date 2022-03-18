@@ -65,6 +65,17 @@
         .footer {
             margin-top: -16px;
         }
+        #myInput {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/36/Search_Icon.png?20200524051850'); /* Add a search icon to input */
+            background-size: auto 25px;
+            background-position: 10px 12px; /* Position the search icon */
+            background-repeat: no-repeat; /* Do not repeat the icon image */
+            width: 100%; /* Full-width */
+            font-size: 16px; /* Increase font-size */
+            padding: 12px 20px 12px 40px; /* Add some padding */
+            border: 1px solid #ddd; /* Add a grey border */
+            margin-bottom: 12px; /* Add some space below the input */
+        }
     </style>
     <script>
         //POUR LA RECHERCHE VIA L ID
@@ -130,10 +141,10 @@
                         <tr>
                             <th scope="col">ID</th>
                             <th scope="col">Utilisateur</th>
-                            <th scope="col">Mot de passe</th>
+                            <th scope="col">Information</th>
                             <th scope="col">Modifier</th>
                             <th scope="col">Supprimer</th>
-                            <th scope="col"><a href="/Ajouter/Ajouter_Login"><img src="https://www.pngmart.com/files/8/Plus-Transparent-Images-PNG.png" width="20" height="20"/></a></th>
+                            <th scope="col"><a href="/Ajouter/Ajouter_Login"><img src="https://www.pngmart.com/files/8/Plus-Transparent-Images-PNG.png" alt="ajouter" width="20" height="20"/></a></th>
                         </tr>
                     </thead>
                     <?php foreach ($logins as $login) : ?>
@@ -142,20 +153,10 @@
                             <td> <?php echo ($login['ID_Login']) ?></td>
                             <td> <?php echo ($login['Utilisateur_Login']) ?></td>
                             <td>
-                                <button class="open-button" onclick="openForm()">voir identifiant</button>
-                                <div class="form-popup" id="myForm">
-                                    <form class="form-container">
-                                        <h1>Login</h1>
-                                        <label><b>Nom d'utilisateur</b></label>
-                                        <input Disabled type="text" name="Utilisateur_Login" value="<?= $login['Utilisateur_Login'] ?>" required>
-
-                                        <label for="psw"><b>Password</b></label>
-                                        <input Disabled type="password" name="Password_Login" value="<?= $login['Password_Login'] ?>" id="password" required>
-                                        <input type="checkbox" onclick="Afficher()"> afficher mot de passe</input>
-
-                                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                                    </form>
-                                </div>
+                                <form action="<?= Base_url('/Recherche/afficher_login/' . $login['ID_Login']); ?>" method="POST">
+                                    <input type="hidden" name="_method" value="AFFICHER">
+                                    <button type="submit" class="btn btn-outline-success" value="">Accéder</button>
+                                </form>
                             </td>
                             <td>
                                 <form action="<?= Base_url('/Recherche/modifier_login/' . $login['ID_Login']); ?>" method="POST">

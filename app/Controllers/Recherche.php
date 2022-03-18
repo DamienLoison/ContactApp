@@ -118,6 +118,13 @@ class Recherche extends Controller {
         ];
         echo view('Recherche/Login/ListeLogin', $data);
     }
+    
+    public function afficher_login($ID_Login = null){
+        $login = new LoginModel();
+        $data['login'] = $login->find($ID_Login);
+        
+        return view('Recherche/Login/AfficherLogin', $data);
+    }
 
     public function modifier_login($ID_Login = null) {
         $login = new LoginModel();
