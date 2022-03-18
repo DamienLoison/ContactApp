@@ -75,7 +75,7 @@
                             L'Affichage des logins comporte un tableau de 6 colonnes comprennant :<br>
                             L'ID -> permettant d'identifier le login<br>
                             Le nom d'Utilisateur qui est nécessaire pour se connecter<br>
-                            Le mot de passe qui est caché, nécessite de cliquer sur <em>"voir identifiant"</em><br>
+                            Les identifiants sont cachés, nécessite de cliquer sur <em>"accéder"</em><br>
                             Modifier -> Permet de modifier les informations de login<br>
                             Supprimer -> supprime le login<br>
                             + -> Permet d'ajouter un nouveau login

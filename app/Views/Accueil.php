@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
         <link rel="stylesheet" type="text/css" href="Style.css" media="all" />
+        <meta http-equiv="refresh" content="60" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <title>Accueil</title>
@@ -26,12 +27,6 @@
         .milieu{
             width: 65%;
             height: 100%;
-        }
-        #information{
-            background-color: white;
-            color: black;
-            width: 50%;
-            height: 20%;
         }
     </style>
     <body>
@@ -56,6 +51,11 @@
                     }
                 }
             }
+
+            //  ACTUALISE AUTOMATIQUEMENT LA PAGE
+            var nb = 10;
+
+            timer = window.setTimeout(" window.refresh();", 1000 * nb, "JavaScript");
         </script>
         <div class="Accueil">
             <div class="text-center bg-dark text-white">
@@ -98,19 +98,12 @@
                         echo strftime('%H:%M');
                         ?>
                     </h4>
-                    
-                    <!--                    <h4>DERNIER AJOUT :</h4>
-                                        CONTACT : • |  AFFICHAGE DU DERNIER CONTACT AJOUTER
-                                        ORGANISATION : • |   AFFICHAGE DE LA DERNIERE ORGANISATION AJOUTER 
-                                        LOGIN : •   AFFICHAGE DU DERNIER LOGIN AJOUTER 
-                                        
-                                        <br>-->
-                    <h4 style="font-size: 11px; margin-top: 240px">se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
+                    <h4 style="font-size: 11px; margin-top: 320px">se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
                 </div>
             </div>
         </div>
     </body>
     <footer>
-<?php echo view('template/footer.php') ?>
+        <?php echo view('template/footer.php') ?>
     </footer>
 </html>
