@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Recherche |Liste Organisation</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <?php echo view('template/header.php') ?>
     </head>
     <style>
@@ -64,7 +66,7 @@
             <?php
             if (session()->getFlashdata('status')) {
                 ?>
-                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <strong><?= session()->getFlashdata('status'); ?></strong>
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-laber="Close"></button>
                 </div>

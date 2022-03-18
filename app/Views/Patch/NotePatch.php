@@ -54,7 +54,9 @@
                         <h3>AJOUT</h3>
                         Ajout d'un nom si une image ne s'affiche pas<br>
                         <h6 style="color: green;">-> image Ajouter qui si ne s'affiche pas affiche Ajouter</h6>
-                        Ajout d'image à la barre de recherche
+                        Ajout d'image à la barre de recherche<br>
+                        Ajout de la date et de l'heure à l'accueil<br>
+
                     </div>
                     <!-- -------------------------------------- -->
                     ___________________________________________________<br>
@@ -67,7 +69,8 @@
                         <h3>CORRECTION/OPTIMISATION</h3>
                         Correction titre<br>
                         Correction erreur lors de la modification d'un contact avec l'organisation<br>
-                        affichage du nom et de l'id de l'organisation lors de la modification d'un contact
+                        affichage du nom et de l'id de l'organisation lors de la modification d'un contact<br>
+                        Correction notification qui disparaissait pas
                     </div>
                 </div>
                 <br>
