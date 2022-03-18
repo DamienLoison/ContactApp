@@ -1,0 +1,162 @@
+CRITICAL - 2022-02-24 03:43:44 --> Class 'App\Controllers\Controllers' not found
+#0 C:\laragon\www\ContactApp\system\Router\Router.php(518): include_once()
+#1 C:\laragon\www\ContactApp\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Supprimer/suppr...')
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Supprimer/suppr...')
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-24 03:44:36 --> Class 'App\Controllers\Controllers' not found
+#0 C:\laragon\www\ContactApp\system\Router\Router.php(518): include_once()
+#1 C:\laragon\www\ContactApp\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Supprimer/suppr...')
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Supprimer/suppr...')
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-24 03:46:13 --> Class 'App\Controllers\Controllers' not found
+#0 C:\laragon\www\ContactApp\system\Router\Router.php(518): include_once()
+#1 C:\laragon\www\ContactApp\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Supprimer/suppr...')
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Supprimer/suppr...')
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-24 03:46:16 --> Class 'App\Controllers\Controllers' not found
+#0 C:\laragon\www\ContactApp\system\Router\Router.php(518): include_once()
+#1 C:\laragon\www\ContactApp\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Supprimer/suppr...')
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Supprimer/suppr...')
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-24 03:52:12 --> Class 'App\Controllers\Controllers' not found
+#0 C:\laragon\www\ContactApp\system\Router\Router.php(518): include_once()
+#1 C:\laragon\www\ContactApp\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Supprimer/suppr...')
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Supprimer/suppr...')
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-24 04:23:04 --> Class 'App\Controllers\Controller' not found
+#0 C:\laragon\www\ContactApp\system\Router\Router.php(518): include_once()
+#1 C:\laragon\www\ContactApp\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Modifier/modifi...')
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Modifier/modifi...')
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-24 04:23:52 --> Class 'App\Controllers\Controller' not found
+#0 C:\laragon\www\ContactApp\system\Router\Router.php(518): include_once()
+#1 C:\laragon\www\ContactApp\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Modifier/modifi...')
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Modifier/modifi...')
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-24 04:24:37 --> Class 'App\Controllers\Controller' not found
+#0 C:\laragon\www\ContactApp\system\Router\Router.php(518): include_once()
+#1 C:\laragon\www\ContactApp\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Modifier/modifi...')
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Modifier/modifi...')
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-24 04:24:39 --> Class 'App\Controllers\Controller' not found
+#0 C:\laragon\www\ContactApp\system\Router\Router.php(518): include_once()
+#1 C:\laragon\www\ContactApp\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('Modifier/modifi...')
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('Modifier/modifi...')
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-24 05:11:18 --> syntax error, unexpected 'endif' (T_ENDIF)
+#0 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/Conta...', Array, true)
+#2 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(43): view('Recherche/Conta...', Array)
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->tout_les_contacts()
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-24 06:54:35 --> Cannot use [] for reading
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-24 06:54:42 --> Array to string conversion
+#0 C:\laragon\www\ContactApp\app\Views\Recherche\Contact\ListeContact.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\laragon\\www\\...', 141, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/Conta...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(43): view('Recherche/Conta...', Array)
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->tout_les_contacts()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-24 06:54:56 --> Cannot use [] for reading
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-02-24 07:49:53 --> Undefined index: Nom_Organisation
+#0 C:\laragon\www\ContactApp\app\Views\Recherche\Contact\ListeContact.php(128): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\laragon\\www\\...', 128, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Recherche/Conta...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(43): view('Recherche/Conta...', Array)
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->tout_les_contacts()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-24 08:27:36 --> Invalid file: Information.php
+#0 C:\laragon\www\ContactApp\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Information.php')
+#1 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Information', Array, true)
+#2 C:\laragon\www\ContactApp\app\Controllers\InformationController.php(11): view('Information')
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\InformationController->index()
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InformationController))
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-24 09:23:28 --> Undefined variable: organisations
+#0 C:\laragon\www\ContactApp\app\Views\Ajout\Contact\formulaire.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 48, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(46): view('Ajout/Contact/f...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contacter()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-24 09:26:46 --> Undefined variable: organisations
+#0 C:\laragon\www\ContactApp\app\Views\Ajout\Contact\formulaire.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 48, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(46): view('Ajout/Contact/f...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-24 09:26:58 --> Undefined variable: organisations
+#0 C:\laragon\www\ContactApp\app\Views\Ajout\Contact\formulaire.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 48, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(46): view('Ajout/Contact/f...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-02-24 09:26:59 --> Undefined variable: organisations
+#0 C:\laragon\www\ContactApp\app\Views\Ajout\Contact\formulaire.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 48, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Ajout/Contact/f...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(46): view('Ajout/Contact/f...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact()
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -4,25 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class OrganisationModel extends Model
-{
-    protected $table = 'organisation';
-    protected $useAutoIncrement = true;
-    // protected $Ajout;
+class OrganisationModel extends Model {
 
-    function getOrganisation()
-    {
+    protected $table = 'organisation';
+    protected $primaryKey = 'ID_Organisation';
+    protected $useAutoIncrement = true;
+    protected $allowedFields = ['Nom_Organisation', 'Adresse_Organisation', 'Mail_Organisation', 'Site_Organisation', 'Telephone_Organisation'];
+
+    function getOrganisation() {
         return $this->findAll();
     }
-    function insertOrganisation($Ajout)
-    {
-        if(!empty($_POST($Ajout)))
-        {
-        //$this->db->insert();
-        echo 'Ajout réussi à la base de donnée !';
-        }else{
-            echo 'Ajout à la base de donnée impossible !';
-        }
 
-    }
 }

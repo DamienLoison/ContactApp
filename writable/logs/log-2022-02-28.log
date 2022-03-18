@@ -1,0 +1,104 @@
+CRITICAL - 2022-02-28 03:18:47 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+#0 C:\laragon\www\ContactApp\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#2 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(58): CodeIgniter\BaseModel->delete()
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->suppression_contact()
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-28 03:19:13 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+#0 C:\laragon\www\ContactApp\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#2 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(58): CodeIgniter\BaseModel->delete()
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->suppression_contact()
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-28 03:28:21 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+#0 C:\laragon\www\ContactApp\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(963): CodeIgniter\Model->doDelete(NULL, false)
+#2 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(58): CodeIgniter\BaseModel->delete()
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->suppression_contact()
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-28 03:30:23 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+#0 C:\laragon\www\ContactApp\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#1 C:\laragon\www\ContactApp\system\BaseModel.php(963): CodeIgniter\Model->doDelete('', false)
+#2 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(58): CodeIgniter\BaseModel->delete('')
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->suppression_contact()
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-02-28 07:52:29 --> Undefined variable: model
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 59, Array)
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->suppression_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 07:53:15 --> Undefined variable: id
+#0 C:\laragon\www\ContactApp\app\Models\ContactModel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(59): App\Models\ContactModel->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->suppression_contact()
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-28 07:55:01 --> Undefined variable: id
+#0 C:\laragon\www\ContactApp\app\Models\ContactModel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(57): App\Models\ContactModel->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->suppression_contact()
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-02-28 08:06:32 --> Cannot add or update a child row: a foreign key constraint fails (`test`.`contact`, CONSTRAINT `Nom_Organisation_Contact` FOREIGN KEY (`Nom_Organisation_Contact`) REFERENCES `organisation` (`Nom_Organisation`))
+CRITICAL - 2022-02-28 08:06:32 --> Cannot add or update a child row: a foreign key constraint fails (`test`.`contact`, CONSTRAINT `Nom_Organisation_Contact` FOREIGN KEY (`Nom_Organisation_Contact`) REFERENCES `organisation` (`Nom_Organisation`))
+#0 C:\laragon\www\ContactApp\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\laragon\www\ContactApp\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\laragon\www\ContactApp\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\laragon\www\ContactApp\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\laragon\www\ContactApp\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\ContactApp\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\ContactApp\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\ContactApp\app\Controllers\Ajouter.php(51): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Ajouter->ajouter_contact_record()
+#9 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ajouter))
+#10 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-02-28 09:24:30 --> Undefined variable: contact
+#0 C:\laragon\www\ContactApp\app\Models\ContactModel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(57): App\Models\ContactModel->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->suppression_contact()
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-28 09:24:39 --> Undefined variable: contact
+#0 C:\laragon\www\ContactApp\app\Models\ContactModel.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 41, Array)
+#1 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(57): App\Models\ContactModel->delete_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->suppression_contact()
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#4 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-02-28 09:27:34 --> Undefined variable: contact
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 57, Array)
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->suppression_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-02-28 09:27:56 --> Undefined variable: contact
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 57, Array)
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->suppression_contact()
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,124 @@
+CRITICAL - 2022-03-04 04:05:29 --> Undefined variable: ID_Login
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 152, Array)
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_login('1 method=')
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-04 04:05:52 --> Undefined variable: ID_Login
+#0 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(152): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 152, Array)
+#1 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_login('1 method=')
+#2 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#3 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-03-04 04:06:25 --> Undefined variable: login
+#0 C:\laragon\www\ContactApp\app\Views\Modifier\ModificationLogin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Modifier/Modifi...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(154): view('Modifier/Modifi...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_login('1 method=')
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-04 04:07:38 --> Undefined variable: login
+#0 C:\laragon\www\ContactApp\app\Views\Modifier\ModificationLogin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Modifier/Modifi...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(154): view('Modifier/Modifi...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_login('1 method=')
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-04 04:08:40 --> Undefined variable: login
+#0 C:\laragon\www\ContactApp\app\Views\Modifier\ModificationLogin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Modifier/Modifi...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(154): view('Modifier/Modifi...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_login('1 method=')
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-04 04:09:00 --> Undefined variable: login
+#0 C:\laragon\www\ContactApp\app\Views\Modifier\ModificationLogin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 15, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Modifier/Modifi...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(154): view('Modifier/Modifi...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_login('2 method=')
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-04 04:11:10 --> Undefined variable: login
+#0 C:\laragon\www\ContactApp\app\Views\Modifier\ModificationLogin.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 17, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Modifier/Modifi...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(154): view('Modifier/Modifi...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_login('1 method=')
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-04 04:12:45 --> Undefined variable: login
+#0 C:\laragon\www\ContactApp\app\Views\Modifier\ModificationLogin.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 17, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Modifier/Modifi...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(154): view('Modifier/Modifi...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_login('1 method=')
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-04 04:23:47 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\ContactApp\app\Views\Modifier\ModificationContact.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\laragon\\www\\...', 24, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Modifier/Modifi...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(58): view('Modifier/Modifi...', Array)
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_contact('2')
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-04 04:33:24 --> Undefined variable: login
+#0 C:\laragon\www\ContactApp\app\Views\Modifier\ModificationLogin.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 17, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Modifier/Modifi...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(154): view('Modifier/Modifi...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_login('1 method=')
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-04 04:36:22 --> Undefined variable: login
+#0 C:\laragon\www\ContactApp\app\Views\Modifier\ModificationLogin.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 17, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Modifier/Modifi...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(154): view('Modifier/Modifi...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_login('1')
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-03-04 04:40:02 --> Undefined variable: login
+#0 C:\laragon\www\ContactApp\app\Views\Modifier\ModificationLogin.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\laragon\\www\\...', 17, Array)
+#1 C:\laragon\www\ContactApp\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\ContactApp\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\ContactApp\system\Common.php(1089): CodeIgniter\View\View->render('Modifier/Modifi...', Array, true)
+#4 C:\laragon\www\ContactApp\app\Controllers\Recherche.php(154): view('Modifier/Modifi...')
+#5 C:\laragon\www\ContactApp\system\CodeIgniter.php(825): App\Controllers\Recherche->modifier_login('1')
+#6 C:\laragon\www\ContactApp\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Recherche))
+#7 C:\laragon\www\ContactApp\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\ContactApp\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
