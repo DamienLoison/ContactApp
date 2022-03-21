@@ -22,8 +22,8 @@ class Filters extends BaseConfig {
         'toolbar' => \CodeIgniter\Filters\DebugToolbar::class,
         'honeypot' => \CodeIgniter\Filters\Honeypot::class,
         'authGuard' => \App\Filters\AuthGuard::class,
-        'invalidchars' => InvalidChars::class,
-        'secureheaders' => SecureHeaders::class,
+//        'invalidchars' => InvalidChars::class,
+//        'secureheaders' => SecureHeaders::class,
     ];
 
     /**

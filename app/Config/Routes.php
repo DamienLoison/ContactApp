@@ -17,7 +17,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Accueil');
+$routes->setDefaultController('User');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -59,6 +59,10 @@ $routes->get('/', 'Recherche::delete_login');
 $routes->get('/', 'Recherche::modifier_login');
 $routes->get('/', 'Recherche::update_login');
 
+//ROUTES USER
+$routes->get('/Inscription', 'User::inscription');
+$routes->get('/Connexion', 'User::connexion');
+$routes->match(['get','post'],'inscription', 'User::inscription');
 
 // custom routes
 $routes->get('/', 'SignupController::index');

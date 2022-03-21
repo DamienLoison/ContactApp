@@ -26,6 +26,18 @@
         <li class="nav-item">
             <a class="nav-link" href="/Accueil/aide">Aide</a>
         </li>
+
+        <!--PARTIE UTILISATEUR (USER)-->
+
+        <li class="nav-item">
+            <a class="nav-link" href="/Inscription/index">Inscrition</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Connexion/index">Connexion</a>
+        </li>
+
+        <!--PARTIE TEST/MODIFICATION-->
+
         <li class="nav-item">
             <a class="nav-link" href="/Accueil/architecture_site" tabindex="-1">Ensembles des pages</a>
         </li>
