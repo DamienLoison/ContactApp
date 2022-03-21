@@ -59,6 +59,12 @@ $routes->get('/', 'Recherche::delete_login');
 $routes->get('/', 'Recherche::modifier_login');
 $routes->get('/', 'Recherche::update_login');
 
+
+// custom routes
+$routes->get('/', 'SignupController::index');
+$routes->get('/signup', 'SignupController::index');
+$routes->get('/signin', 'SigninController::index');
+$routes->get('/profile', 'ProfileController::index', ['filter' => 'authGuard']);
 //ROUTES 
 
 /*
