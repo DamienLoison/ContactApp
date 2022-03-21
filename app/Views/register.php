@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr-Fr">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -12,7 +12,7 @@
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-6">
-                    <h1>Sign Up</h1>
+                    <h1>INSCRIPTION</h1>
                     <?php if (isset($validation)): ?>
                         <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
                     <?php endif; ?>
@@ -22,18 +22,18 @@
                             <input type="text" name="nom" class="form-control" id="InputForName" value="<?= set_value('nom') ?>">
                         </div>
                         <div class="mb-3">
-                            <label for="InputForEmail" class="form-label">Email address</label>
+                            <label for="InputForEmail" class="form-label">Email</label>
                             <input type="email" name="email" class="form-control" id="InputForEmail" value="<?= set_value('email') ?>">
                         </div>
                         <div class="mb-3">
-                            <label for="InputForPassword" class="form-label">Password</label>
+                            <label for="InputForPassword" class="form-label">Mot de passe</label>
                             <input type="password" name="password" class="form-control" id="InputForPassword">
                         </div>
                         <div class="mb-3">
-                            <label for="InputForConfPassword" class="form-label">Confirm Password</label>
+                            <label for="InputForConfPassword" class="form-label">Confirmer mot de passe</label>
                             <input type="password" name="confpassword" class="form-control" id="InputForConfPassword">
                         </div>
-                        <button type="submit" class="btn btn-primary">Register</button>
+                        <button type="submit" class="btn btn-primary">Inscription</button>
                     </form>
                 </div>
             </div>
