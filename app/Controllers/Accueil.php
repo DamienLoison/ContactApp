@@ -7,6 +7,8 @@ use CodeIgniter\Controller;
 class Accueil extends Controller {
 
     public function index() {
+        $session = session();
+        $session->get('nom');
         echo view('Accueil');
     }
 
@@ -21,8 +23,8 @@ class Accueil extends Controller {
     public function aide() {
         echo view('Aide');
     }
-    
-    public function me_contacter(){
+
+    public function me_contacter() {
         echo view('template/header');
         echo view('Reste/Contacter');
         echo view('template/footer');

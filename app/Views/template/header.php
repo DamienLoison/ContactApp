@@ -30,10 +30,10 @@
         <!--PARTIE UTILISATEUR (USER)-->
 
         <li class="nav-item">
-            <a class="nav-link" href="/Inscription/index">Inscrition</a>
+            <a class="nav-link" href="/register/">Inscription</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/Connexion/index">Connexion</a>
+            <a class="nav-link" href="/User/login">Connexion</a>
         </li>
 
         <!--PARTIE TEST/MODIFICATION-->

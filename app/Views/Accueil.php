@@ -5,7 +5,6 @@
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
         <link rel="stylesheet" type="text/css" href="Style.css" media="all" />
         <!--ACTUALISE LA PAGE TOUTE LES MINUTES-->
-        <meta http-equiv="refresh" content="60" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <title>Accueil</title>
@@ -32,26 +31,27 @@
     </style>
     <body>
         <script>
-            function myFunction() {
-                // Declare variables
-                var input, filter, input, txtValue;
-                input = document.getElementById("myInput");
-                filter = input.value.toUpperCase();
-                table = document.getElementById("myTable");
-                tr = table.getElementsByTagName("tr");
-                // Loop through all table rows, and hide those who don't match the search query
-                for (i = 0; i < tr.length; i++) {
-                    td = tr[i].getElementsByTagName("td")[1];
-                    if (td) {
-                        txtValue = td.textContent || td.innerText;
-                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                            tr[i].style.display = "";
-                        } else {
-                            tr[i].style.display = "none";
-                        }
-                    }
+            //DATE ET HEURE EN TEMPS REELLE
+            function pause(ms)
+            {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+
+            async function afficherDate()
+            {
+                while (true)
+                {
+                    await pause(1000);
+                    var cejour = new Date();
+                    var options = {weekday: "long", year: "numeric", month: "long", day: "2-digit"};
+                    var date = cejour.toLocaleDateString("fr-FR", options);
+                    var heure = ("0" + cejour.getHours()).slice(-2) + ":" + ("0" + cejour.getMinutes()).slice(-2) + ":" + ("0" + cejour.getSeconds()).slice(-2);
+                    var dateheure = date + " " + heure;
+                    var dateheure = dateheure.replace(/(^\w{1})|(\s+\w{1})/g, lettre => lettre.toUpperCase());
+                    document.getElementById('dateheure').innerHTML = dateheure;
                 }
             }
+            afficherDate();
         </script>
         <div class="Accueil">
             <div class="text-center bg-dark text-white">
@@ -85,14 +85,7 @@
                 <div class="milieu col-8 bg-dark text-white ">
                     <h3 class="bg-danger text-white">CENTRE D'INFORMATION</h3>
                     <h4>
-                        <?php
-                        setlocale(LC_ALL, 'fr_fr');
-                        echo strftime('%A %d %B %Y');
-                        ?>
-                        <br>
-                        <?php
-                        echo strftime('%H:%M');
-                        ?>
+                        <span id="dateheure"></span> 
                     </h4>
                     <h4 style="font-size: 11px; margin-top: 320px">se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
                 </div>
