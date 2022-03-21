@@ -15,9 +15,9 @@ class User extends Controller {
     }
 
     public function save() {
-        //include helper form
         helper(['form']);
-        //set rules validation form
+        
+        //Regle de validation du formulaire
         $rules = [
             'nom' => 'min_length[3]|max_length[20]',
             'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[user.email]',
@@ -76,12 +76,16 @@ class User extends Controller {
     public function logout() {
         $session = session();
         $session->destroy();
-        return redirect()->to('/login');
+        return redirect()->to('User/login');
     }
 
-    public function dashboard() {
+    public function dashboard($id = null) {
         $session = session();
-        echo "Welcome back, " . $session->get('nom');
+//        echo $session->get('nom');
+        $data = [
+            'session' => $session->get('nom')
+        ];
+        return redirect()->to('/Accueil/');
     }
 
 }

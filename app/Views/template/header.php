@@ -35,6 +35,10 @@
         <li class="nav-item">
             <a class="nav-link" href="/User/login">Connexion</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link text-danger" href="/User/logout">Déconnexion</a>
+        </li>
+        
 
         <!--PARTIE TEST/MODIFICATION-->
 

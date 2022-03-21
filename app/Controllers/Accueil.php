@@ -8,8 +8,13 @@ class Accueil extends Controller {
 
     public function index() {
         $session = session();
-        $session->get('nom');
-        echo view('Accueil');
+        $data = [
+            'session' => $session->get('nom')
+        ];
+        
+//        echo $session->get('nom');
+
+        echo view('Accueil', $data);
     }
 
     public function note_patch() {
