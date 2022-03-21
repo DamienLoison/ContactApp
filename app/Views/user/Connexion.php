@@ -1,69 +1,42 @@
 <!doctype html>
-<html lang="fr-Fr">
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <title>Connexion</title>
-        <?php echo view('template/header.php') ?>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Login</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
     </head>
-    <body>
-        <style>
-            body{
-                margin-top: 40px;
-            }
-        </style>
+
+    <body >
         <div class="container">
-            <div class="row justify-content-center align-items-center">       
-<!--                <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                    <h1>Connexion</h1>
-
-                    <?= form_open() ?>
-
-                    <div class="form-group">
-                        <label>Email :</label>
-                        <input type="text" name="email" placeholder="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Mot de passe :</label>
-                        <input type="password" name="password" placeholder="mot de passe" class="form-control">
-                    </div>
-                    BOUTON VALIDER
-                    <div class="form-group">
-                        <input type="submit" name="connexion" value="Connexion" class="btn-primary">
-                    </div>
-
-                    <?= form_close() ?>
-                </div>-->
-
-                <h1>Connexion</h1>
-                <?php if (session()->get('sucess')): ?>
-                    <div class="alert alert-success" role="alert">
-                        <?= session()->get('sucess') ?>
-                    </div>
-                <?php endif; ?>
-                <form class="" action="/User/Connexion" method="POST">
-                    <div class="form-group">
-                        <label for="email">Email :</label>
-                        <input type="text" name="email" value="<?= set_value('email') ?>" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Mot de passe :</label>
-                        <input type="password" name="password" value="" class="form-control required">
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-sm-4">
-                            <button type="submit" class="btn btn-primary">Connexion</button>
+            <div class="row">
+                <div class="col-md-6 mx-auto mt-5">
+                    <?php if (session()->getFlashdata('message')) { ?>
+                        <div class="alert alert-info">
+                            <?= session()->getFlashdata('message') ?>
                         </div>
-                        <div class="col-12 col-sm-8 text-right">
-                            <a href="/Inscription">Pas encore de compte ?</a>
+                    <?php } ?>
+                    <form method="post"  action="<?= base_url('login/auth') ?>">
+                        <h1 class="h3 mb-3 font-weight-normal">Aplikasi Login Sederhana Codeingiter 4</h1>
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" class="form-control" name="username" required="" placeholder="Masukkan Username">
                         </div>
-                    </div>
-                </form>
-            </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" name="password" required="" placeholder="Masukkan Password">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-block" type="submit">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>  
         </div>
     </body>
-    <footer>
-        <?php echo view('template/footer.php') ?>
-    </footer>
 </html>

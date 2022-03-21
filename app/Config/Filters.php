@@ -21,9 +21,9 @@ class Filters extends BaseConfig {
         'csrf' => \CodeIgniter\Filters\CSRF::class,
         'toolbar' => \CodeIgniter\Filters\DebugToolbar::class,
         'honeypot' => \CodeIgniter\Filters\Honeypot::class,
-        'authGuard' => \App\Filters\AuthGuard::class,
-//        'invalidchars' => InvalidChars::class,
-//        'secureheaders' => SecureHeaders::class,
+        'auth' => \App\Filters\Auth::class,
+        'invalidchars' => InvalidChars::class,
+        'secureheaders' => SecureHeaders::class,
     ];
 
     /**

@@ -65,10 +65,11 @@ $routes->get('/Connexion', 'User::connexion');
 $routes->match(['get','post'],'inscription', 'User::inscription');
 
 // custom routes
-$routes->get('/', 'SignupController::index');
-$routes->get('/signup', 'SignupController::index');
-$routes->get('/signin', 'SigninController::index');
-$routes->get('/profile', 'ProfileController::index', ['filter' => 'authGuard']);
+//$routes->get('/', 'SignupController::index');
+//$routes->get('/signup', 'SignupController::index');
+//$routes->get('/signin', 'SigninController::index');
+//$routes->get('/profile', 'ProfileController::index', ['filter' => 'authGuard']);
+$routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
 //ROUTES 
 
 /*

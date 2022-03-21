@@ -7,55 +7,81 @@ use App\Models\UserModel;
 
 class User extends Controller {
 
-    public function __construct() {
-        helper(['form']);
-        $this->load->helper('url');
-        $this->load->model('user_model');
-    }
-
     public function index() {
-        //PERMET DE REDIRIGER AUTOMATIQUEMENT SUR LA PAGE DE CONNEXION !
-        return redirect()->to('/User/connexion');
-    }
-
-    public function inscription() {
+        //include helper form
         helper(['form']);
         $data = [];
+        echo view('register', $data);
+    }
 
-        if ($this->request->getMethod() == 'POST') {
-            $rules = [
-                'nom' => 'min_length[2]|max_length[50]',
-                'email' => 'required|valid_email|is_unique[user.email]',
-                'password' => 'required|min_length[4]|max_length[50]',
-                'confpassword' => 'matches[password]'
+    public function save() {
+        //include helper form
+        helper(['form']);
+        //set rules validation form
+        $rules = [
+            'nom' => 'min_length[3]|max_length[20]',
+            'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[user._email]',
+            'password' => 'required|min_length[6]|max_length[200]',
+            'confpassword' => 'matches[password]'
+        ];
+
+        if ($this->validate($rules)) {
+            $model = new UserModel();
+            $data = [
+                'nom' => $this->request->getVar('nom'),
+                'email' => $this->request->getVar('email'),
+                'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
             ];
-            if (!$this->validate($rules)) {
-                $data['validation'] = $this->validator;
-            } else {
-                $model = new UserModel();
-
-                $newdata = [
-                    'nom' => $this->requet->getVar('nom'),
-                    'email' => $this->requet->getVar('email'),
-                    'password' => $this->requet->getVar('password'),
-                ];
-                $model->save($newdata);
-                $session = session();
-                $session->setFlashdata('réussi', 'Inscription réussi');
-                return redirect()->to('/');
-            }
+            $model->save($data);
+            return redirect()->to('/login');
+        } else {
+            $data['validation'] = $this->validator;
+            echo view('register', $data);
         }
-
-        //AFFICHAGE
-        echo view('user/Inscription', $data);
     }
 
-    public function connexion() {
+    public function login() {
         helper(['form']);
-        $data = [];
+        echo view('login');
+    }
 
-        //AFFICHAGE
-        echo view('user/Connexion', $data);
+    public function auth() {
+        $session = session();
+        $model = new UserModel();
+        $email = $this->request->getVar('email');
+        $password = $this->request->getVar('password');
+        $data = $model->where('email', $email)->first();
+        if ($data) {
+            $pass = $data['user_password'];
+            $verify_pass = password_verify($password, $pass);
+            if ($verify_pass) {
+                $ses_data = [
+                    'id' => $data['id'],
+                    'nom' => $data['nom'],
+                    'email' => $data['email'],
+                    'logged_in' => TRUE
+                ];
+                $session->set($ses_data);
+                return redirect()->to('/dashboard');
+            } else {
+                $session->setFlashdata('msg', 'Wrong Password');
+                return redirect()->to('/login');
+            }
+        } else {
+            $session->setFlashdata('msg', 'Email not Found');
+            return redirect()->to('/login');
+        }
+    }
+
+    public function logout() {
+        $session = session();
+        $session->destroy();
+        return redirect()->to('/login');
+    }
+
+    public function dashboard() {
+        $session = session();
+        echo "Welcome back, " . $session->get('nom');
     }
 
 }
