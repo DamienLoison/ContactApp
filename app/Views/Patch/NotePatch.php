@@ -79,7 +79,6 @@
                         <h6 style="color: green;">-> image Ajouter qui si ne s'affiche pas affiche Ajouter</h6>
                         Ajout d'image à la barre de recherche<br>
                         Ajout de la date et de l'heure à l'accueil<br>
-
                     </div>
                     <!-- -------------------------------------- -->
                     ___________________________________________________<br>

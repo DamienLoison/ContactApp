@@ -114,5 +114,4 @@ class Ajouter extends Controller {
             return redirect()->to('/LoginRegisterController/login');
         }
     }
-
 }

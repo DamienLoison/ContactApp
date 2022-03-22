@@ -27,9 +27,6 @@
             width: 65%;
             height: 100%;
         }
-/*        #NomSession{
-            border-bottom: solid white 1px;
-        }*/
     </style>
     <body>
         <script>
