@@ -21,7 +21,7 @@ class LoginRegisterController extends Controller {
         $rules = [
             'name' => 'required|min_length[3]|max_length[20]',
             'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[users.user_email]',
-            'password' => 'required|min_length[6]|max_length[200]',
+            'password' => 'required|min_length[5]|max_length[200]',
             'confpassword' => 'matches[password]'
         ];
 
@@ -84,7 +84,6 @@ class LoginRegisterController extends Controller {
     }
 
     public function dashboard() {
-        $session = session();
         return redirect()->to('/Accueil/index');
     }
 
