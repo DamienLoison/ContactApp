@@ -34,9 +34,14 @@
             <a class="nav-link" href="/Accueil/note_patch" tabindex="-1">Note de patch</a>
         </li>
         <li class="nav-item text-white">
-            Connecté en tant que : 
-            <?php $session = session(); ?>
-            <?php echo $session->get('user_name'); ?>
+            <?php
+            $session = session();
+            if ($session->get('user_name') == null) {
+                
+            } else {
+                echo "Connecté en tant que : " . $session->get('user_name');
+            }
+            ?>
         </li>
         <li class="nav-item ms-auto">
             <a class="nav-link" href="/LoginRegisterController/">Inscription</a>
