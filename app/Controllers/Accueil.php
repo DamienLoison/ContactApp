@@ -3,18 +3,14 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
+use App\Models\UserModel;
 
-class Accueil extends Controller {
+class Accueil extends BaseController {
+
+    protected $session;
 
     public function index() {
-        $session = session();
-        $data = [
-            'session' => $session->get('nom')
-        ];
-        
-//        echo $session->get('nom');
-
-        echo view('Accueil', $data);
+        echo view('Accueil');
     }
 
     public function note_patch() {

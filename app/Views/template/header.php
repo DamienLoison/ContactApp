@@ -26,29 +26,25 @@
         <li class="nav-item">
             <a class="nav-link" href="/Accueil/aide">Aide</a>
         </li>
-
-        <!--PARTIE UTILISATEUR (USER)-->
-
-        <li class="nav-item">
-            <a class="nav-link" href="/register/">Inscription</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/User/login">Connexion</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-danger" href="/User/logout">Déconnexion</a>
-        </li>
-        
-
         <!--PARTIE TEST/MODIFICATION-->
-
         <li class="nav-item">
             <a class="nav-link" href="/Accueil/architecture_site" tabindex="-1">Ensembles des pages</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/Accueil/note_patch" tabindex="-1">Note de patch</a>
         </li>
+        <!--PARTIE UTILISATEUR (USER)-->
+
         <li class="nav-item ms-auto">
+            <a class="nav-link" href="/LoginRegisterController/">Inscription</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/LoginRegisterController/login">Connexion</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link text-danger" href="/LoginRegisterController/logout">Déconnexion</a>
+        </li>
+        <li class="nav-item">
             v1.0.1
         </li>
     </ul>

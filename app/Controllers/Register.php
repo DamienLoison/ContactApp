@@ -19,9 +19,9 @@ class Register extends Controller {
         helper(['form']);
         //set rules validation form
         $rules = [
-            'nom' => 'required|min_length[3]|max_length[20]',
-            'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[user.email]',
-            'password' => 'required|min_length[6]|max_length[200]',
+            'user_name' => 'required|min_length[3]|max_length[20]',
+            'user_email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[user.email]',
+            'user_password' => 'required|min_length[6]|max_length[200]',
             'confpassword' => 'matches[password]'
         ];
 

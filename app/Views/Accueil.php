@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
         <link rel="stylesheet" type="text/css" href="Style.css" media="all" />
-        <!--ACTUALISE LA PAGE TOUTE LES MINUTES-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <title>Accueil</title>
@@ -90,7 +89,8 @@
                     <h4>
                         <span id="dateheure"></span> 
                     </h4>
-                    <h4 id="NomSession">Bienvenu <?php echo $session->get('nom') ?></h4>
+                    <h4>Bienvenu <?php echo session()->get('nom');  ?></h4>
+                    <!--AJOUTER LE NOM DE LA SESSION !-->
                     __________________________
                     <h4 style="font-size: 11px; margin-top: 320px">se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
                 </div>
