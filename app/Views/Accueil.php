@@ -27,6 +27,11 @@
             width: 65%;
             height: 100%;
         }
+        #session{
+            width: 20%;
+            margin-left: 40%;
+            border-bottom: solid 1px white;
+        }
     </style>
     <body>
         <script>
@@ -86,14 +91,25 @@
                     <h4>
                         <span id="dateheure"></span> 
                     </h4>
-                    <h4>Bienvenu <?php echo $session?></h4>
-                    __________________________
-                    <h4 style="font-size: 11px; margin-top: 320px">se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
+                    <div id="session" class="">
+                        <h4>           
+                            <?php
+                            $session = session();
+                            if ($session->get('user_name') == null) {
+                                
+                            } else {
+                                echo "Bienvenu : " . $session->get('user_name');
+                                echo "";
+                            }
+                            ?>
+                        </h4>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 11px; margin-top: 320px">se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </body>
-    <footer>
-        <?php echo view('template/footer.php') ?>
-    </footer>
-</html>
+                </body>
+                <footer>
+                    <?php echo view('template/footer.php') ?>
+                </footer>
+                </html>

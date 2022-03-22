@@ -16,7 +16,6 @@ class LoginRegisterController extends Controller {
     }
 
     public function save() {
-        //include helper form
         helper(['form']);
         //set rules validation form
         $rules = [
