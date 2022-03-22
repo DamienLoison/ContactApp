@@ -34,17 +34,17 @@
             <a class="nav-link" href="/Accueil/note_patch" tabindex="-1">Note de patch</a>
         </li>
         <li class="nav-item ms-auto">
-            <a class="nav-link" href="/LoginRegisterController/"><img src="<?php echo base_url('image/nav/inscription.png'); ?>"width="30px" height="30px" alt="déconnexion" /></a>
+            <a class="nav-link" href="/LoginRegisterController/"><img src="<?php echo base_url('image/nav/inscription.png'); ?>"width="30px" height="30px" alt="inscription" /></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-success" href="/LoginRegisterController/login"><img src="<?php echo base_url('image/nav/connexion.png'); ?>"width="30px" height="30px" alt="déconnexion" /></a>
+            <a class="nav-link text-success" href="/LoginRegisterController/login"><img src="<?php echo base_url('image/nav/connexion.png'); ?>"width="30px" height="30px" alt="connexion" /></a>
         </li>
         <li class="nav-item ">
             <a class="nav-link text-danger" href="/LoginRegisterController/logout"><img src="<?php echo base_url('image/nav/deconnexion.png'); ?>"width="30px" height="30px" alt="déconnexion" /></a>
         </li>
         <li class="nav-item text-white">
             <a class="nav-link text-white">
-                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user" width="30px" height="30px"/>
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user:" width="30px" height="30px"/>
                 <?php
                 $session = session();
                 if ($session->get('user_name') == null) {
