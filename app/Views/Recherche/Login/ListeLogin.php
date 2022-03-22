@@ -146,7 +146,7 @@
                             <th scope="col">Information</th>
                             <th scope="col">Modifier</th>
                             <th scope="col">Supprimer</th>
-                            <th scope="col"><a href="/Ajouter/Ajouter_Login"><img src="https://www.pngmart.com/files/8/Plus-Transparent-Images-PNG.png" alt="ajouter" width="20" height="20"/></a></th>
+                            <th scope="col"><a href="/Ajouter/Ajouter_Login"><img src="<?php echo base_url('image/logo/Ajout.png'); ?>"width="20px" height="20px" alt="Ajouter"/></a></th>
                         </tr>
                     </thead>
                     <?php foreach ($logins as $login) : ?>
