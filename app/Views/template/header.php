@@ -33,8 +33,11 @@
         <li class="nav-item">
             <a class="nav-link" href="/Accueil/note_patch" tabindex="-1">Note de patch</a>
         </li>
-        <!--PARTIE UTILISATEUR (USER)-->
-
+        <li class="nav-item text-white">
+            Connecté en tant que : 
+            <?php $session = session(); ?>
+            <?php echo $session->get('user_name'); ?>
+        </li>
         <li class="nav-item ms-auto">
             <a class="nav-link" href="/LoginRegisterController/">Inscription</a>
         </li>
