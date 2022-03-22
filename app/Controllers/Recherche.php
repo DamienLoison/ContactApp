@@ -16,10 +16,14 @@ class Recherche extends Controller {
 
     public function index() {
         helper(['Contact', 'url']);
-
-        echo view('template/header');
-        echo view('Recherche/AccueilRecherche');
-        echo view('template/footer');
+        $session = session();
+        if (!empty($session->get("user_name"))) {
+            echo view('template/header');
+            echo view('Recherche/AccueilRecherche');
+            echo view('template/footer');
+        } else {
+            return redirect()->to('/LoginRegisterController/login');
+        }
     }
 
     //
@@ -27,23 +31,33 @@ class Recherche extends Controller {
     // 
 
     public function tout_les_contacts() {
-        $model = new ContactModel();
-        $model1 = new OrganisationModel();
-        $data = [
-            'contacts' => $model->getContact(),
-            'organisations' => $model1->getOrganisation(),
-        ];
-        echo view('Recherche/Contact/ListeContact', $data);
+        $session = session();
+        if (!empty($session->get("user_name"))) {
+            $model = new ContactModel();
+            $model1 = new OrganisationModel();
+            $data = [
+                'contacts' => $model->getContact(),
+                'organisations' => $model1->getOrganisation(),
+            ];
+            echo view('Recherche/Contact/ListeContact', $data);
+        } else {
+            return redirect()->to('/LoginRegisterController/login');
+        }
     }
 
     public function modifier_contact($ID_Contact = null) {
-        $contact = new ContactModel();
-        $organisation = new OrganisationModel();
-        $data = [
-            'contact' => $contact->find($ID_Contact),
-            'organisation' => $organisation->getOrganisation(),
-        ];
-        return view('Modifier/ModificationContact', $data);
+        $session = session();
+        if (!empty($session->get("user_name"))) {
+            $contact = new ContactModel();
+            $organisation = new OrganisationModel();
+            $data = [
+                'contact' => $contact->find($ID_Contact),
+                'organisation' => $organisation->getOrganisation(),
+            ];
+            return view('Modifier/ModificationContact', $data);
+        } else {
+            return redirect()->to('/LoginRegisterController/login');
+        }
     }
 
     public function update_contact($ID_Contact = null) {
@@ -73,11 +87,16 @@ class Recherche extends Controller {
     //
 
     public function toute_les_organisations() {
-        $model = new OrganisationModel();
-        $data = [
-            'organisations' => $model->getOrganisation()
-        ];
-        echo view('Recherche/Organisation/ListeOrganisation', $data);
+        $session = session();
+        if (!empty($session->get("user_name"))) {
+            $model = new OrganisationModel();
+            $data = [
+                'organisations' => $model->getOrganisation()
+            ];
+            echo view('Recherche/Organisation/ListeOrganisation', $data);
+        } else {
+            return redirect()->to('/LoginRegisterController/login');
+        }
     }
 
     public function modifier_organisation($ID_Organisation = null) {
@@ -112,17 +131,22 @@ class Recherche extends Controller {
     //
 
     public function tout_les_login() {
-        $model = new LoginModel();
-        $data = [
-            'logins' => $model->getLogin(),
-        ];
-        echo view('Recherche/Login/ListeLogin', $data);
+        $session = session();
+        if (!empty($session->get("user_name"))) {
+            $model = new LoginModel();
+            $data = [
+                'logins' => $model->getLogin(),
+            ];
+            echo view('Recherche/Login/ListeLogin', $data);
+        } else {
+            return redirect()->to('/LoginRegisterController/login');
+        }
     }
-    
-    public function afficher_login($ID_Login = null){
+
+    public function afficher_login($ID_Login = null) {
         $login = new LoginModel();
         $data['login'] = $login->find($ID_Login);
-        
+      
         return view('Recherche/Login/AfficherLogin', $data);
     }
 

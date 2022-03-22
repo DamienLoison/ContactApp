@@ -17,7 +17,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Accueil');
+$routes->setDefaultController('LoginRegisterController');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -31,6 +31,14 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+$routes->get('/', 'LoginRegisterController::index');
+$routes->post('save', 'LoginRegisterController::save');
+$routes->get('login', 'LoginRegisterController::login');
+$routes->post('postLogin', 'LoginRegisterController::auth');
+$routes->get('logout', 'LoginRegisterController::logout');
+$routes->get('dashboard', 'LoginRegisterController::dashboard');
+ 
 //ROUTES ACCUEIL
 $routes->get('/', 'Accueil::index');
 $routes->get('/', 'Accueil::note_patch');
@@ -58,6 +66,8 @@ $routes->get('/', 'Recherche::tout_les_login');
 $routes->get('/', 'Recherche::delete_login');
 $routes->get('/', 'Recherche::modifier_login');
 $routes->get('/', 'Recherche::update_login');
+
+$routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
 
 //ROUTES 
 

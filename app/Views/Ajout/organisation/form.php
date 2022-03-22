@@ -20,9 +20,9 @@
         <div class="container mt-3">
             <div class="row">
                 <div class="col-sm-4 offset-4 my-3">
-                    <form action="<?= base_url('Recherche/toute_les_organisations'); ?>" method="POST">
-                        <button type="submit" class="btn btn-danger btn-block btn-lg float-end">Retour</button>
-                    </form> 
+                    <form action="" method="POST">
+                        <button class="btn btn-primary"><a class="text-white" href="javascript:window.history.go(-1);">Retour</a></button>                       
+                    </form>
                     <h2>Ajouter une Organisation</h2>
                     <form action="<?php echo site_url('Ajouter/ajouter_organisation_record'); ?>" method="POST">
                         <div class="mb-3 mt-3">

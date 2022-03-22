@@ -3,11 +3,18 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
+use App\Models\UserModel;
 
-class Accueil extends Controller {
+class Accueil extends BaseController {
+
+    protected $session;
 
     public function index() {
-        echo view('Accueil');
+        $session = session();
+        $data = [
+          'session' => $session->get('user_name')  
+        ];
+        echo view('Accueil', $data);
     }
 
     public function note_patch() {
@@ -21,8 +28,8 @@ class Accueil extends Controller {
     public function aide() {
         echo view('Aide');
     }
-    
-    public function me_contacter(){
+  
+    public function me_contacter() {
         echo view('template/header');
         echo view('Reste/Contacter');
         echo view('template/footer');

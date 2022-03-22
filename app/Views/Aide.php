@@ -48,7 +48,8 @@
                             Le nom de l'organisation du contact<br>
                             Modifier -> permet de modifier les informations d'un contact <br>
                             Supprimer -> Supprime le contact ainsi que l'ensemble de ses informations<br>
-                            + -> Permet d'ajouter un contact
+                            + -> Permet d'ajouter un contact<br>
+                            <strong>La barre de recherche fonctionne qu'avec le nom du contact !</strong>
                         </p>
                     </div>
                     <h4 class="text-center">____________________________________________</h4>
@@ -65,7 +66,8 @@
                             Le numéro de téléphone de l'organisation<br>
                             Modifier -> Permet de modifier les informations de l'organisations<br>
                             Supprimer -> Supprime l'organisation ainsi que l'ensemble de ses données<br>
-                            + -> Permet d'ajouter une nouvelle organisation
+                            + -> Permet d'ajouter une nouvelle organisation<br>
+                            <strong>La barre de recherche fonctionne qu'avec le nom d'une organisation !</strong>
                         </p>
                     </div>
                     <h4 class="text-center">____________________________________________</h4>
@@ -78,7 +80,8 @@
                             Les identifiants sont cachés, nécessite de cliquer sur <em>"accéder"</em><br>
                             Modifier -> Permet de modifier les informations de login<br>
                             Supprimer -> supprime le login<br>
-                            + -> Permet d'ajouter un nouveau login
+                            + -> Permet d'ajouter un nouveau login<br>
+                            <strong>La barre de recherche fonctionne qu'avec l'ID d'un login !</strong>
                         </p>
                     </div>
                 </div>

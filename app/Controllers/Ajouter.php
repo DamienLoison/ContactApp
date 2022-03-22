@@ -23,7 +23,12 @@ class Ajouter extends Controller {
      * --------------------------------| */
 
     public function ajouter_accueil() {
-        echo view("Ajout/accueil");
+        $session = session();
+        if (!empty($session->get("user_name"))) {
+            echo view("Ajout/accueil");
+        } else {
+            return redirect()->to('/LoginRegisterController/login');
+        }
     }
 
     /* --------------------------------|
@@ -31,21 +36,31 @@ class Ajouter extends Controller {
      * --------------------------------| */
 
     public function ajouter_contact() {
-        $model = new OrganisationModel();
-        $data = [
-            'organisations' => $model->getOrganisation()
-        ];
-        echo view("Ajout/Contact/formulaire", $data);
+        $session = session();
+        if (!empty($session->get("user_name"))) {
+            $model = new OrganisationModel();
+            $data = [
+                'organisations' => $model->getOrganisation()
+            ];
+            echo view("Ajout/Contact/formulaire", $data);
+        } else {
+            return redirect()->to('/LoginRegisterController/login');
+        }
     }
 
     public function ajouter_contact_record() {
-        $model = new OrganisationModel();
-        $data = [
-            'organisations' => $model->getOrganisation()
-        ];
-        $ContactModel = new ContactModel();
-        $ContactModel->insert($_POST);
-        echo view("Ajout/Contact/formulaire", $data);
+        $session = session();
+        if (!empty($session->get("user_name"))) {
+            $model = new OrganisationModel();
+            $data = [
+                'organisations' => $model->getOrganisation()
+            ];
+            $ContactModel = new ContactModel();
+            $ContactModel->insert($_POST);
+            echo view("Ajout/Contact/formulaire", $data);
+        } else {
+            return redirect()->to('/LoginRegisterController/login');
+        }
     }
 
     /* --------------------------------|
@@ -53,17 +68,27 @@ class Ajouter extends Controller {
      * --------------------------------| */
 
     public function ajouter_organisation() {
-        $model = new OrganisationModel();
-        $data = [
-            'organisations' => $model->getOrganisation()
-        ];
-        echo view("Ajout/Organisation/form", $data);
+        $session = session();
+        if (!empty($session->get("user_name"))) {
+            $model = new OrganisationModel();
+            $data = [
+                'organisations' => $model->getOrganisation()
+            ];
+            echo view("Ajout/Organisation/form", $data);
+        } else {
+            return redirect()->to('/LoginRegisterController/login');
+        }
     }
 
     public function ajouter_organisation_record() {
-        $OrganisationModel = new OrganisationModel();
-        $OrganisationModel->insert($_POST);
-        echo view("Ajout/Organisation/form");
+        $session = session();
+        if (!empty($session->get("user_name"))) {
+            $OrganisationModel = new OrganisationModel();
+            $OrganisationModel->insert($_POST);
+            echo view("Ajout/Organisation/form");
+        } else {
+            return redirect()->to('/LoginRegisterController/login');
+        }
     }
 
     /* --------------------------------|
@@ -71,13 +96,22 @@ class Ajouter extends Controller {
      * --------------------------------| */
 
     public function ajouter_login() {
-        echo view("Ajout/Login/form");
+        $session = session();
+        if (!empty($session->get("user_name"))) {
+            echo view("Ajout/Login/form");
+        } else {
+            return redirect()->to('/LoginRegisterController/login');
+        }
     }
 
     public function ajouter_login_record() {
-        $LoginModel = new LoginModel();
-        $LoginModel->insert($_POST);
-        echo view("Ajout/Login/form");
+        $session = session();
+        if (!empty($session->get("user_name"))) {
+            $LoginModel = new LoginModel();
+            $LoginModel->insert($_POST);
+            echo view("Ajout/Login/form");
+        } else {
+            return redirect()->to('/LoginRegisterController/login');
+        }
     }
-
 }
