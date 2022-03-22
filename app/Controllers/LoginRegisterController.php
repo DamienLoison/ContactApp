@@ -45,7 +45,9 @@ class LoginRegisterController extends Controller {
 
     public function login() {
         helper(['form']);
+        echo view('template/header.php');
         echo view('login');
+        echo view('template/footer.php');
     }
 
     public function auth() {
