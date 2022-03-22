@@ -10,7 +10,11 @@ class Accueil extends BaseController {
     protected $session;
 
     public function index() {
-        echo view('Accueil');
+        $session = session();
+        $data = [
+          'session' => $session->get('user_name')  
+        ];
+        echo view('Accueil', $data);
     }
 
     public function note_patch() {

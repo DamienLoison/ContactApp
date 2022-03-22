@@ -84,13 +84,7 @@ class LoginRegisterController extends Controller {
 
     public function dashboard() {
         $session = session();
-        $data = [
-            'session' => $session->get('user_name')
-                ];
-//        echo view('template/header.php');
-//        echo view("dashboard", $data);
-//        echo view('template/footer.php');
-        return redirect()->to('/Accueil', $data);
+        return redirect()->to('/Accueil/index');
     }
 
 }
