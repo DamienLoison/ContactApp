@@ -89,7 +89,7 @@
                     <h4>
                         <span id="dateheure"></span> 
                     </h4>
-                    <h4>Bienvenu <?php echo session()->get('nom');  ?></h4>
+                    <h4>Bienvenu <?php echo $session?></h4>
                     <!--AJOUTER LE NOM DE LA SESSION !-->
                     __________________________
                     <h4 style="font-size: 11px; margin-top: 320px">se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>

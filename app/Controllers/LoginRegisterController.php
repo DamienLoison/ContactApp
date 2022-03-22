@@ -8,10 +8,11 @@ use App\Models\UserModel;
 class LoginRegisterController extends Controller {
 
     public function index() {
-        //include helper form
         helper(['form']);
         $data = [];
+        echo view('template/header.php');
         echo view('register', $data);
+        echo view('template/footer.php');
     }
 
     public function save() {
@@ -36,7 +37,9 @@ class LoginRegisterController extends Controller {
             return redirect()->to('/login');
         } else {
             $data['validation'] = $this->validator;
+            echo view('template/header.php');
             echo view('register', $data);
+            echo view('template/footer.php');
         }
     }
 
@@ -81,7 +84,13 @@ class LoginRegisterController extends Controller {
 
     public function dashboard() {
         $session = session();
-        echo "Welcome back, " . $session->get('user_name');
+        $data = [
+            'session' => $session->get('user_name')
+                ];
+//        echo view('template/header.php');
+//        echo view("dashboard", $data);
+//        echo view('template/footer.php');
+        return redirect()->to('/Accueil', $data);
     }
 
 }
