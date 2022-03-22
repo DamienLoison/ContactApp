@@ -28,7 +28,7 @@ class Accueil extends BaseController {
     public function aide() {
         echo view('Aide');
     }
-
+  
     public function me_contacter() {
         echo view('template/header');
         echo view('Reste/Contacter');

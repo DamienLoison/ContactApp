@@ -17,7 +17,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('User');
+$routes->setDefaultController('LoginRegisterController');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -31,10 +31,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-// 
-//TEST TEST TEST TEST
-//
-$routes->setDefaultController('LoginRegisterController');
+
 $routes->get('/', 'LoginRegisterController::index');
 $routes->post('save', 'LoginRegisterController::save');
 $routes->get('login', 'LoginRegisterController::login');
@@ -42,7 +39,6 @@ $routes->post('postLogin', 'LoginRegisterController::auth');
 $routes->get('logout', 'LoginRegisterController::logout');
 $routes->get('dashboard', 'LoginRegisterController::dashboard');
  
-
 //ROUTES ACCUEIL
 $routes->get('/', 'Accueil::index');
 $routes->get('/', 'Accueil::note_patch');
@@ -71,17 +67,8 @@ $routes->get('/', 'Recherche::delete_login');
 $routes->get('/', 'Recherche::modifier_login');
 $routes->get('/', 'Recherche::update_login');
 
-//ROUTES USER
-$routes->get('/Inscription', 'User::inscription');
-$routes->get('/Connexion', 'User::connexion');
-$routes->match(['get','post'],'inscription', 'User::inscription');
-
-// custom routes
-//$routes->get('/', 'SignupController::index');
-//$routes->get('/signup', 'SignupController::index');
-//$routes->get('/signin', 'SigninController::index');
-//$routes->get('/profile', 'ProfileController::index', ['filter' => 'authGuard']);
 $routes->get('/dashboard', 'Dashboard::index',['filter' => 'auth']);
+
 //ROUTES 
 
 /*

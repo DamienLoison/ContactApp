@@ -146,7 +146,7 @@ class Recherche extends Controller {
     public function afficher_login($ID_Login = null) {
         $login = new LoginModel();
         $data['login'] = $login->find($ID_Login);
-
+      
         return view('Recherche/Login/AfficherLogin', $data);
     }
 
