@@ -15,7 +15,7 @@
     </style>
     <ul class="nav fixed-top">
         <li class=".navbar-brand">
-            <a class="nav-link active" aria-current="page" href="https://github.com/DamienLoison/ContactApp">ContactApp</a>
+            <a class="nav-link active" aria-current="page" href="https://github.com/DamienLoison/ContactApp"><img src="<?php echo base_url('image/nav/ContactApp.png'); ?>"width="30px" height="30px" alt="ContactApp" /></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/Accueil">Accueil</a>
@@ -34,17 +34,14 @@
             <a class="nav-link" href="/Accueil/note_patch" tabindex="-1">Note de patch</a>
         </li>
         <li class="nav-item ms-auto">
-            <a class="nav-link" href="/LoginRegisterController/"><img src="https://cdn-icons.flaticon.com/png/512/1144/premium/1144695.png?token=exp=1647960567~hmac=a3bb766fd42118f14e7fd07544414178" width="30px" height="30px" alt="alt"/></a>
+            <a class="nav-link" href="/LoginRegisterController/"><img src="<?php echo base_url('image/nav/inscription.png'); ?>"width="30px" height="30px" alt="déconnexion" /></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/LoginRegisterController/login"><img src="https://cdn-icons.flaticon.com/png/512/310/premium/310767.png?token=exp=1647960504~hmac=f441cb3299e32b99dca8a05a92530fd1" width="30px" height="30px" alt="connexion"/></a>
+            <a class="nav-link text-success" href="/LoginRegisterController/login"><img src="<?php echo base_url('image/nav/connexion.png'); ?>"width="30px" height="30px" alt="déconnexion" /></a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link text-danger" href="/LoginRegisterController/logout"><img src="https://cdn-icons.flaticon.com/png/512/3686/premium/3686918.png?token=exp=1647960290~hmac=927c1612f008f2c25644f51918557ae3" width="30px" height="30px" alt="déconnexion"/></a>
+            <a class="nav-link text-danger" href="/LoginRegisterController/logout"><img src="<?php echo base_url('image/nav/deconnexion.png'); ?>"width="30px" height="30px" alt="déconnexion" /></a>
         </li>
-
-
-
         <li class="nav-item text-white">
             <a class="nav-link text-white">
                 <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user" width="30px" height="30px"/>
@@ -58,8 +55,8 @@
                 ?>
             </a>
         </li>
-        <li class="nav-item">
+<!--        <li class="nav-item">
             v1.0.1
-        </li>
+        </li>-->
     </ul>
 </html>
