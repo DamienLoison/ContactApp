@@ -42,21 +42,48 @@
         <li class="nav-item ">
             <a class="nav-link text-danger" href="/LoginRegisterController/logout"><img src="<?php echo base_url('image/nav/deconnexion.png'); ?>"width="30px" height="30px" alt="déconnexion" /></a>
         </li>
-        <li class="nav-item text-white">
-            <a class="nav-link text-white">
-                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user:" width="30px" height="30px"/>
-                <?php
-                $session = session();
-                if ($session->get('user_name') == null) {
-                    echo "connectez-vous ! " . " ";
-                } else {
-                    echo " " . $session->get('user_name');
-                }
-                ?>
-            </a>
+        <!--        <li class="nav-item text-white">
+                    <a class="nav-link text-white">
+                        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user:" width="30px" height="30px"/>
+        <?php
+//                $session = session();
+//                if ($session->get('user_name') == null) {
+//                    echo "connectez-vous ! " . " ";
+//                } else {
+//                    echo " " . $session->get('user_name');
+//                }
+        ?>
+                    </a>
+                </li>-->
+        <li>           
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user:" width="30px" height="30px"/>
+                    <?php
+                    $session = session();
+                    if ($session->get('user_name') == null) {
+                        echo "connectez-vous ! " . " ";
+                    } else {
+                        echo " " . $session->get('user_name');
+                    }
+                    ?>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item active" href="/User/profil">Afficher profil</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <a class="nav-link text-danger" href="/LoginRegisterController/logout">
+                            <img src="<?php echo base_url('image/nav/deconnexion.png'); ?>"width="20px" height="20px" alt="déconnexion" />
+                            déconnexion
+                        </a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
         </li>
-<!--        <li class="nav-item">
-            v1.0.1
-        </li>-->
+        <!--        <li class="nav-item">
+                    v1.0.1
+                </li>-->
     </ul>
 </html>
