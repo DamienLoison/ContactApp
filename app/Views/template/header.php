@@ -30,27 +30,38 @@
         <li class="nav-item">
             <a class="nav-link" href="/Accueil/architecture_site" tabindex="-1">Ensembles des pages</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/Accueil/note_patch" tabindex="-1">Note de patch</a>
-        </li>
-        <li class="nav-item text-white">
-            <?php
-            $session = session();
-            if ($session->get('user_name') == null) {
-                
-            } else {
-                echo "Connecté en tant que : " . $session->get('user_name');
-            }
-            ?>
-        </li>
         <li class="nav-item ms-auto">
             <a class="nav-link" href="/LoginRegisterController/">Inscription</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/LoginRegisterController/login">Connexion</a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link text-danger" href="/LoginRegisterController/logout">Déconnexion</a>
+            <div class="dropdown">
+                <button class="btn-grou btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user:" width="30px" height="30px"/>
+                    <?php
+                    $session = session();
+                    if ($session->get('user_name') == null) {
+                        echo "connectez-vous ! " . " ";
+                    } else {
+                        echo " " . $session->get('user_name');
+                    }
+                    ?>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item active" href="/User/profil">Afficher profil</a></li>
+                    <li>
+                        <a class="nav-link text-sucess" href="/LoginRegisterController/login">
+                            <img src="<?php echo base_url('image/nav/connexion.png'); ?>"width="20px" height="20px" alt="connexion:"/>
+                            connexion
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-danger" href="/LoginRegisterController/logout">
+                            <img src="<?php echo base_url('image/nav/deconnexion.png'); ?>"width="20px" height="20px" alt="déconnexion:"/>
+                            déconnexion
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </li>
     </ul>
 </html>
