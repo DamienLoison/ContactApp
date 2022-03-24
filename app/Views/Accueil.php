@@ -67,21 +67,21 @@
                     <h3 class="bg-danger">ACCÈS RAPIDE</h3>
                     <div>
                         <h4 style="background-color: blueviolet;">CONTACT</h4>
-                        <a style="color: blueviolet;" href="/Recherche/tout_les_contacts">AFFICHER CONTACT</a><br>
+                        <a style="color: blueviolet;" href="/Accueil/tout_les_contacts">AFFICHER CONTACT</a><br>
                         _____________________ <br>
-                        <a style="color: blueviolet;" href="/Ajouter/ajouter_contact">AJOUTER CONTACT</a><br>
+                        <a style="color: blueviolet;" href="/Accueil/ajouter_contact">AJOUTER CONTACT</a><br>
                     </div><br>
                     <div>
                         <h4 style="background-color: tomato;">ORGANISATION</h4>
-                        <a style="color: tomato;" href="/Recherche/toute_les_organisations">AFFICHER ORGANISATION</a><br>
+                        <a style="color: tomato;" href="/Accueil/toute_les_organisations">AFFICHER ORGANISATION</a><br>
                         ___________________________ <br>
-                        <a style="color: tomato;" href="/Ajouter/ajouter_organisation">AJOUTER ORGANISATION</a><br>
+                        <a style="color: tomato;" href="/Accueil/ajouter_organisation">AJOUTER ORGANISATION</a><br>
                     </div><br>
                     <div>
                         <h4 style="background-color: seagreen;">LOGIN</h4>
-                        <a style="color: seagreen;" href="/Recherche/tout_les_login">AFFICHER LOGIN</a><br>
+                        <a style="color: seagreen;" href="/Accueil/tout_les_login">AFFICHER LOGIN</a><br>
                         _________________ <br>
-                        <a style="color: seagreen;" href="/Ajouter/ajouter_login">AJOUTER LOGIN</a><br>
+                        <a style="color: seagreen;" href="/Accueil/ajouter_login">AJOUTER LOGIN</a><br>
                     </div>
                     <br>
                 </div>
