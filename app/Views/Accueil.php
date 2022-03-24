@@ -55,6 +55,9 @@
             afficherDate();
         </script>
         <div class="Accueil">
+            <div class="bg-dark text-dark">
+                <br>
+            </div>
             <div class="corps row align-items-start bg-dark text-white text-center">
                 <!--AFFICHAGE A GAUCHE--> 
                 <div class="gauche col-4 bg-dark text-white">
