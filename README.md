@@ -57,6 +57,18 @@ CREATE TABLE IF NOT EXISTS `organisation` (
 
 -----------------------------------------------------------------------------------------------------------
 
+```sql
+CREATE TABLE users(
+    user_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_name VARCHAR(100),
+    user_email VARCHAR(100),
+    user_password VARCHAR(200),
+    user_created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=INNODB;
+```
+
+-----------------------------------------------------------------------------------------------------------
+
 ##Requis pour fonctionner :
 
 PHP version 7.3 ou supérieur, avec les extensions : 
