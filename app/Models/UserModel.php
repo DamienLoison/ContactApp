@@ -10,4 +10,7 @@ class UserModel extends Model {
     protected $primaryKey = 'id';
     protected $allowedFields = ['user_name', 'user_email', 'user_password', 'user_created_at'];
 
+    public function getName() {
+        return $this->findAll();
+    }
 }

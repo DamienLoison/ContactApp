@@ -16,7 +16,7 @@
             <br><a href="https://github.com/DamienLoison/ContactApp">lien Github</a> 
         </div>
         <div class="col">
-            <a href="Accueil/me_contacter">Me contacter </a>
+            <a href="/Accueil/me_contacter">Me contacter </a>
         </div>
     </div>
 </footer>
