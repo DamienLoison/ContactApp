@@ -100,18 +100,19 @@
         <li class="position-absolute top-50 start-50 translate-middle">
             <h3>ContactApp</h3>
         </li>
-        <!-- IMAGE UTILISATEUR
-        INSCRIPTION / CONNEXION / DECONNEXION-->
-
+        <!--
+        IMAGE UTILISATEUR
+        INSCRIPTION / CONNEXION
+        -->
         <li class="nav-item ms-auto">
             <a class="nav-link" href="/LoginRegisterController/"><img src="<?php echo base_url('image/nav/inscription.png'); ?>"width="30px" height="30px" alt="inscription" /></a>
         </li>
-        <li class="nav-item">
+<!--        <li class="nav-item">
             <a class="nav-link text-success" href="/LoginRegisterController/login"><img src="<?php echo base_url('image/nav/connexion.png'); ?>"width="30px" height="30px" alt="connexion" /></a>
         </li>
         <li class="nav-item">
             <a class="nav-link text-danger" href="/LoginRegisterController/logout"><img src="<?php echo base_url('image/nav/deconnexion.png'); ?>"width="30px" height="30px" alt="déconnexion" /></a>
-        </li>
+        </li>-->
         <!--PAGE PROFIL-->
         <li class="nav-item">
             <div class="dropdown">
@@ -129,6 +130,12 @@
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                     <li><a class="dropdown-item active" href="/User/profil">Afficher profil</a></li>
                     <!--<li><a class="dropdown-item" href="#">Another action</a></li> -->
+                    <li>
+                        <a class="nav-link text-sucess" href="/LoginRegisterController/login">
+                            <img src="<?php echo base_url('image/nav/connexion.png'); ?>"width="20px" height="20px" alt="connexion:"/>
+                        connexion
+                        </a>
+                    </li>
                     <li>
                         <a class="nav-link text-danger" href="/LoginRegisterController/logout">
                             <img src="<?php echo base_url('image/nav/deconnexion.png'); ?>"width="20px" height="20px" alt="déconnexion" />
