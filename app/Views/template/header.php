@@ -96,7 +96,7 @@
         <!--PAGE PROFIL-->
         <li class="nav-item">
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn-grou btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user:" width="30px" height="30px"/>
                     <?php
                     $session = session();
