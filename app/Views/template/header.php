@@ -6,7 +6,7 @@
     <style>
         .nav {
             background-color: rgb(84, 84, 84);
-            color: rgb(198, 83, 140);
+            color: white;
             height: 40px;
         }
         .nav-link {
@@ -33,20 +33,17 @@
         }
         #Accueil_liste{
             background-color: rgb(84,84,84);
-            color: rgb(51, 153, 255); 
+            color: rgb(51, 153, 255);
         }
         #Accueil_liste_color{
-            color: rgb(51, 153, 255); 
+            color: rgb(51, 153, 255);
         }
     </style>
     <ul class="nav fixed-top">
         <li class=".navbar-brand">
             <a class="nav-link active" aria-current="page" href="https://github.com/DamienLoison/ContactApp"><img src="<?php echo base_url('image/nav/ContactApp.png'); ?>"width="30px" height="30px" alt="ContactApp" /></a>
         </li>
-<!--        <li class="nav-item">
-            <a class="nav-link" href="/Accueil">Accueil</a>
-        </li>-->
-
+        <!--ACCUEIL-->
         <li>
             <div class="btn-group">
                 <a class="nav-link" href="/Accueil">Accueil</a>
@@ -60,9 +57,7 @@
                 </ul>
             </div>
         </li>
-
-
-
+        <!--CONTACT-->
         <li>
             <div class="btn-group">
                 <button type="button" class="btn dropdown-toggle" id="contact" data-bs-toggle="dropdown" aria-expanded="false">
@@ -75,6 +70,7 @@
                 </ul>
             </div>
         </li>
+        <!--ORGANISATION-->
         <li>
             <div class="btn-group">
                 <button type="button" class="btn dropdown-toggle" id="organisation" data-bs-toggle="dropdown" aria-expanded="false">
@@ -87,6 +83,7 @@
                 </ul>
             </div>
         </li>
+        <!--LOGIN-->
         <li>
             <div class="btn-group">
                 <button type="button" class="btn dropdown-toggle" id="login" data-bs-toggle="dropdown" aria-expanded="false">
@@ -99,17 +96,12 @@
                 </ul>
             </div>
         </li>
-
-<!--        <li class="nav-item">
-            <a class="nav-link" href="/Accueil/aide">Aide</a>
-        </li>-->
-        <!--PARTIE TEST/MODIFICATION-->
-<!--        <li class="nav-item">
-            <a class="nav-link" href="/Accueil/architecture_site" tabindex="-1">Ensembles des pages</a>
-        </li>-->
-        <!--        <li class="nav-item">
-                    <a class="nav-link" href="/Accueil/note_patch" tabindex="-1">Note de patch</a>
-                </li>-->
+        <!--NOM APP-->
+        <li class="position-absolute top-50 start-50 translate-middle">
+            <h3>ContactApp</h3>
+        </li>
+        <!-- IMAGE UTILISATEUR
+        INSCRIPTION / CONNEXION / DECONNEXION-->
         <li class="nav-item ms-auto">
             <a class="nav-link" href="/LoginRegisterController/"><img src="<?php echo base_url('image/nav/inscription.png'); ?>"width="30px" height="30px" alt="inscription" /></a>
         </li>

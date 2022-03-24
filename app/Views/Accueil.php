@@ -15,9 +15,6 @@
         }
         .Accueil{
         }
-        .corps{
-            margin-top: -8px;
-        }
         .gauche{
             width: 35%;
             height: 100%;
@@ -58,9 +55,6 @@
             afficherDate();
         </script>
         <div class="Accueil">
-            <div class="text-center bg-dark text-white">
-                <h1>ContactApp</h1>
-            </div>
             <div class="corps row align-items-start bg-dark text-white text-center">
                 <!--AFFICHAGE A GAUCHE--> 
                 <div class="gauche col-4 bg-dark text-white">
@@ -132,8 +126,9 @@
                                             <h4 style="font-size: 11px; margin-top: 320px">se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
                                         </div>-->
                 </div>
-                </body>
-                <footer>
-                    <?php echo view('template/footer.php') ?>
-                </footer>
-                </html>
+            </div>
+    </body>
+    <footer>
+        <?php echo view('template/footer.php') ?>
+    </footer>
+</html>
