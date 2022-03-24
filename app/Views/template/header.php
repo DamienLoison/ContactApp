@@ -12,6 +12,9 @@
         .nav-link {
             color: rgb(51, 153, 255);
         }
+        /*        #user{
+                    background-color: black;
+                }*/
     </style>
     <ul class="nav fixed-top">
         <li class=".navbar-brand">
@@ -47,7 +50,8 @@
                     ?>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                    <li><a class="dropdown-item active" href="/User/profil">Afficher profil</a></li>
+                    <li><a id="user" class="nav-link" href="/User/profil">Afficher profil</a></li>
+                    <li><a id="user" class="nav-link" href="/User/tout_les_utilisateurs">Voir tout les utilisateurs</a></li>
                     <li>
                         <a class="nav-link text-sucess" href="/LoginRegisterController/login">
                             <img src="<?php echo base_url('image/nav/connexion.png'); ?>"width="20px" height="20px" alt="connexion:"/>

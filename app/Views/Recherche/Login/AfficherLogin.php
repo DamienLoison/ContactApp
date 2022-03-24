@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Login</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <?php echo view('template/header.php') ?>
     </head>
     <body class="bg-dark"> 
