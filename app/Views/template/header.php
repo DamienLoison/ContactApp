@@ -52,8 +52,5 @@
         <li class="nav-item ">
             <a class="nav-link text-danger" href="/LoginRegisterController/logout">Déconnexion</a>
         </li>
-        <li class="nav-item">
-            v1.0.1
-        </li>
     </ul>
 </html>
