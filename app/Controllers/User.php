@@ -14,9 +14,13 @@ class User extends BaseController {
     public function profil() {
         $session = session();
         $session->get('user_name');
+        $user = new UserModel();
+        $data = [
+            'users' => $user->getName(),
+        ];
 
         echo view('template/header');
-        echo view('user/Profil');
+        echo view('user/Profil', $data);
         echo view('template/footer');
     }
 

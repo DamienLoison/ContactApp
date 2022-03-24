@@ -12,9 +12,6 @@
         .nav-link {
             color: rgb(51, 153, 255);
         }
-        /*        #user{
-                    background-color: black;
-                }*/
     </style>
     <ul class="nav fixed-top">
         <li class=".navbar-brand">
@@ -36,6 +33,7 @@
         <li class="nav-item ms-auto">
             <a class="nav-link" href="/LoginRegisterController/">Inscription</a>
         </li>
+        <!--LISTE USER-->
         <li class="nav-item">
             <div class="dropdown">
                 <button class="btn-grou btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
