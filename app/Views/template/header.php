@@ -128,15 +128,15 @@
                 </button>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                     <li><a class="dropdown-item active" href="/User/profil">Afficher profil</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <!--<li><a class="dropdown-item" href="#">Another action</a></li> -->
                     <li>
                         <a class="nav-link text-danger" href="/LoginRegisterController/logout">
                             <img src="<?php echo base_url('image/nav/deconnexion.png'); ?>"width="20px" height="20px" alt="déconnexion" />
                             déconnexion
                         </a>
                     </li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    <!--<li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>-->
                 </ul>
             </div>
         </li>
