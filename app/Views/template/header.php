@@ -102,6 +102,7 @@
         </li>
         <!-- IMAGE UTILISATEUR
         INSCRIPTION / CONNEXION / DECONNEXION-->
+
         <li class="nav-item ms-auto">
             <a class="nav-link" href="/LoginRegisterController/"><img src="<?php echo base_url('image/nav/inscription.png'); ?>"width="30px" height="30px" alt="inscription" /></a>
         </li>
@@ -111,7 +112,6 @@
         <li class="nav-item">
             <a class="nav-link text-danger" href="/LoginRegisterController/logout"><img src="<?php echo base_url('image/nav/deconnexion.png'); ?>"width="30px" height="30px" alt="déconnexion" /></a>
         </li>
-
         <!--PAGE PROFIL-->
         <li class="nav-item">
             <div class="dropdown">
@@ -141,5 +141,4 @@
             </div>
         </li>
     </ul>
-
 </html>
