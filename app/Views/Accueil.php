@@ -15,9 +15,6 @@
         }
         .Accueil{
         }
-        .corps{
-            margin-top: -8px;
-        }
         .gauche{
             width: 35%;
             height: 100%;
@@ -58,8 +55,8 @@
             afficherDate();
         </script>
         <div class="Accueil">
-            <div class="text-center bg-dark text-white">
-                <h1>ContactApp</h1>
+            <div class="bg-dark text-dark">
+                <br>
             </div>
             <div class="corps row align-items-start bg-dark text-white text-center">
                 <!--AFFICHAGE A GAUCHE--> 
@@ -67,21 +64,21 @@
                     <h3 class="bg-danger">ACCÈS RAPIDE</h3>
                     <div>
                         <h4 style="background-color: blueviolet;">CONTACT</h4>
-                        <a style="color: blueviolet;" href="/Recherche/tout_les_contacts">AFFICHER CONTACT</a><br>
+                        <a style="color: blueviolet;" href="/Accueil/tout_les_contacts">AFFICHER CONTACT</a><br>
                         _____________________ <br>
-                        <a style="color: blueviolet;" href="/Ajouter/ajouter_contact">AJOUTER CONTACT</a><br>
+                        <a style="color: blueviolet;" href="/Accueil/ajouter_contact">AJOUTER CONTACT</a><br>
                     </div><br>
                     <div>
                         <h4 style="background-color: tomato;">ORGANISATION</h4>
-                        <a style="color: tomato;" href="/Recherche/toute_les_organisations">AFFICHER ORGANISATION</a><br>
+                        <a style="color: tomato;" href="/Accueil/toute_les_organisations">AFFICHER ORGANISATION</a><br>
                         ___________________________ <br>
-                        <a style="color: tomato;" href="/Ajouter/ajouter_organisation">AJOUTER ORGANISATION</a><br>
+                        <a style="color: tomato;" href="/Accueil/ajouter_organisation">AJOUTER ORGANISATION</a><br>
                     </div><br>
                     <div>
                         <h4 style="background-color: seagreen;">LOGIN</h4>
-                        <a style="color: seagreen;" href="/Recherche/tout_les_login">AFFICHER LOGIN</a><br>
+                        <a style="color: seagreen;" href="/Accueil/tout_les_login">AFFICHER LOGIN</a><br>
                         _________________ <br>
-                        <a style="color: seagreen;" href="/Ajouter/ajouter_login">AJOUTER LOGIN</a><br>
+                        <a style="color: seagreen;" href="/Accueil/ajouter_login">AJOUTER LOGIN</a><br>
                     </div>
                     <br>
                 </div>
@@ -104,12 +101,37 @@
                             ?>
                         </h4>
                     </div>
-                    <div>
-                        <h4 style="font-size: 11px; margin-top: 320px">se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
+                    <div class="row">
+                        <div class="col">
+                            <br>
+                            <h4>besoin d'aide ?</h4>
+                            <p class="text-start" style="border-left: solid 2px #cdba20; padding-left: 5px;">
+                                Un doute sur comment utiliser l'application ?<br>
+                                un peu perdu ?
+                                Venez voir la page d'aide<br><br>
+                                <a href="/Accueil/aide" >Direction l'aide</a>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <br>
+                            <h4>Curieux sur l'application ?</h4>
+                            <p class="" style="border-left: solid 2px palegreen; padding-left: 5px;">
+                                Tu veux savoir comment fonctionne l'application ?<br>
+                                Quel est son code source ? Où le trouver ?<br>
+                                Vien faire un tour sur la page officielle Github<br>
+                                <a href="https://github.com/DamienLoison/ContactApp" >Direction Github</a>
+                            </p>
+                            <br>
+                        </div>
                     </div>
+
+                    <!--                    <div>
+                                            <h4 style="font-size: 11px; margin-top: 320px">se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
+                                        </div>-->
                 </div>
-                </body>
-                <footer>
-                    <?php echo view('template/footer.php') ?>
-                </footer>
-                </html>
+            </div>
+    </body>
+    <footer>
+        <?php echo view('template/footer.php') ?>
+    </footer>
+</html>
