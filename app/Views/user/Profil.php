@@ -24,18 +24,19 @@
             <div id="corps" class="text-center">
 
                 <label>Nom/Rôle de l'utilisateur :</label>
-                <input type="text" name="user_name" value="<?php echo $session->get('user_name') ?>">
+                <input disabled type="text" name="user_name" value="<?php echo $session->get('user_name') ?>">
 
                 <label>Email de l'utilisateur :</label>
-                <input type="text" name="user_email" value="<?php echo $session->get('user_email') ?>">
-                
+                <input disabled type="text" name="user_email" value="<?php echo $session->get('user_email') ?>">
+
                 <label>Date de création du rôle :</label>
-                <input type="text" name="user_created_at"
-                       value="
-                       <?php
+                <input disabled type="text" name="user_created_at"
+                       value="<?php
                        foreach ($users as $user) {
                            if ($user['user_name'] == $session->get('user_name')) {
                                echo $user['user_created_at'];
+                           } else {
+                               
                            }
                        }
                        ?>">
