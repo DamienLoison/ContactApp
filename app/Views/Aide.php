@@ -26,6 +26,10 @@
             border-left: solid seagreen 2px ;
             padding-left: 5px;
         }
+        .maj{
+            border-left: solid turquoise 2px ;
+            padding-left: 5px;
+        }
     </style>
     <body>
         <div class="Cadre bg-dark text-white">
@@ -84,6 +88,21 @@
                             Supprimer -> supprime le login<br>
                             + -> Permet d'ajouter un nouveau login<br>
                             <strong>La barre de recherche fonctionne qu'avec l'ID d'un login !</strong>
+                        </p>
+                    </div>
+                    <div class="maj">
+                        <h3 style="border-top: solid 2px white;">Comment mettre à jour l'application</h3>
+                        <p>
+                            Pour mettre à jour ContactApp, il faut :<br>
+                            - Vérifier si une mise à jour existe depuis Github dans la section Release<br>
+                            - Si une nouvelle version est disponible, il est possible de mettre à jour l'application !<br>
+                            - Il n'est toutefois pas obligatoire de la mettre à jour !<br>
+                            - Après avoir vérifier la version, il est possible de télécharger la nouvelle version sous forme de fichier compressé !<br>
+                            - Après quoi, il suffit de décmpressé le fichier à l'emplacement de l'application.<br>
+                            - Le Système d'exploitation demandera alors si vous souhaitez remplacer les fichiers déjà existant<br>
+                            - Vous valider oui.<br>
+                            - La manipulation est terminé, vous avez désormais la version souhaité ! <br>
+                            - Il est également possible de retourner à une ancienne version si celle-ci est toujours disponible !
                         </p>
                     </div>
                 </div>
