@@ -104,9 +104,33 @@
                             ?>
                         </h4>
                     </div>
-                    <div>
-                        <h4 style="font-size: 11px; margin-top: 320px">se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
+                    <div class="row">
+                        <div class="col">
+                            <br>
+                            <h4>besoin d'aide ?</h4>
+                            <p class="text-start" style="border-left: solid 2px #cdba20; padding-left: 5px;">
+                                Un doute sur comment utiliser l'application ?<br>
+                                un peu perdu ?
+                                Venez voir la page d'aide<br><br>
+                                <a href="/Accueil/aide" >Direction l'aide</a>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <br>
+                            <h4>Curieux sur l'application ?</h4>
+                            <p class="" style="border-left: solid 2px palegreen; padding-left: 5px;">
+                                Tu veux savoir comment fonctionne l'application ?<br>
+                                Quel est son code source ? Où le trouver ?<br>
+                                Vien faire un tour sur la page officielle Github<br>
+                                <a href="https://github.com/DamienLoison/ContactApp" >Direction Github</a>
+                            </p>
+                            <br>
+                        </div>
                     </div>
+
+                    <!--                    <div>
+                                            <h4 style="font-size: 11px; margin-top: 320px">se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
+                                        </div>-->
                 </div>
                 </body>
                 <footer>

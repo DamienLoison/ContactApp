@@ -27,14 +27,41 @@
             background-color: rgb(84,84,84);
             border-color: rgb(84,84,84);
         }
+        #Accueil{
+            background-color: rgb(84,84,84);
+            color: rgb(51, 153, 255);
+        }
+        #Accueil_liste{
+            background-color: rgb(84,84,84);
+            color: rgb(51, 153, 255); 
+        }
+        #Accueil_liste_color{
+            color: rgb(51, 153, 255); 
+        }
     </style>
     <ul class="nav fixed-top">
         <li class=".navbar-brand">
             <a class="nav-link active" aria-current="page" href="https://github.com/DamienLoison/ContactApp"><img src="<?php echo base_url('image/nav/ContactApp.png'); ?>"width="30px" height="30px" alt="ContactApp" /></a>
         </li>
-        <li class="nav-item">
+<!--        <li class="nav-item">
             <a class="nav-link" href="/Accueil">Accueil</a>
+        </li>-->
+
+        <li>
+            <div class="btn-group">
+                <a class="nav-link" href="/Accueil">Accueil</a>
+                <button id="Accueil_liste" type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu bg-dark">
+                    <li><a id="Accueil_liste_color" class="dropdown-item" href="/Accueil/aide">Aide</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a id="Accueil_liste_color" class="dropdown-item" href="/Accueil/architecture_site">Toutes les pages</a></li>
+                </ul>
+            </div>
         </li>
+
+
 
         <li>
             <div class="btn-group">
@@ -73,13 +100,13 @@
             </div>
         </li>
 
-        <li class="nav-item">
+<!--        <li class="nav-item">
             <a class="nav-link" href="/Accueil/aide">Aide</a>
-        </li>
+        </li>-->
         <!--PARTIE TEST/MODIFICATION-->
-        <li class="nav-item">
+<!--        <li class="nav-item">
             <a class="nav-link" href="/Accueil/architecture_site" tabindex="-1">Ensembles des pages</a>
-        </li>
+        </li>-->
         <!--        <li class="nav-item">
                     <a class="nav-link" href="/Accueil/note_patch" tabindex="-1">Note de patch</a>
                 </li>-->
@@ -121,9 +148,6 @@
                 </ul>
             </div>
         </li>
-        <!--        <li class="nav-item">
-                    v1.0.1
-                </li>-->
     </ul>
 
 </html>
