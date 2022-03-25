@@ -285,4 +285,11 @@ class Accueil extends BaseController {
         echo view('template/footer');
     }
 
+    //TEST
+    public function testing() {
+        echo view('template/header');
+        echo view('test/testing');
+        echo view('template/footer');
+    }
+
 }
