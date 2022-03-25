@@ -80,7 +80,7 @@
                         <button type="submit" class="btn btn-primary btn-block btn-lg float-start">Valider</button>
                     </form>
                     <div class="d-flex align-content-end">                        
-                        <form action="<?= base_url('Recherche/tout_les_contacts');
+                        <form action="<?= base_url('Accueil/tout_les_contacts');
                                 ?>" method="POST">
                             <button type="submit" class="btn btn-danger btn-block btn-lg float-end">Retour</button>
                         </form>   

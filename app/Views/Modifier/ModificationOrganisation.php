@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-sm-4 offset-4 my-3">
                     <h2>Ajouter une Organisation</h2>
-                    <form action="<?= base_url('Recherche/update_organisation/' . $organisation['ID_Organisation']); ?>" method="POST">
+                    <form action="<?= base_url('Accueil/update_organisation/' . $organisation['ID_Organisation']); ?>" method="POST">
                         <div class="mb-3 mt-3">
                             <label>Nom de l'organisation :</label>
                             <input type="text" name="Nom_Organisation" value="<?= $organisation['Nom_Organisation'] ?>" class="form-control"  placeholder="Entrer le nom de l'organisation" required>
@@ -38,7 +38,7 @@
                         <button type="submit" class="btn btn-primary btn-block btn-lg float-start">Valider</button>   
                     </form>
                     <div class="d-flex align-content-end">  
-                        <form action="<?= base_url('Recherche/toute_les_organisations'); ?>" method="POST">
+                        <form action="<?= base_url('Accueil/toute_les_organisations'); ?>" method="POST">
                             <button type="submit" class="btn btn-danger btn-block btn-lg float-end">Retour</button>
                         </form> 
                     </div>

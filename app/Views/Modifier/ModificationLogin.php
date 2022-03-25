@@ -26,11 +26,11 @@
         <div class="container mt-3">
             <div class="row">
                 <div class="col-sm-4 offset-4 my-3">
-                    <form action="<?= base_url('Recherche/tout_les_login'); ?>" method="POST">
+                    <form action="<?= base_url('Accueil/tout_les_login'); ?>" method="POST">
                         <button type="submit" class="btn btn-danger btn-block btn-lg float-end">Retour</button>
                     </form>  
                     <h2>Modifier un Login</h2>
-                    <form action="<?= base_url('Recherche/update_login/' . $login['ID_Login']); ?>" method="POST">
+                    <form action="<?= base_url('Accueil/update_login/' . $login['ID_Login']); ?>" method="POST">
                         <div class="mb-3 mt-3">
                             <label>Utilisateur :</label>
                             <input type="text" name="Utilisateur_Login" class="form-control" value="<?= $login['Utilisateur_Login'] ?>" placeholder="Entrer le nom d'utilisateur"  required>

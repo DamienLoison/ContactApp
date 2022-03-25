@@ -87,7 +87,7 @@
                             <th scope="col">Téléphone</th>
                             <th scope="col">Modifier</th>
                             <th scope="col">Supprimer</th>
-                            <th scope="col"><a href="/Ajouter/Ajouter_Organisation"><img src="<?php echo base_url('image/logo/Ajout.png'); ?>"width="20px" height="20px" alt="Ajouter"/></a></th>
+                            <th scope="col"><a href="/Accueil/Ajouter_Organisation"><img src="<?php echo base_url('image/logo/Ajout.png'); ?>"width="20px" height="20px" alt="Ajouter"/></a></th>
                         </tr>
                     </thead>
                     <?php foreach ($organisations as $organisation) : ?>
@@ -101,13 +101,13 @@
                             <td> <a href="https://www.<?php echo ($organisation['Site_Organisation']) ?>">Direction <?php echo ($organisation['Nom_Organisation']) ?></a></td>
                             <td> <?php echo ($organisation['Telephone_Organisation']) ?></td>
                             <td>                   
-                                <form name="Modifier" action="<?= Base_url('/Recherche/modifier_organisation/' . $organisation['ID_Organisation']); ?>" method="POST">
+                                <form name="Modifier" action="<?= Base_url('/Accueil/modifier_organisation/' . $organisation['ID_Organisation']); ?>" method="POST">
                                     <input type="hidden" name="_method" value="MODIFIER">
                                     <button type="submit" class="btn btn-outline-warning" value="">Modifier</button>
                                 </form>
                             </td>
                             <td>
-                                <form action="<?= base_url('/Recherche/delete_organisation/' . $organisation['ID_Organisation']) ?>" method="POST">
+                                <form action="<?= base_url('/Accueil/delete_organisation/' . $organisation['ID_Organisation']) ?>" method="POST">
                                     <input type="hidden" name="_method" value="DELETE">
                                     <button type="submit" class="btn btn-dark btn-sm">&#10060;</button>
                                 </form>
