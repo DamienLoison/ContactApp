@@ -249,8 +249,12 @@ class Accueil extends BaseController {
     public function profil() {
         $session = session();
         if (!empty($session->get("user_name"))) {
+            $user = new UserModel();
+            $data = [
+                'users' => $user->getName(),
+            ];
             echo view('template/header');
-            echo view('user/Profil');
+            echo view('user/Profil', $data);
             echo view('template/footer');
         } else {
             return redirect()->to('/LoginRegisterController/login');
