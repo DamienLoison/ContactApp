@@ -107,12 +107,12 @@
         <li class="nav-item ms-auto">
             <a class="nav-link" href="/LoginRegisterController/"><img src="<?php echo base_url('image/nav/inscription.png'); ?>"width="30px" height="30px" alt="inscription" /></a>
         </li>
-<!--        <li class="nav-item">
-            <a class="nav-link text-success" href="/LoginRegisterController/login"><img src="<?php echo base_url('image/nav/connexion.png'); ?>"width="30px" height="30px" alt="connexion" /></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-danger" href="/LoginRegisterController/logout"><img src="<?php echo base_url('image/nav/deconnexion.png'); ?>"width="30px" height="30px" alt="déconnexion" /></a>
-        </li>-->
+        <!--        <li class="nav-item">
+                    <a class="nav-link text-success" href="/LoginRegisterController/login"><img src="<?php echo base_url('image/nav/connexion.png'); ?>"width="30px" height="30px" alt="connexion" /></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="/LoginRegisterController/logout"><img src="<?php echo base_url('image/nav/deconnexion.png'); ?>"width="30px" height="30px" alt="déconnexion" /></a>
+                </li>-->
         <!--PAGE PROFIL-->
         <li class="nav-item">
             <div class="dropdown">
@@ -133,7 +133,7 @@
                     <li>
                         <a class="nav-link text-sucess" href="/LoginRegisterController/login">
                             <img src="<?php echo base_url('image/nav/connexion.png'); ?>"width="20px" height="20px" alt="connexion:"/>
-                        connexion
+                            connexion
                         </a>
                     </li>
                     <li>
@@ -142,8 +142,8 @@
                             déconnexion
                         </a>
                     </li>
-                    <!--<li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Separated link</a></li>-->
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/Accueil/tout_les_utilisateurs">Liste utilisateurs</a></li>
                 </ul>
             </div>
         </li>
