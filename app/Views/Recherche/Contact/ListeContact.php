@@ -100,7 +100,7 @@
                                 <th scope="col">Organisation</th>
                                 <th scope="col">Modifier</th>
                                 <th scope="col">Supprimer</th>
-                                <th scope="col"><a href="/Ajouter/Ajouter_Contact"><img src="<?php echo base_url('image/logo/Ajout.png'); ?>"width="20px" height="20px" alt="Ajouter"/></a></th>
+                                <th scope="col"><a href="/Accueil/Ajouter_Contact"><img src="<?php echo base_url('image/logo/Ajout.png'); ?>"width="20px" height="20px" alt="Ajouter"/></a></th>
                             </tr>
                         </thead>
                         <?php foreach ($contacts as $contact) : ?>
@@ -123,13 +123,13 @@
                                     ?>
                                 </td>
                                 <td>
-                                    <form action="<?= base_url('/Recherche/modifier_contact/' . $contact['ID_Contact']); ?>" method="POST">
+                                    <form action="<?= base_url('/Accueil/modifier_contact/' . $contact['ID_Contact']); ?>" method="POST">
                                         <input type="hidden" name="_method" value="MODIFIER">
                                         <button type="submit" class="btn btn-outline-warning" value="">Modifier</button>
                                     </form>
                                 </td>
                                 <td>
-                                    <form action="<?= base_url('/Recherche/delete_contact/' . $contact['ID_Contact']) ?>" method="POST">
+                                    <form action="<?= base_url('/Accueil/delete_contact/' . $contact['ID_Contact']) ?>" method="POST">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <button type="submit" class="btn btn-dark btn-sm">&#10060;</button>
                                     </form>

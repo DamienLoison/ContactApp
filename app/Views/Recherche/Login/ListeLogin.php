@@ -146,7 +146,7 @@
                             <th scope="col">Information</th>
                             <th scope="col">Modifier</th>
                             <th scope="col">Supprimer</th>
-                            <th scope="col"><a href="/Ajouter/Ajouter_Login"><img src="<?php echo base_url('image/logo/Ajout.png'); ?>"width="20px" height="20px" alt="Ajouter"/></a></th>
+                            <th scope="col"><a href="/Accueil/Ajouter_Login"><img src="<?php echo base_url('image/logo/Ajout.png'); ?>"width="20px" height="20px" alt="Ajouter"/></a></th>
                         </tr>
                     </thead>
                     <?php foreach ($logins as $login) : ?>
@@ -155,19 +155,19 @@
                             <td> <?php echo ($login['ID_Login']) ?></td>
                             <td> <?php echo ($login['Utilisateur_Login']) ?></td>
                             <td>
-                                <form action="<?= Base_url('/Recherche/afficher_login/' . $login['ID_Login']); ?>" method="POST">
+                                <form action="<?= Base_url('/Accueil/afficher_login/' . $login['ID_Login']); ?>" method="POST">
                                     <input type="hidden" name="_method" value="AFFICHER">
                                     <button type="submit" class="btn btn-outline-success" value="">Accéder</button>
                                 </form>
                             </td>
                             <td>
-                                <form action="<?= Base_url('/Recherche/modifier_login/' . $login['ID_Login']); ?>" method="POST">
+                                <form action="<?= Base_url('/Accueil/modifier_login/' . $login['ID_Login']); ?>" method="POST">
                                     <input type="hidden" name="_method" value="MODIFIER">
                                     <button type="submit" class="btn btn-outline-warning" value="">Modifier</button>
                                 </form>
                             </td>
                             <td>
-                                <form action="<?= base_url('/Recherche/delete_login/' . $login['ID_Login']) ?>" method="POST">
+                                <form action="<?= base_url('/Accueil/delete_login/' . $login['ID_Login']) ?>" method="POST">
                                     <input type="hidden" name="_method" value="DELETE">
                                     <button type="submit" class="btn btn-dark btn-sm">&#10060;</button>
                                 </form>
