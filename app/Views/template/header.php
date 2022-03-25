@@ -38,6 +38,9 @@
         #Accueil_liste_color{
             color: rgb(51, 153, 255);
         }
+        #profil{
+            background-color: 343a40;
+        }
     </style>
     <?php $session = session(); ?>
     <ul class="nav fixed-top">
@@ -142,7 +145,7 @@
                         //AFFICHER OU NON LE BOUTON DECONNEXION    
                     } else {
                         echo"<li>";
-                        echo"<a class='dropdown-item active' href='/Accueil/profil'>";
+                        echo"<a class='dropdown-item active' id='profil' href='/Accueil/profil'>";
                         echo"Afficher profil";
                         echo"</a>";
                         echo"</li>";

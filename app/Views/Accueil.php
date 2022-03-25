@@ -124,10 +124,6 @@
                             <br>
                         </div>
                     </div>
-
-                    <!--                    <div>
-                                            <h4 style="font-size: 11px; margin-top: 320px">se réferrer au Note Patch actuel disponible depuis la barre de navigation</h4>
-                                        </div>-->
                 </div>
             </div>
     </body>
