@@ -50,11 +50,21 @@ CREATE TABLE IF NOT EXISTS `organisation` (
   `Mail_Organisation` varchar(100) NOT NULL COMMENT 'Longueur de 100 caracteres',
   `Site_Organisation` varchar(200) NOT NULL COMMENT 'Longeur de 200 caracteres pour le site internet',
   `Telephone_Organisation` char(10) NOT NULL,
-  `Logo_Organisation` text NOT NULL COMMENT 'Logo de l''entreprise',
   PRIMARY KEY (`ID_Organisation`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1 COMMENT='ID_Organisation, Nom_Organisation, Adresse_Organisation, mail_Organisation, Site_Organisation, telephone_Organisation, Logo_Organisation';
 ```
 
+-----------------------------------------------------------------------------------------------------------
+
+```sql
+CREATE TABLE IF NOT EXISTS `users`(
+    `user_id` INT PRIMARY KEY AUTO_INCREMENT,
+    `user_name` VARCHAR(100),
+    `user_email` VARCHAR(100),
+    `user_password` VARCHAR(200),
+    `user_created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=INNODB;
+```
 -----------------------------------------------------------------------------------------------------------
 
 ##Requis pour fonctionner :
