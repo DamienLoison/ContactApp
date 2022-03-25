@@ -39,6 +39,7 @@
             color: rgb(51, 153, 255);
         }
     </style>
+    <?php $session = session(); ?>
     <ul class="nav fixed-top">
         <li class=".navbar-brand">
             <a class="nav-link active" aria-current="page" href="https://github.com/DamienLoison/ContactApp"><img src="<?php echo base_url('image/nav/ContactApp.png'); ?>"width="30px" height="30px" alt="ContactApp" /></a>
@@ -102,24 +103,27 @@
         </li>
         <!--
         IMAGE UTILISATEUR
-        INSCRIPTION / CONNEXION
+        INSCRIPTION
         -->
-        <li class="nav-item ms-auto">
-            <a class="nav-link" href="/LoginRegisterController/"><img src="<?php echo base_url('image/nav/inscription.png'); ?>"width="30px" height="30px" alt="inscription" /></a>
-        </li>
-        <!--        <li class="nav-item">
-                    <a class="nav-link text-success" href="/LoginRegisterController/login"><img src="<?php echo base_url('image/nav/connexion.png'); ?>"width="30px" height="30px" alt="connexion" /></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-danger" href="/LoginRegisterController/logout"><img src="<?php echo base_url('image/nav/deconnexion.png'); ?>"width="30px" height="30px" alt="déconnexion" /></a>
-                </li>-->
+        <?php
+        if ($session->get('user_name') == null) {
+            echo "<li class='nav-item ms-auto'>";
+            echo "<a class='nav-link' href='/LoginRegisterController/'>";
+            echo "<img src='" . base_url('image/nav/inscription.png') . "'width='30px' height='30px' alt='inscription:'/>";
+            echo "</a>";
+            echo "</li>";
+//            echo "";
+        } else {
+            echo "<li class='nav-item ms-auto'>";
+            echo "</li>";
+        }
+        ?>
         <!--PAGE PROFIL-->
         <li class="nav-item">
             <div class="dropdown">
                 <button class="btn-grou btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user:" width="30px" height="30px"/>
                     <?php
-                    $session = session();
                     if ($session->get('user_name') == null) {
                         echo "connectez-vous ! " . " ";
                     } else {
