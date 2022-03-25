@@ -130,18 +130,26 @@
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                     <li><a class="dropdown-item active" href="/User/profil">Afficher profil</a></li>
                     <!--<li><a class="dropdown-item" href="#">Another action</a></li> -->
-                    <li>
-                        <a class="nav-link text-sucess" href="/LoginRegisterController/login">
-                            <img src="<?php echo base_url('image/nav/connexion.png'); ?>"width="20px" height="20px" alt="connexion:"/>
-                            connexion
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link text-danger" href="/LoginRegisterController/logout">
-                            <img src="<?php echo base_url('image/nav/deconnexion.png'); ?>"width="20px" height="20px" alt="déconnexion" />
-                            déconnexion
-                        </a>
-                    </li>
+
+                    <?php
+                    //AFFICHE OU NON LE BOUTON CONNEXION
+                    if ($session->get('user_name') == null) {
+                        echo "<li>";
+                        echo "<a class='nav-link text-sucess' href='/LoginRegisterController/login'>";
+                        echo "<img src='" . base_url('image/nav/connexion.png') . "'width='20px' height='20px' alt='connexion:'/>";
+                        echo "connexion";
+                        echo "</a>";
+                        echo "</li>";
+                        //AFFICHER OU NON LE BOUTON DECONNEXION    
+                    } else {
+                        echo "<li>";
+                        echo "<a class='nav-link text-danger' href='/LoginRegisterController/logout'>";
+                        echo "<img src='" . base_url('image/nav/deconnexion.png') . "'width='20px' height='20px' alt='déconnexion:'/>";
+                        echo "déconnexion";
+                        echo "</a>";
+                        echo "</li>";
+                    }
+                    ?>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="/Accueil/tout_les_utilisateurs">Liste utilisateurs</a></li>
                 </ul>
