@@ -24,14 +24,14 @@
                         <button class="btn btn-primary"><a class="text-white" href="javascript:window.history.go(-1);">Retour</a></button>                       
                     </form>
                     <h2>Ajouter une Organisation</h2>
-                    <form action="<?php echo site_url('Ajouter/ajouter_organisation_record'); ?>" method="POST">
+                    <form action="<?php echo site_url('Accueil/ajouter_organisation_record'); ?>" method="POST">
                         <div class="mb-3 mt-3">
                             <label>Nom de l'organisation :</label>
-                            <input type="text" class="form-control" id="Nom_Organisation" placeholder="Entrer le nom" name="Nom_Organisation" required>
+                            <input type="text" class="form-control" id="Nom_Organisation" placeholder="Entrer le nom de l'organisation" name="Nom_Organisation" required>
                         </div>
                         <div class="mb-3 mt-3">
                             <label>Adresse de l'organisation :</label>
-                            <input type="text" class="form-control" id="Adresse_Organisation" placeholder="Entrer le prénom" name="Adresse_Organisation" required>
+                            <input type="text" class="form-control" id="Adresse_Organisation" placeholder="Entrer l'adresse de l'organisation" name="Adresse_Organisation" required>
                         </div>
                         <div class="mb-3 mt-3">
                             <label>Mail de l'organisation :</label>

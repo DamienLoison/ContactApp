@@ -25,7 +25,7 @@
                         <button class="btn btn-primary"><a class="text-white" href="javascript:window.history.go(-1);">Retour</a></button>                       
                     </form>  
                     <h2>Ajouter un contact</h2>                    
-                    <form action="<?php echo site_url('Ajouter/ajouter_contact_record'); ?>" method="POST">
+                    <form action="<?php echo site_url('Accueil/ajouter_contact_record'); ?>" method="POST">
                         <div class="mb-3 mt-3">
                             <label>Nom du contact :</label>
                             <input type="text" class="form-control" id="nomContact" placeholder="Entrer le nom" name="Nom_Contact" required>
@@ -57,7 +57,7 @@
                             </select>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block btn-lg float-start">Valider</button>
-                        <form action="<?php echo site_url('Ajouter/ajouter_organisation'); ?>" method="POST">
+                        <form action="<?php echo site_url('Accueil/ajouter_organisation'); ?>" method="POST">
                             <button type="submit" class="Add_Organisation btn btn-primary btn-block btn-lg float-end">Ajouter une organisation</button>
                         </form>    
                     </form>

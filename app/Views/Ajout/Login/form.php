@@ -24,14 +24,14 @@
                         <button class="btn btn-primary"><a class="text-white" href="javascript:window.history.go(-1);">Retour</a></button>                       
                     </form>
                     <h2>Ajouter un Login</h2>
-                    <form action="<?php echo site_url('Ajouter/ajouter_login_record'); ?>" method="POST">
+                    <form action="<?php echo site_url('Accueil/ajouter_login_record'); ?>" method="POST">
                         <div class="mb-3 mt-3">
                             <label>Utilisateur :</label>
                             <input type="text" class="form-control" id="Utilisateur_Login" placeholder="Entrer le nom d'utilisateur" name="Utilisateur_Login" required>
                         </div>
                         <div class="mb-3 mt-3">
                             <label>Mot de passe :</label>
-                            <input type="text" class="form-control" id="Password_Login" placeholder="Entrer le mot de passe" name="Password_Login" required>
+                            <input type="password" class="form-control" id="Password_Login" placeholder="Entrer le mot de passe" name="Password_Login" required>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block btn-lg">Valider</button>
                     </form>
