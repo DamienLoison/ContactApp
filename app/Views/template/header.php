@@ -101,18 +101,15 @@
         <li class="position-absolute top-50 start-50 translate-middle">
             <h3>ContactApp</h3>
         </li>
-        <!--
-        IMAGE UTILISATEUR
-        INSCRIPTION
-        -->
         <?php
+        //IMAGE UTILISATEUR
+        //L'IMAGE INSCRIPTION APPARAIT LORSQUE L'UTILISATEUR N'EST PAS CONNECTE
         if ($session->get('user_name') == null) {
             echo "<li class='nav-item ms-auto'>";
             echo "<a class='nav-link' href='/LoginRegisterController/'>";
             echo "<img src='" . base_url('image/nav/inscription.png') . "'width='30px' height='30px' alt='inscription:'/>";
             echo "</a>";
             echo "</li>";
-//            echo "";
         } else {
             echo "<li class='nav-item ms-auto'>";
             echo "</li>";
@@ -132,9 +129,7 @@
                     ?>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                    <li><a class="dropdown-item active" href="/User/profil">Afficher profil</a></li>
-                    <!--<li><a class="dropdown-item" href="#">Another action</a></li> -->
-
+                    <li><a class="dropdown-item active" href="/Accueil/profil">Afficher profil</a></li>
                     <?php
                     //AFFICHE OU NON LE BOUTON CONNEXION
                     if ($session->get('user_name') == null) {

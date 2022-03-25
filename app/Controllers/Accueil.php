@@ -247,9 +247,14 @@ class Accueil extends BaseController {
 
     //PARTIE USER 
     public function profil() {
-        echo view('template/header');
-        echo view('user/Profil');
-        echo view('template/footer');
+        $session = session();
+        if (!empty($session->get("user_name"))) {
+            echo view('template/header');
+            echo view('user/Profil');
+            echo view('template/footer');
+        } else {
+            return redirect()->to('/LoginRegisterController/login');
+        }
     }
 
     public function tout_les_utilisateurs() {
