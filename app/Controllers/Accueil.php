@@ -6,6 +6,7 @@ use CodeIgniter\Controller;
 use App\Models\ContactModel;
 use App\Models\OrganisationModel;
 use App\Models\LoginModel;
+use App\Models\UserModel;
 
 class Accueil extends BaseController {
 
@@ -242,6 +243,22 @@ class Accueil extends BaseController {
         $log->delete($ID_Login);
 
         return redirect()->to(base_url('Accueil/tout_les_login'));
+    }
+
+    //PARTIE USER 
+    public function profil() {
+        echo view('template/header');
+        echo view('user/Profil');
+        echo view('template/footer');
+    }
+
+    public function tout_les_utilisateurs() {
+        $user = new UserModel();
+        $data = [
+            'users' => $user->getName(),
+        ];
+
+        return view('user/ListeUtilisateur', $data);
     }
 
     //PAGE ANNEXE DE L'ACCUEIL
